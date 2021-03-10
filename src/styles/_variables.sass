@@ -1,0 +1,143 @@
+//
+// Colores genericos ===================================
+//
+
+$black: #000
+$darkest-gray: lighten($black, 10%)
+$darker-gray: lighten($black, 20%)
+$darken-gray: lighten($black, 30%)
+$dark-gray: lighten($black, 40%)
+$gray: lighten($black, 50%)
+$light-gray: lighten($black, 60%)
+$lighten-gray: lighten($black, 70%)
+$lighter-gray: lighten($black, 80%)
+$lightest-gray: lighten($black, 90%)
+$white: #fff
+
+
+$red: #F44336
+$deep-orange: #FF5722
+$pink: #E91E63
+$purple: #9C27B0
+$deep-purple: #673AB7
+$indigo: #3F51B5
+$blue: #2196F3
+$light-blue: #03A9F4
+$cyan: #00BCD4
+$teal: #009688
+$green: #4CAF50
+$light-green: #8BC34A
+$lime: #CDDC39
+$yellow: #FFEB3B
+$amber: #FFC107
+$orange: #FF9800
+$brown: #795548
+$blue-grey: #607D8B
+
+//
+// Colores Plantilla SENA ===================================
+//
+
+$color-primario: #111E61
+$color-secundario: #727997
+$color-terciario: #B0C0D2
+
+$color-acento-a: #FFCD0D
+$color-acento-b: #FE848D
+
+$color-institucional: #ff8f00
+
+
+// Validation states Colors
+$color-success: lighten($green, 10%)
+$color-info: lighten($light-blue, 15%)
+$color-warning: lighten($yellow, 15%)
+$color-danger: desaturate($red, 15%)
+
+// Font Colors
+$base-font-color: $dark-gray
+$paragraph-color: $dark-gray
+$heading-color: $dark-gray
+
+// Links Colors
+$action-color: $color-acento-a
+$link-color: $action-color
+$link-hover-color: darken($action-color, 25%)
+
+// Selection Colors
+$selection-color: $blue
+$selection-font-color: $white
+
+// Typography -----------------------------------------------------
+$base-light-font-weight: 100
+$base-medium-font-weight: 400
+$base-bold-font-weight: 700
+$base-black-font-weight: 900
+
+$base-font-family: 'Roboto', sans-serif
+$base-font-size: 16px
+$base-font-weight: $base-medium-font-weight
+$base-line-height: 1.5
+
+$heading-font-family: $base-font-family
+$heading-font-weight: $base-black-font-weight
+$heading-line-height: $base-line-height
+
+$code-font-family: "Lucida Console", "Courier New", monospace
+
+$h1-font-size: 2.625em
+$h2-font-size: 2.375em
+$h3-font-size: 1.875em
+$h4-font-size: 1.5em
+$h5-font-size: 1.25em
+$h6-font-size: 1.125em
+
+$paragraph-font-family: $base-font-family
+$paragraph-font-size: $base-font-size
+$paragraph-font-weight: $base-font-weight
+$paragraph-line-height: $base-line-height
+
+// Links -----------------------------------------------------
+$link-font-family: $base-font-family
+$link-font-size: $base-font-size
+$link-font-weight: $base-font-weight
+
+$label-font-size: $base-font-size
+$label-font-family: $base-font-family
+$label-font-weight: $heading-font-weight
+
+// Other Sizes -----------------------------------------------------
+$base-border-radius: 3px
+$base-spacing: $base-line-height * 1em
+$small-spacing: $base-spacing / 2
+$big-spacing: $base-spacing * 2
+$base-z-index: 0
+
+// Border
+$base-border-color: $light-gray
+$base-border: 1px solid $base-border-color
+
+// Forms -----------------------------------------------------
+$placeholder-color: $light-gray
+$form-background-color: white
+$form-box-shadow: inset 0 1px 3px rgba($black, 0.06)
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3)
+
+// Animations
+$base-duration: 150ms
+$base-timing: ease-in-out
+
+// ---
+// BREAKPOINTS
+// ---
+$bp-min-xxl: 1400px
+$bp-min-xl: 1200px
+$bp-min-lg: 992px
+$bp-min-md: 768px
+$bp-min-sm: 576px
+
+$bp-max-xl: 1400px
+$bp-max-lg: 1200px
+$bp-max-md: 992px
+$bp-max-sm: 768px
+$bp-max-xs: 576px
