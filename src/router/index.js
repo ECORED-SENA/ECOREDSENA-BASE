@@ -12,56 +12,72 @@ const router = new VueRouter({
       name: 'inicio',
       component: Inicio,
     },
-    // {
-    //   path: '/introduccion',
-    //   name: 'introduccion',
-    //   component: () =>
-    //     import(/* webpackChunkName: "intro" */ '../views/Introduccion.vue'),
-    // },
-    // {
-    //   path: '/curso',
-    //   name: 'curso',
-    //   component: Curso,
-    //   redirect: {
-    //     name: 'tema1',
-    //   },
-    //   children: [
-    //     {
-    //       path: 'tema1',
-    //       name: 'tema1',
-    //       component: () =>
-    //         import(
-    //           /* webpackChunkName: "actividad" */ '../components/curso/Tema1.vue'
-    //         ),
-    //     },
-    //   ],
-    // },
-    // {
-    //   path: '/actividad/:index',
-    //   name: 'actividad',
-    //   component: () =>
-    //     import(/* webpackChunkName: "actividad" */ '../views/Actividad.vue'),
-    // },
-    // {
-    //   path: '/glosario',
-    //   name: 'glosario',
-    //   component: () =>
-    //     import(/* webpackChunkName: "glosario" */ '../views/Glosario.vue'),
-    // },
-    // {
-    //   path: '/complementario',
-    //   name: 'complementario',
-    //   component: () =>
-    //     import(/* webpackChunkName: "comple" */ '../views/Complementario.vue'),
-    // },
-    // {
-    //   path: '/referencias',
-    //   name: 'referencias',
-    //   component: () =>
-    //     import(
-    //       /* webpackChunkName: "referencias" */ '../views/Referencias.vue'
-    //     ),
-    // },
+    {
+      path: '/introduccion',
+      name: 'introduccion',
+      component: () =>
+        import(/* webpackChunkName: "intro" */ '../views/Introduccion.vue'),
+    },
+    {
+      path: '/curso',
+      name: 'curso',
+      // component: Curso,
+      redirect: {
+        name: 'tema1',
+      },
+      children: [
+        {
+          path: 'tema1',
+          name: 'tema1',
+          // component: () =>
+          //   import(
+          //     /* webpackChunkName: "actividad" */ '../components/curso/Tema1.vue'
+          //   ),
+        },
+        {
+          path: 'tema2',
+          name: 'tema2',
+          // component: () =>
+          //   import(
+          //     /* webpackChunkName: "actividad" */ '../components/curso/Tema1.vue'
+          //   ),
+        },
+        {
+          path: 'tema3',
+          name: 'tema3',
+          // component: () =>
+          //   import(
+          //     /* webpackChunkName: "actividad" */ '../components/curso/Tema1.vue'
+          //   ),
+        },
+      ],
+    },
+    {
+      path: '/actividad/:index?',
+      name: 'actividad',
+      // component: () =>
+      //   import(/* webpackChunkName: "actividad" */ '../views/Actividad.vue'),
+    },
+    {
+      path: '/glosario',
+      name: 'glosario',
+      // component: () =>
+      //   import(/* webpackChunkName: "glosario" */ '../views/Glosario.vue'),
+    },
+    {
+      path: '/complementario',
+      name: 'complementario',
+      // component: () =>
+      //   import(/* webpackChunkName: "comple" */ '../views/Complementario.vue'),
+    },
+    {
+      path: '/referencias',
+      name: 'referencias',
+      // component: () =>
+      //   import(
+      //     /* webpackChunkName: "referencias" */ '../views/Referencias.vue'
+      //   ),
+    },
   ],
   scrollBehavior(to) {
     return to.hash

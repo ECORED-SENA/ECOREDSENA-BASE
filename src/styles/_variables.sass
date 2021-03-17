@@ -35,41 +35,57 @@ $brown: #795548
 $blue-grey: #607D8B
 
 //
-// Colores Plantilla SENA ===================================
+// Colores Plantilla ===================================
 //
 
-$color-primario: #111E61
-$color-secundario: #727997
-$color-terciario: #B0C0D2
-
-$color-acento-a: #FFCD0D
-$color-acento-b: #FE848D
+$color-sistema-a: #111e61
+$color-sistema-b: #727997
+$color-sistema-c: #b0c0d2
+$color-sistema-d: #d2e1f1
+$color-sistema-e: #D8ECFF
+$color-sistema-f: #e8e8e8
+$color-sistema-g: #f3f9ff
 
 $color-institucional: #ff8f00
 
+$color-banner-text: $white
 
-// Validation states Colors
+//
+// Colores Curso ===================================
+//
+
+$color-curso-a: #522981
+$color-curso-b: #FF4A69
+$color-curso-c: #FFCD0D
+$color-curso-d: #7DD3E9
+
+
+// Colores y estados de validacion
 $color-success: lighten($green, 10%)
 $color-info: lighten($light-blue, 15%)
 $color-warning: lighten($yellow, 15%)
 $color-danger: desaturate($red, 15%)
 
-// Font Colors
-$base-font-color: $dark-gray
-$paragraph-color: $dark-gray
-$heading-color: $dark-gray
+// Colores tipografia
+$base-font-color: $color-sistema-a
+$paragraph-color: $base-font-color
+$heading-color: $color-sistema-a
 
-// Links Colors
-$action-color: $color-acento-a
+// Colores links
+$action-color: $color-curso-a
 $link-color: $action-color
 $link-hover-color: darken($action-color, 25%)
 
-// Selection Colors
+// Colores botones
+$btn-bg-color: $color-curso-c
+$btn-color: $color-curso-a
+
+// Colores Seleccion
 $selection-color: $blue
 $selection-font-color: $white
 
-// Typography -----------------------------------------------------
-$base-light-font-weight: 100
+// Tipografias -----------------------------------------------------
+$base-thin-font-weight: 100
 $base-medium-font-weight: 400
 $base-bold-font-weight: 700
 $base-black-font-weight: 900
@@ -97,7 +113,7 @@ $paragraph-font-size: $base-font-size
 $paragraph-font-weight: $base-font-weight
 $paragraph-line-height: $base-line-height
 
-// Links -----------------------------------------------------
+// Tipografias Links -----------------------------------------------------
 $link-font-family: $base-font-family
 $link-font-size: $base-font-size
 $link-font-weight: $base-font-weight
@@ -106,8 +122,8 @@ $label-font-size: $base-font-size
 $label-font-family: $base-font-family
 $label-font-weight: $heading-font-weight
 
-// Other Sizes -----------------------------------------------------
-$base-border-radius: 3px
+// otros tamaños -----------------------------------------------------
+$base-border-radius: 5px
 $base-spacing: $base-line-height * 1em
 $small-spacing: $base-spacing / 2
 $big-spacing: $base-spacing * 2

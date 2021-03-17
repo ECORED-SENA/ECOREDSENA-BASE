@@ -1,12 +1,134 @@
 <template lang="pug">
-header
-  h1 header
+header.header.container-fluid
+  .row.align-items-center.justify-content-between
+    .col-auto.d-flex.align-items-center
+      
+      .header__menu.me-5(@click="$emit('update:menuOpen', !menuOpen)")
+        .header__menu__btn(:class="{'header__menu__btn--open': menuOpen}")
+          .line-2
+          .line-1
+          .line-3
+        span MENÚ
+
+      img.header__logo.me-5(src="@/assets/template/logo-sena-naranja.svg")
+
+      a(href="").me-5 Resultados de aprendizaje
+      a(href="").me-5 Contenidos
+      a(href="") Créditos
+
+    .col-auto
+      a.boton
+        span.me-1 Iniciar
+        i(class="fas fa-angle-right")
+
 </template>
 
 <script>
 export default {
   name: 'Header',
+  props: {
+    menuOpen: {
+      type: Boolean,
+      default: false,
+    },
+  },
 }
 </script>
 
-<style lang="sass" scoped></style>
+<style lang="sass" scoped>
+.header
+  position: sticky
+  top: 0
+  padding-top: 10px
+  padding-bottom: 10px
+  background-color: $white
+  z-index: 10010
+  &__logo
+    width: 50px
+
+
+.header__menu
+  cursor: pointer
+  span
+    font-size: 0.7em
+    display: block
+    line-height: 1em
+    text-align: center
+    color: $color-sistema-a
+  &__btn
+    width: 30px
+    height: 30px
+    position: relative
+    margin-bottom: 4px
+    .line-1,.line-2,.line-3
+      height: 4px
+      width: 30px
+      background-color: $color-sistema-a
+      transform-origin: center center
+      position: absolute
+      left: 0
+      border-radius: 2px
+    .line-1
+      top: 4px
+      animation: line-1-inactive 0.5s ease-in-out forwards
+    .line-2
+      top: 13px
+      animation: line-2-inactive 0.5s ease-in-out forwards
+    .line-3
+      top: 22px
+      animation: line-3-inactive 0.5s ease-in-out forwards
+    &:hover
+      cursor: pointer
+
+    &--open
+      .line-1
+        animation: line-1-active 0.5s ease-in-out forwards
+      .line-2
+        animation: line-2-active 0.5s ease-in-out forwards
+      .line-3
+        animation: line-3-active 0.5s ease-in-out forwards
+
+@keyframes line-1-active
+  0%
+    transform: translate(0, 0) rotate(0)
+  50%
+    transform: translate(0, 9px) rotate(0)
+  100%
+    transform: translate(0, 9px) rotate(45deg)
+
+@keyframes line-2-active
+  0%
+    transform: scale(1)
+  100%
+    transform: scale(0)
+
+@keyframes line-3-active
+  0%
+    transform: translate(0, 0) rotate(0)
+  50%
+    transform: translate(0, -9px) rotate(0)
+  100%
+    transform: translate(0, -9px) rotate(-45deg)
+
+@keyframes line-1-inactive
+  0%
+    transform: translate(0, 9px) rotate(45deg)
+  50%
+    transform: translate(0, 9px) rotate(0)
+  100%
+    transform: translate(0, 0) rotate(0)
+
+@keyframes line-2-inactive
+  0%
+    transform: scale(0)
+  100%
+    transform: scale(1)
+
+@keyframes line-3-inactive
+  0%
+    transform: translate(0, -9px) rotate(-45deg)
+  50%
+    transform: translate(0, -9px) rotate(0)
+  100%
+    transform: translate(0, 0) rotate(0)
+</style>
