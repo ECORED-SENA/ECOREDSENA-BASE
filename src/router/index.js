@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Inicio from '../views/Inicio.vue'
-// import Curso from '../views/Curso.vue'
+import Curso from '../views/Curso.vue'
 
 Vue.use(VueRouter)
 
@@ -21,7 +21,7 @@ const router = new VueRouter({
     {
       path: '/curso',
       name: 'curso',
-      // component: Curso,
+      component: Curso,
       redirect: {
         name: 'tema1',
       },
@@ -29,10 +29,8 @@ const router = new VueRouter({
         {
           path: 'tema1',
           name: 'tema1',
-          // component: () =>
-          //   import(
-          //     /* webpackChunkName: "actividad" */ '../components/curso/Tema1.vue'
-          //   ),
+          component: () =>
+            import(/* webpackChunkName: "tema1" */ '../views/curso/Tema1.vue'),
         },
         {
           path: 'tema2',

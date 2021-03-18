@@ -1,5 +1,5 @@
 <template lang="pug">
-footer.container.footer.tarjeta.px-5.py-4.mb-4
+footer.container.footer.tarjeta.px-5.py-4
   .row.align-items-center
     .col-auto
       img(src="@/assets/template/cc.svg")
@@ -16,6 +16,8 @@ export default {
 <style lang="sass" scoped>
 .footer
   background-color: $color-sistema-d
+  border-bottom-right-radius: 0
+  border-bottom-left-radius:  0
   p
     color: $color-sistema-b
 </style>
