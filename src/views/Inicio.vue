@@ -3,7 +3,7 @@ section
   BannerPrincipal.mb-5
   
   //- Resultados de aprendizaje
-  .container.tarjeta.tarjeta__template--azul-claro.px-5.py-4.mb-5
+  .container.tarjeta.tarjeta__template--azul-claro.px-3.py-4.px-sm-5.mb-5
     .row
       .col-md-3.col-xl-2.mb-4.mb-md-0
         .titulo__template--a
@@ -15,11 +15,11 @@ section
             span {{resultado}}
 
   //- Desarrollo de contenidos
-  .container.tarjeta.tarjeta__template--azul-claro.px-5.pt-4.pb-5.mb-5
+  .container.tarjeta.tarjeta__template--azul-claro.px-3.py-4.px-sm-5.pb-sm-5.mb-5
     .titulo__template--a.mb-4
       span.h6 Desarrollo<br>de contenidos
 
-    .tarjeta--blanca.p-4
+    .tarjeta--blanca.p-3.p-sm-4
       .desarrollo-contenidos
         router-link.desarrollo-contenidos__item(
           v-for="item of desarrolloContenidosData"
@@ -35,7 +35,7 @@ section
             span Ver más
 
   //- Créditos
-  .container.tarjeta.tarjeta__template--azul-claro.px-5.py-4.mb-5
+  .container.tarjeta.tarjeta__template--azul-claro.px-3.py-4.px-sm-5.mb-5
     .titulo__template--a.mb-4
       span.h6 Créditos
 
@@ -44,158 +44,48 @@ section
         p.text-bold ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES
       .mb-4
         p
-          span.text-bold Ingry Dayanna Bonilla Monzon
+          span.text-bold {{creditosData.liderEquipo.nombre}}
           br
-          | Líder del equipo
+          | {{creditosData.liderEquipo.cargo}}
 
       .row
-        .col-lg-4
+        .col-lg-8
           p.creditos__titulo.mb-3 CONTENIDO INSTRUCCIONAL
-
-          p.mb-3
-            span.text-bold Gloria Matilde Lee Mejía
-            br
-            | Responsable del equipo
-            br
-            | Centro de Comercio y Servicios
-            br
-            | Regional Tolima
-
-          p.mb-3
-            span.text-bold Rafael Neftalí Lizcano Reyes
-            br
-            | Asesor pedagógico
-            br
-            | Centro Industrial del Diseño y la Manufactura
-            br
-            | Regional Santander
-
-          p.mb-3
-            span.text-bold Astrid Lili Puerta
-            br
-            | Experta temática
-            br
-            | Centro Agropecuario de Buga
-            br
-            | Regional valle
-
-          p.mb-3
-            span.text-bold Javier Enrique Santana
-            br
-            | Experto temático
-            br
-            | Centro de Gestión Industrial
-            br
-            | Regional Distrito Capital
-
-          p.mb-3
-            span.text-bold Michael Andrés Cortés Caro
-            br
-            | Experto temático
-            br
-            | Ministerio de Ambiente y Desarrollo Sostenible
-
-        .col-lg-4
-          p.mb-3
-            span.text-bold Mauricio Jiménez Fajardo
-            br
-            | Experto temático
-            br
-            | Ministerio de Ambiente y Desarrollo Sostenible
-
-          p.mb-3
-            span.text-bold Manuel Alejandro Garzón Cárdenas
-            br
-            | Experto temático
-            br
-            | Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)
-
-          p.mb-3
-            span.text-bold Liliana Victoria Morales Gualdrón
-            br
-            | Diseñador instruccional
-            br
-            | Centro para la Industria y la Comunicación Gráfica
-            br
-            | Regional Distrito Capital
-
-          p.mb-3
-            span.text-bold Carlos Andrés Rodríguez
-            br
-            | Evaluador instruccional
-            br
-            | Centro de Diseño y Metrología
-            br
-            | Regional Distrito Capital
-
-          p.mb-4.mb-lg-0
-            span.text-bold Julieth Paola Vital López
-            br
-            | Revisora de estilo
-            br
-            | Centro para la Industria de la Comunicación Gráfica
-            br
-            | Regional Distrito Capital
+          .row
+            .col-lg-6(v-for="column of contenidoInstruccional")
+              CreditosItem(v-for="item of column" :item="item")
 
         .col-lg-4
           p.creditos__titulo.mb-3 DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES 
-
-          p.mb-3
-            span.text-bold Francisco José Lizcano Reyes
-            br
-            | Responsable del equipo
-
-          p.mb-3
-            span.text-bold Leyson Fabian Castaño Perez
-            br
-            | Integración de recursos y pruebas
-
-          p.mb-3
-            span.text-bold Adriana Rincón Avendaño
-            br
-            span.text-bold Eulises Orduz Amezquita
-            br
-            | Diseño web y Producción Audiovisual
-
-          p.mb-3
-            span.text-bold Edward Leonardo Pico Cabra
-            br
-            | Desarrollo Front-end
-
-          p.mb-4 Centro Industrial del Diseño y la Manufactura
-            br
-            | Regional Santander
-
+          CreditosItem(v-for="item of creditosData.desarrolloProducto" :item="item")
+          
           p.creditos__titulo.mb-3 GESTORES DE REPOSITORIO
-
-          p.mb-3
-            span.text-bold Brayan Stiven Pinto Diaz
-            br
-            | Desarrollo front-end
-            br
-            | Validación de recursos.
-            br
-            | Centro de comercio y servicios
-            br
-            | Regional Tolima
+          CreditosItem(v-for="item of creditosData.gestoresRepositorio" :item="item")
 
   Footer
   
 
 </template>
 <script>
-import { resultadosAprendizaje, menuPrincipal } from '../config/global'
+import {
+  resultadosAprendizaje,
+  menuPrincipal,
+  creditos,
+} from '../config/global'
 import BannerPrincipal from '../components/plantilla/BannerPrincipal'
+import CreditosItem from '../components/plantilla/CreditosItem'
 import Footer from '../components/plantilla/Footer'
 export default {
   name: 'Inicio',
   components: {
     BannerPrincipal,
+    CreditosItem,
     Footer,
   },
   data: () => ({
     resultadosData: resultadosAprendizaje,
     menuPrincipalData: menuPrincipal,
+    creditosData: creditos,
   }),
   computed: {
     desarrolloContenidosData() {
@@ -204,6 +94,13 @@ export default {
         ...this.menuPrincipalData.subMenu,
       ]
       return allMenuData.filter(item => item.desarrolloContenidos)
+    },
+    contenidoInstruccional() {
+      const contenido = this.creditosData.contenidoInstruccional
+      const half = Math.round(contenido.length / 2)
+      const firstHalf = [...contenido].splice(0, half)
+      const secondHalf = [...contenido].splice(half, contenido.length)
+      return [firstHalf, secondHalf]
     },
   },
 }

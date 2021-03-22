@@ -35,18 +35,18 @@ const router = new VueRouter({
         {
           path: 'tema2',
           name: 'tema2',
-          // component: () =>
-          //   import(
-          //     /* webpackChunkName: "actividad" */ '../components/curso/Tema1.vue'
-          //   ),
+          component: () =>
+            import(
+              /* webpackChunkName: "actividad" */ '../views/curso/Tema2.vue'
+            ),
         },
         {
           path: 'tema3',
           name: 'tema3',
-          // component: () =>
-          //   import(
-          //     /* webpackChunkName: "actividad" */ '../components/curso/Tema1.vue'
-          //   ),
+          component: () =>
+            import(
+              /* webpackChunkName: "actividad" */ '../views/curso/Tema3.vue'
+            ),
         },
       ],
     },
@@ -77,14 +77,25 @@ const router = new VueRouter({
       //   ),
     },
   ],
-  scrollBehavior(to) {
-    return to.hash
-      ? {
-          selector: to.hash,
-          offset: { y: 100 },
-          behavior: 'smooth',
-        }
-      : { x: 0, y: 0 }
+  scrollBehavior(to, from) {
+    if (to.hash) {
+      const newRoute = {
+        selector: to.hash,
+        offset: { y: 100 },
+        behavior: 'smooth',
+      }
+      if (to.name === from.name) {
+        return newRoute
+      } else {
+        return new Promise(resolve => {
+          setTimeout(() => {
+            resolve(newRoute)
+          }, 300)
+        })
+      }
+    } else {
+      return { x: 0, y: 0, behavior: 'auto' }
+    }
   },
 })
 

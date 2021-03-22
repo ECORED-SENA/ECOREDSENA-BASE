@@ -1,31 +1,34 @@
 <template lang="pug">
 header.header.container-fluid
   .row.align-items-center.justify-content-between
-    .col-auto.d-flex.align-items-center
+    .col.col-sm-auto.d-flex.align-items-center.justify-content-between.justify-content-sm-start
       
-      .header__menu.me-5(@click="$emit('update:menuOpen', !menuOpen)")
+      .header__menu.me-5(v-if="$route.name != 'inicio'" @click="$emit('update:menuOpen', !menuOpen)")
         .header__menu__btn(:class="{'header__menu__btn--open': menuOpen}")
           .line-2
           .line-1
           .line-3
         span MENÚ
 
-      img.header__logo.me-5(src="@/assets/template/logo-sena-naranja.svg")
+      img.header__logo.me-sm-5(src="@/assets/template/logo-sena-naranja.svg")
 
-      a(href="").me-5 Resultados de aprendizaje
-      a(href="").me-5 Contenidos
-      a(href="") Créditos
+      .d-none.d-md-flex.align-items-center
+        a(href="").me-5 Resultados de aprendizaje
+        a(href="").me-5 Contenidos
+        a(href="") Créditos
 
-    .col-auto
-      a.boton
+    .col-auto(v-if="$route.name === 'inicio'")
+      router-link.boton(:to="{name: iniciarLnk.nombreRuta }")
         span.me-1 Iniciar
         i(class="fas fa-angle-right")
 
 </template>
 
 <script>
+import mixins from '../../mixins/mixins'
 export default {
   name: 'Header',
+  mixins: [mixins],
   props: {
     menuOpen: {
       type: Boolean,
@@ -43,6 +46,7 @@ export default {
   padding-bottom: 10px
   background-color: $white
   z-index: 10010
+  line-height: 1.1em
   &__logo
     width: 50px
 

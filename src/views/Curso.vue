@@ -1,7 +1,7 @@
 <template lang="pug">
 #curso.curso
   router-view
-  BarraAvance
+  BarraAvance(:menu-open="menuOpen")
 </template>
 
 <script>
@@ -10,6 +10,12 @@ export default {
   name: 'Curso',
   components: {
     BarraAvance,
+  },
+  props: {
+    menuOpen: {
+      type: Boolean,
+      default: false,
+    },
   },
 }
 </script>

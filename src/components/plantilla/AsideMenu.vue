@@ -68,6 +68,13 @@ export default {
     menuData: menuPrincipal && menuPrincipal.menu,
     subMenuData: menuPrincipal && menuPrincipal.subMenu,
   }),
+  watch: {
+    $route(to) {
+      if (to.name === 'inicio') {
+        this.$emit('update:menuOpen', false)
+      }
+    },
+  },
 }
 </script>
 

@@ -3,13 +3,19 @@
   .banner-curso__fondo(:style="{'background-image': `url(${globalData.fondoBannerPrincipal})`}")
   .container
     .banner-curso__titulo.py-5 
-      h1.h3.mb-0 {{globalData.componenteFormativo}}
+      h1.h3.mb-0 {{titulo}}
 </template>
 
 <script>
 import { global } from '../../config/global'
 export default {
   name: 'BannerCurso',
+  props: {
+    titulo: {
+      type: String,
+      default: '',
+    },
+  },
   data: () => ({
     globalData: global,
   }),
@@ -32,4 +38,5 @@ export default {
   &__titulo
     h1
       color: $color-banner-text
+      line-height: 1.1em
 </style>

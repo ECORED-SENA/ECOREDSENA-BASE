@@ -2,21 +2,24 @@
 #app.app
   Header(:menu-open.sync="menuOpen")
   .contenedor-principal
-    AsideMenu(:menu-open="menuOpen")
+    AsideMenu(:menu-open.sync="menuOpen")
     section.seccion-principal
-      router-view
+      router-view(:menu-open="menuOpen")
       footer
+  BarraAvance(:menu-open="menuOpen")
 
 </template>
 
 <script>
 import AsideMenu from './components/plantilla/AsideMenu'
 import Header from './components/plantilla/Header'
+import BarraAvance from './components/plantilla/BarraAvance'
 export default {
-  name: 'Inicio',
+  name: 'App',
   components: {
     AsideMenu,
     Header,
+    BarraAvance,
   },
   data: () => ({
     menuOpen: false,
@@ -26,7 +29,6 @@ export default {
 
 <style lang="sass">
 .app
-  // height: 100%
 
 .contenedor-principal
   display: flex

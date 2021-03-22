@@ -1,8 +1,10 @@
 <template lang="pug">
 .banner-principal
-  .container.tarjeta.p-5.pb-0(:style="{'background-image': `url(${globalData.fondoBannerPrincipal})`}")
+  .container.tarjeta.p-4.ps-sm-5.pe-sm-5.pt-sm-5.pb-0(
+    :style="{'background-image': `url(${globalData.fondoBannerPrincipal})`}"
+  )
     .row.justify-content-around
-      .col-lg-7.col-xxl-5.banner-principal__info
+      .col-lg-7.col-xxl-5.banner-principal__info.pb-4.pb-sm-5
         .banner-principal__programa
           span.text-small.insignia.me-2 Programa
           p.text-small.mb-0 {{globalData.programaFormacion}}
@@ -11,7 +13,7 @@
         .banner-principal__descripcion
           p.mb-0 {{globalData.descripcionCurso}}
         .banner-principal__accion
-          a.boton
+          router-link.boton(:to="{name: iniciarLnk.nombreRuta }")
             span.me-1 Iniciar
             i(class="fas fa-angle-right")
 
@@ -21,8 +23,10 @@
 
 <script>
 import { global } from '../../config/global'
+import mixins from '../../mixins/mixins'
 export default {
   name: 'BannerPrincipal',
+  mixins: [mixins],
   data: () => ({
     globalData: global,
   }),
@@ -41,7 +45,6 @@ export default {
 
 
   &__info
-    padding-bottom: 50px
 
   &__programa
     display: flex
@@ -52,6 +55,9 @@ export default {
     margin-bottom: 20px
     h1
       line-height: 1.1em
+
+      @media (max-width: $bp-max-xs)
+        font-size: 2em
 
   &__descripcion
     margin-bottom: 20px
