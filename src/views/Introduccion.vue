@@ -1,11 +1,7 @@
 <template lang="pug">
 .curso-main-container.introduccion
-  BannerCurso
-  .container.tarjeta--blanca.p-5.mb-5
-    
-    .h3 INTRODUCCIÓN
-    
-    hr.mb-5
+  BannerInterno(icono="fas fa-info" titulo="Introducción")
+  .container.tarjeta--blanca.p-4.p-md-5.mb-5
     
     .video.mb-5
       iframe(width="560" height="315" src="https://www.youtube.com/embed/YXT2HTjiB3Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
@@ -25,11 +21,11 @@
 </template>
 
 <script>
-import BannerCurso from '../components/plantilla/BannerCurso'
+import BannerInterno from '../components/plantilla/BannerInterno'
 export default {
   name: 'Introduccion',
   components: {
-    BannerCurso,
+    BannerInterno,
   },
   data: () => ({
     globalData: global,

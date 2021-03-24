@@ -1,7 +1,7 @@
 <template lang="pug">
 .curso-main-container.introduccion
-  BannerCurso(titulo="Tema 3 adipiscing elit. Nunc lacinia risus non nisl tincidunt condimentum")
-  .container.tarjeta--blanca.p-5.mb-5
+  BannerInterno(titulo="Tema 3 adipiscing elit. Nunc lacinia risus non nisl tincidunt condimentum")
+  .container.tarjeta--blanca.p-4.p-md-5.mb-5
     
     #t_3_1.pb-5.h2 tema 3.1
     .pb-5(v-for="item of 15")
@@ -24,11 +24,11 @@
 </template>
 
 <script>
-import BannerCurso from '../../components/plantilla/BannerCurso'
+import BannerInterno from '../../components/plantilla/BannerInterno'
 export default {
   name: 'Tema1',
   components: {
-    BannerCurso,
+    BannerInterno,
   },
 }
 </script>

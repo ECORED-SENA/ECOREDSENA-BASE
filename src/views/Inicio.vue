@@ -1,9 +1,10 @@
 <template lang="pug">
 section
-  BannerPrincipal.mb-5
+  BannerPrincipal
   
   //- Resultados de aprendizaje
-  .container.tarjeta.tarjeta__template--azul-claro.px-3.py-4.px-sm-5.mb-5
+  #resultados.pb-5
+  .container.tarjeta.tarjeta__template--azul-claro.px-3.py-4.px-sm-5
     .row
       .col-md-3.col-xl-2.mb-4.mb-md-0
         .titulo__template--a
@@ -15,7 +16,8 @@ section
             span {{resultado}}
 
   //- Desarrollo de contenidos
-  .container.tarjeta.tarjeta__template--azul-claro.px-3.py-4.px-sm-5.pb-sm-5.mb-5
+  #contenidos.pb-5
+  .container.tarjeta.tarjeta__template--azul-claro.px-3.py-4.px-sm-5.pb-sm-5
     .titulo__template--a.mb-4
       span.h6 Desarrollo<br>de contenidos
 
@@ -35,57 +37,32 @@ section
             span Ver más
 
   //- Créditos
+  #creditos.pb-5
   .container.tarjeta.tarjeta__template--azul-claro.px-3.py-4.px-sm-5.mb-5
     .titulo__template--a.mb-4
       span.h6 Créditos
 
-    .creditos
-      .mb-3
-        p.text-bold ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES
-      .mb-4
-        p
-          span.text-bold {{creditosData.liderEquipo.nombre}}
-          br
-          | {{creditosData.liderEquipo.cargo}}
-
-      .row
-        .col-lg-8
-          p.creditos__titulo.mb-3 CONTENIDO INSTRUCCIONAL
-          .row
-            .col-lg-6(v-for="column of contenidoInstruccional")
-              CreditosItem(v-for="item of column" :item="item")
-
-        .col-lg-4
-          p.creditos__titulo.mb-3 DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES 
-          CreditosItem(v-for="item of creditosData.desarrolloProducto" :item="item")
-          
-          p.creditos__titulo.mb-3 GESTORES DE REPOSITORIO
-          CreditosItem(v-for="item of creditosData.gestoresRepositorio" :item="item")
+    CreditosComp
 
   Footer
   
 
 </template>
 <script>
-import {
-  resultadosAprendizaje,
-  menuPrincipal,
-  creditos,
-} from '../config/global'
+import { resultadosAprendizaje, menuPrincipal } from '../config/global'
 import BannerPrincipal from '../components/plantilla/BannerPrincipal'
-import CreditosItem from '../components/plantilla/CreditosItem'
+import CreditosComp from '../components/plantilla/CreditosComp'
 import Footer from '../components/plantilla/Footer'
 export default {
   name: 'Inicio',
   components: {
     BannerPrincipal,
-    CreditosItem,
+    CreditosComp,
     Footer,
   },
   data: () => ({
     resultadosData: resultadosAprendizaje,
     menuPrincipalData: menuPrincipal,
-    creditosData: creditos,
   }),
   computed: {
     desarrolloContenidosData() {
@@ -94,13 +71,6 @@ export default {
         ...this.menuPrincipalData.subMenu,
       ]
       return allMenuData.filter(item => item.desarrolloContenidos)
-    },
-    contenidoInstruccional() {
-      const contenido = this.creditosData.contenidoInstruccional
-      const half = Math.round(contenido.length / 2)
-      const firstHalf = [...contenido].splice(0, half)
-      const secondHalf = [...contenido].splice(half, contenido.length)
-      return [firstHalf, secondHalf]
     },
   },
 }
@@ -144,18 +114,4 @@ export default {
       background-color: $color-sistema-g
       font-weight: $base-black-font-weight
       color: $color-sistema-a
-
-.creditos
-  color: $color-sistema-b
-
-  p
-    line-height: 1.3em
-    margin-bottom: 0
-    color: $color-sistema-b
-
-  &__titulo
-    font-weight: $base-bold-font-weight
-    background-color: $color-sistema-d
-    padding: 5px 10px
-    border-radius: $base-border-radius
 </style>

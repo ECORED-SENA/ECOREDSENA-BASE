@@ -41,6 +41,7 @@ aside.aside-menu(:class="{'aside-menu--open': menuOpen}")
         a.aside-menu__sec-menu__item__lnk(
           v-if="secMenuItem.hasOwnProperty('download')"
           :href="secMenuItem.download"
+          target="_blank"
         )
           i(:class="secMenuItem.icono")
           span {{secMenuItem.titulo}}

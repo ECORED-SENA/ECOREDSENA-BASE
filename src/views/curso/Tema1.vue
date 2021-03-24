@@ -1,7 +1,7 @@
 <template lang="pug">
 .curso-main-container.introduccion
-  BannerCurso(titulo="Tema 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia risus")
-  .container.tarjeta--blanca.p-5.mb-5
+  BannerInterno(titulo="Tema 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia risus")
+  .container.tarjeta--blanca.p-4.p-md-5.mb-5
     
     #t_1_1.pb-5.h2 tema 1.1
     .pb-5(v-for="item of 15")
@@ -21,11 +21,21 @@
 </template>
 
 <script>
-import BannerCurso from '../../components/plantilla/BannerCurso'
+import { mapActions } from 'vuex'
+import BannerInterno from '../../components/plantilla/BannerInterno'
 export default {
   name: 'Tema1',
   components: {
-    BannerCurso,
+    BannerInterno,
+  },
+  mounted() {
+    this.increment()
+    setTimeout(() => {
+      this.decrease()
+    }, 3000)
+  },
+  methods: {
+    ...mapActions(['increment', 'decrease']),
   },
 }
 </script>

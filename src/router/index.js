@@ -59,22 +59,28 @@ const router = new VueRouter({
     {
       path: '/glosario',
       name: 'glosario',
-      // component: () =>
-      //   import(/* webpackChunkName: "glosario" */ '../views/Glosario.vue'),
+      component: () =>
+        import(/* webpackChunkName: "glosario" */ '../views/Glosario.vue'),
     },
     {
       path: '/complementario',
       name: 'complementario',
-      // component: () =>
-      //   import(/* webpackChunkName: "comple" */ '../views/Complementario.vue'),
+      component: () =>
+        import(/* webpackChunkName: "comple" */ '../views/Complementario.vue'),
     },
     {
       path: '/referencias',
       name: 'referencias',
-      // component: () =>
-      //   import(
-      //     /* webpackChunkName: "referencias" */ '../views/Referencias.vue'
-      //   ),
+      component: () =>
+        import(
+          /* webpackChunkName: "referencias" */ '../views/Referencias.vue'
+        ),
+    },
+    {
+      path: '/creditos',
+      name: 'creditos',
+      component: () =>
+        import(/* webpackChunkName: "creditos" */ '../views/Creditos.vue'),
     },
   ],
   scrollBehavior(to, from) {

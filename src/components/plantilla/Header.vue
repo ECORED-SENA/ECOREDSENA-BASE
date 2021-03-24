@@ -12,12 +12,15 @@ header.header.container-fluid
 
       img.header__logo.me-sm-5(src="@/assets/template/logo-sena-naranja.svg")
 
-      .d-none.d-md-flex.align-items-center
-        a(href="").me-5 Resultados de aprendizaje
-        a(href="").me-5 Contenidos
-        a(href="") Créditos
+      .d-none.d-md-flex.align-items-center(v-if="isInicio")
+        a(href="#resultados").me-5 Resultados de aprendizaje
+        a(href="#contenidos").me-5 Contenidos
+        a(href="#creditos") Créditos
 
-    .col-auto(v-if="$route.name === 'inicio'")
+      .header__componente-formativo(v-else)
+        span {{globalData.componenteFormativo}}
+
+    .col-auto(v-if="isInicio")
       router-link.boton(:to="{name: iniciarLnk.nombreRuta }")
         span.me-1 Iniciar
         i(class="fas fa-angle-right")
@@ -25,6 +28,7 @@ header.header.container-fluid
 </template>
 
 <script>
+import { global } from '../../config/global'
 import mixins from '../../mixins/mixins'
 export default {
   name: 'Header',
@@ -33,6 +37,14 @@ export default {
     menuOpen: {
       type: Boolean,
       default: false,
+    },
+  },
+  data: () => ({
+    globalData: global,
+  }),
+  computed: {
+    isInicio() {
+      return this.$route.name === 'inicio'
     },
   },
 }
