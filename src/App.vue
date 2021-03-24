@@ -11,6 +11,7 @@
 </template>
 
 <script>
+import { global } from './config/global'
 import AsideMenu from './components/plantilla/AsideMenu'
 import Header from './components/plantilla/Header'
 import BarraAvance from './components/plantilla/BarraAvance'
@@ -23,7 +24,11 @@ export default {
   },
   data: () => ({
     menuOpen: false,
+    globalData: global,
   }),
+  created() {
+    document.title = this.globalData.componenteFormativo
+  },
 }
 </script>
 
