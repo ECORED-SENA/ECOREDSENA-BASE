@@ -1,5 +1,5 @@
 <template lang="pug">
-.curso-main-container.introduccion
+.curso-main-container
   BannerInterno(titulo="Tema 2 Lorem ipsum dolor sit amet, consectetur")
   .container.tarjeta--blanca.p-4.p-md-5.mb-5
     

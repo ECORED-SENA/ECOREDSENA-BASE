@@ -77,7 +77,6 @@ export default {
     overflow: hidden
     transition: height 0.5s ease-in-out
 
-
 .acordion-slot
   position: absolute
   opacity: 0
