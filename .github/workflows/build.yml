@@ -37,11 +37,11 @@ jobs:
         run: |
           git config user.name maoSantaella
           git config user.email mao.santaella@gmail.com
-          git checkout -b new-dist
+          git checkout -b newdist
           git add --force dist
           git commit -m "new dist"
-          git push -u origin new-dist
-          git push origin `git subtree split --prefix dist new-dist`:gh-pages --force
-          git push origin --delete new-dist
+          git push -u origin newdist
+          git push origin `git subtree split --prefix dist newdist`:gh-pages --force
+          git push origin --delete newdist
 
 # git subtree push --prefix dist origin gh-pages
