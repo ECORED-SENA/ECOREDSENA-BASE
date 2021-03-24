@@ -50,7 +50,7 @@ npm run lint
 
 #### 6. Hacer clik "Run workflow
 
-![instrucciones despues del primer push](src\assets\template\pasos.jpg?raw=true 'Title')
+![instrucciones despues del primer push](src\assets\template\pasos.jpg 'Title')
 
 #
 
