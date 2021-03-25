@@ -13,7 +13,6 @@ header.header.container-fluid
       img.header__logo.me-sm-5(src="@/assets/template/logo-sena-naranja.svg")
 
       .d-none.d-md-flex.align-items-center(v-if="isInicio")
-        a(href="#resultados").me-5 Resultados de aprendizaje
         a(href="#contenidos").me-5 Contenidos
         a(href="#creditos") Créditos
 

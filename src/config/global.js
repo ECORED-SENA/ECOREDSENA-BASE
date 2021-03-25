@@ -200,12 +200,6 @@ export const menuPrincipal = {
   ],
 }
 
-export const resultadosAprendizaje = [
-  'Nunc dapibus felis sit amet quam varius, a tristique lorem vehicula. Quisque justo ante, fermentum.',
-  'Nunc at magna aliquet, porttitor ipsum eget, semper metus. Nullam vulputate nulla at lectus malesuada.',
-  'Quisque consequat iaculis blandit. Cras vulputate odio sit amet tristique maximus. Mauris et iaculis lorem.',
-]
-
 export const creditos = {
   liderEquipo: {
     nombre: 'Ingry Dayanna Bonilla Monzon',

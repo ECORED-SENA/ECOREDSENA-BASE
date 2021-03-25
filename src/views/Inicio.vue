@@ -1,19 +1,6 @@
 <template lang="pug">
 section
   BannerPrincipal
-  
-  //- Resultados de aprendizaje
-  #resultados.pb-5
-  .container.tarjeta.tarjeta__template--azul-claro.px-3.py-4.px-sm-5
-    .row
-      .col-md-3.col-xl-2.mb-4.mb-md-0
-        .titulo__template--a
-          span.h6 Resultados<br>de aprendizaje
-
-      .col-md-9.col-xl-10
-        ul.resultados-aprendizaje
-          li.resultados-aprendizaje__item(v-for="resultado of resultadosData")
-            span {{resultado}}
 
   //- Desarrollo de contenidos
   #contenidos.pb-5
