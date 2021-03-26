@@ -3,7 +3,8 @@
   BannerInterno(titulo="Tema 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia risus")
   .container.tarjeta--blanca.p-4.p-md-5.mb-5
     
-    #t_1_1.pb-5.h2 tema 1.1
+    #t_1_1.pb-5.h2 Textos
+    h1 H1: I Don't know how to act my age
     .pb-5(v-for="item of 15")
 
     #t_1_2.pb-5.h2 tema 1.2

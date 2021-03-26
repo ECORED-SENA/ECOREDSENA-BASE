@@ -36,7 +36,7 @@ section
 
 </template>
 <script>
-import { resultadosAprendizaje, menuPrincipal } from '../config/global'
+import { menuPrincipal } from '../config/global'
 import BannerPrincipal from '../components/plantilla/BannerPrincipal'
 import CreditosComp from '../components/plantilla/CreditosComp'
 import Footer from '../components/plantilla/Footer'
@@ -48,7 +48,6 @@ export default {
     Footer,
   },
   data: () => ({
-    resultadosData: resultadosAprendizaje,
     menuPrincipalData: menuPrincipal,
   }),
   computed: {

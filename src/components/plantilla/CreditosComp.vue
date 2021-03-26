@@ -12,15 +12,15 @@
     .col-lg-8
       p.creditos__titulo.mb-3 CONTENIDO INSTRUCCIONAL
       .row
-        .col-lg-6(v-for="column of contenidoInstruccional")
-          CreditosItem(v-for="item of column" :item="item")
+        .col-lg-6(v-for="(column, idx) of contenidoInstruccional" :key="'inst-'+idx")
+          CreditosItem(v-for="(item, colIdx) of column" :key="'inst-col-'+idx+colIdx" :item="item")
 
     .col-lg-4
       p.creditos__titulo.mb-3 DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES 
-      CreditosItem(v-for="item of creditosData.desarrolloProducto" :item="item")
+      CreditosItem(v-for="(item, idx) of creditosData.desarrolloProducto" :key="'desa-'+idx" :item="item" )
       
       p.creditos__titulo.mb-3 GESTORES DE REPOSITORIO
-      CreditosItem(v-for="item of creditosData.gestoresRepositorio" :item="item")
+      CreditosItem(v-for="(item, idx) of creditosData.gestoresRepositorio" :key="'repo-'+idx" :item="item")
 </template>
 
 <script>

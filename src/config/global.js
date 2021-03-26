@@ -1,6 +1,4 @@
 export const global = {
-  programaFormacion:
-    'Programa de formación con un nombre muy muy largo y extenso',
   componenteFormativo:
     'Componente Formativo con un nombre extremadamente largo y extenso',
   descripcionCurso:
