@@ -8,25 +8,31 @@
 
 ## **Configuración del proyecto**
 
-#### Instalación de dependencias
+### 1. Se recomienda trabajar con [vs-code](https://code.visualstudio.com/)
+
+### 2. Instalar extención [EsLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+### 3. Instalación de dependencias
 
 ```
 npm install
 ```
+#
+## **Desarrollo**
 
-#### Montaje de servidor local
+### Montaje de servidor local
 
 ```
 npm run serve
 ```
 
-#### Compilación para la producción
+### Compilación para la producción
 
 ```
 npm run build
 ```
 
-#### Linteo y arreglo de sintaxis de archivos
+### Linteo y arreglo de sintaxis de archivos
 
 ```
 npm run lint
