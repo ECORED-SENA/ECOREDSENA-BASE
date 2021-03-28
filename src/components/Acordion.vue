@@ -1,13 +1,16 @@
 <template lang="pug">
 .acordion
-  .tarjeta.tarjeta--blanca.mb-4.pb-0(v-for="elm of elements" :key="elm.id")
+  .p-3.pb-0(v-for="elm of elements" :key="elm.id" :class="cardClass")
     
-    .acordion__header(@click="selected = selected != elm.id ? elm.id : 0")
+    .acordion__header.mb-3(@click="selected = selected != elm.id ? elm.id : 0")
       .acordion__accion
-        img(v-if="selected != elm.id" src="@/assets/images/pages/tema1/img17.svg")
-        img(v-else src="@/assets/images/pages/tema1/img2.svg")
+        .h4.mb-0(v-if="selected != elm.id")
+          i.fas.fa-plus-square
+          
+        .h4.mb-0(v-else)
+          i.fas.fa-minus-square
       .acordion__titulo
-        .h1.mb-0 {{elm.titulo}}
+        .h4.mb-0 {{elm.titulo}}
     
     .acordion__contenido(
       v-html="elm.html",
@@ -22,32 +25,78 @@
 <script>
 export default {
   name: 'Acordion',
+  props: {
+    claseTarjeta: {
+      type: String,
+      default: '',
+    },
+  },
   data: () => ({
+    mainId: Math.floor(Math.random() * 10000000),
     selected: 0,
     elements: [],
+    stateStr: '',
     rendered: false,
   }),
+  computed: {
+    cardClass() {
+      if (this.claseTarjeta.length) {
+        return this.claseTarjeta
+      } else {
+        return 'tarjeta tarjeta--blanca mb-3'
+      }
+    },
+    menuState() {
+      return this.$store.getters.isMenuOpen
+    },
+  },
+  watch: {
+    menuState() {
+      this.domUpdated()
+    },
+  },
+  created() {
+    window.addEventListener('resize', this.domUpdated)
+  },
   mounted() {
     this.$nextTick(() => {
       this.crearElementos()
-      setTimeout(() => {
-        this.rendered = true
-      }, 500)
+    })
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.domUpdated)
+  },
+  updated() {
+    this.$nextTick(() => {
+      if (this.getStateStr() != this.stateStr) {
+        this.crearElementos()
+      }
     })
   },
   methods: {
     crearElementos() {
       if (!this.$slots.default) return []
       else if (!this.$slots.default.length) return []
-      this.elements = this.$slots.default.map(elemento => ({
-        id: Math.floor(Math.random() * 10000000),
+      this.domUpdated()
+      this.elements = this.$slots.default.map((elemento, index) => ({
+        id: this.mainId + index + 1,
         html: elemento.elm.outerHTML,
         titulo: elemento.data.attrs.titulo,
       }))
-      this.selected = this.elements[0].id
+      this.selected = this.selected > 0 ? this.selected : this.elements[0].id
+      this.stateStr = this.getStateStr()
     },
     getActiveHeight(id) {
       return this.$refs[id][0].scrollHeight + 'px'
+    },
+    getStateStr() {
+      return this.$slots.default.map(elm => elm.elm.outerHTML).join('')
+    },
+    domUpdated() {
+      this.rendered = false
+      setTimeout(() => {
+        this.rendered = true
+      }, 500)
     },
   },
 }
@@ -58,9 +107,6 @@ export default {
 .acordion
   position: relative
 
-  .tarjeta
-    padding: 25px
-
   &__header
     display: flex
     align-items: center
@@ -68,7 +114,6 @@ export default {
     cursor: pointer
 
   &__accion
-    width: 30px
 
   &__titulo
     margin-left: 15px

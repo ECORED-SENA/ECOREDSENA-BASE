@@ -3,7 +3,7 @@
   BannerInterno(icono="far fa-folder-open" titulo="Material complementario")
   .container.tarjeta--blanca.p-4.p-md-5.mb-5
     .table-responsive
-      table.table
+      table
         thead
           tr
             th(colspan='8' scope="col") Autor, (año del documento o material), Nombre del documento o material
@@ -41,24 +41,10 @@ export default {
       line-height: 1em
 table
   width: calc(100% - 1px)
-  margin: 0
   min-width: 800px
   th, td
     padding: 25px 20px
     text-align: center
     &:first-child
       text-align: left
-
-  thead
-    border-top: 4px solid $color-curso-b
-    background-color: $color-sistema-f
-  th
-    border-bottom: none
-
-  tbody
-  td
-    border-bottom: 1px solid $color-sistema-f
-    border-left: 1px solid $color-sistema-f
-    &:last-child
-      border-right: 1px solid $color-sistema-f
 </style>

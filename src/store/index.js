@@ -6,13 +6,16 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     loading: 0,
+    menuOpen: false,
   },
   getters: {
-    isLoading: state => {
-      return !!state.loading
-    },
+    isLoading: state => !!state.loading,
+    isMenuOpen: state => state.menuOpen,
   },
   mutations: {
+    toggleMenu(state, newVal) {
+      state.menuOpen = newVal
+    },
     increment(state) {
       state.loading++
     },
@@ -21,6 +24,9 @@ export default new Vuex.Store({
     },
   },
   actions: {
+    toggleMenu({ commit }, newVal) {
+      commit('toggleMenu', newVal)
+    },
     increment({ commit }) {
       commit('increment')
     },

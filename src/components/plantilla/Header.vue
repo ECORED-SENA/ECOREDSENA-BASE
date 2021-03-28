@@ -3,7 +3,7 @@ header.header.container-fluid
   .row.align-items-center.justify-content-between
     .col.col-sm-auto.d-flex.align-items-center.justify-content-between.justify-content-sm-start
       
-      .header__menu.me-5(v-if="$route.name != 'inicio'" @click="$emit('update:menuOpen', !menuOpen)")
+      .header__menu.me-5(v-if="$route.name != 'inicio'" @click="toggleMenu(!menuOpen)")
         .header__menu__btn(:class="{'header__menu__btn--open': menuOpen}")
           .line-2
           .line-1
@@ -32,18 +32,20 @@ import mixins from '../../mixins/mixins'
 export default {
   name: 'Header',
   mixins: [mixins],
-  props: {
-    menuOpen: {
-      type: Boolean,
-      default: false,
-    },
-  },
   data: () => ({
     globalData: global,
   }),
   computed: {
     isInicio() {
       return this.$route.name === 'inicio'
+    },
+    menuOpen() {
+      return this.$store.getters.isMenuOpen
+    },
+  },
+  methods: {
+    toggleMenu(newVal) {
+      this.$store.dispatch('toggleMenu', newVal)
     },
   },
 }

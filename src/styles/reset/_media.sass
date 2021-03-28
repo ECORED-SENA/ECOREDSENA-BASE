@@ -1,15 +1,18 @@
-figure
-  margin: 1em 40px
+figure, picture,img,svg
+  margin: 0
+  width: 100%
+  max-width: 100%
+
+figcaption
+  display: block
+  background-color: $color-sistema-f
+  padding: $base-spacing /2 $base-spacing
+  font-size: 0.8em
+  font-weight: $base-bold-font-weight
 
 img,svg
   display: block
   border-style: none
-  width: 100%
-  max-width: 100%
-
-picture
-  margin: 0
-  max-width: 100%
 
 svg:not(:root)
   overflow: hidden

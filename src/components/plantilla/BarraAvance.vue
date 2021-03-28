@@ -25,12 +25,6 @@
 import { menuPrincipal } from '../../config/global'
 export default {
   name: 'BarraAvance',
-  props: {
-    menuOpen: {
-      type: Boolean,
-      default: false,
-    },
-  },
   data: () => ({
     menuData: menuPrincipal.menu,
     cursoSelection: null,
@@ -162,6 +156,9 @@ export default {
           }
         }
       }
+    },
+    menuOpen() {
+      return this.$store.getters.isMenuOpen
     },
   },
   created() {
