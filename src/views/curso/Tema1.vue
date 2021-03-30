@@ -1,7 +1,7 @@
 <template lang="pug">
-.curso-main-container
+.curso-main-container.pb-3
   BannerInterno(titulo="Tema 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia risus")
-  .container.tarjeta--blanca.p-4.p-md-5.mb-5
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
     
     #t_1_1.h1 Elementos basicos
     

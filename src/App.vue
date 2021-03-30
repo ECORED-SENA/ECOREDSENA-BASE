@@ -1,12 +1,12 @@
 <template lang="pug">
 #app.app
-  Header(:menu-open.sync="menuOpen")
+  Header
   .contenedor-principal
-    AsideMenu(:menu-open.sync="menuOpen")
-    section.seccion-principal
-      router-view(:menu-open="menuOpen")
+    AsideMenu
+    section.seccion-principal(:class="{'seccion-principal--barra-avance-open' : !menuState}")
+      router-view
       footer
-  BarraAvance(:menu-open="menuOpen")
+  BarraAvance
 
 </template>
 
@@ -26,6 +26,11 @@ export default {
     menuOpen: false,
     globalData: global,
   }),
+  computed: {
+    menuState() {
+      return this.$store.getters.isMenuOpen
+    },
+  },
   created() {
     document.title = this.globalData.componenteFormativo
   },
@@ -41,4 +46,8 @@ export default {
 
 .seccion-principal
   width: 100%
+
+  &--barra-avance-open
+    .curso-main-container
+      padding-bottom: 80px !important
 </style>
