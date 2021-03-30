@@ -33,13 +33,15 @@ export default {
   computed: {
     showBarra() {
       const haveControls =
-        this.controlLinks.next.name || this.controlLinks.back.name
+        (this.controlLinks.next && this.controlLinks.next.name) ||
+        (this.controlLinks.back && this.controlLinks.back.name)
       return !this.menuOpen && haveControls
     },
     controlLinks() {
       const menuObject = this.menuData.find(
         item => item.nombreRuta === this.$route.name,
       )
+      console.log(menuObject)
       if (this.$route.name === 'introduccion') {
         // SI ESTOY EN INTRODUCCION
         const tema1 = this.menuData.find(item => item.nombreRuta === 'tema1')
@@ -75,86 +77,79 @@ export default {
           .map(item => item.nombreRuta)
           .indexOf(this.$route.name)
 
+        let routeObj = {}
+
+        // back logic
         if (idxCurrentHash <= 0) {
           // SI NO HAY SELECCIONADO UN HASH O ESTA SELECCIONADO EL PRIMERO
-          const lastMenuItem = this.menuData[idxOfMenuItem - 1]
-          const isTheme =
-            lastMenuItem && lastMenuItem.nombreRuta.includes('tema')
-          const isIntro =
-            lastMenuItem && lastMenuItem.nombreRuta.includes('introduccion')
-          const nextHash = menuObject.subMenu[idxCurrentHash + 1].hash
+          const backMenuItem = this.menuData[idxOfMenuItem - 1]
 
-          if (isTheme || isIntro) {
+          const backIsTheme =
+            backMenuItem && backMenuItem.nombreRuta.includes('tema')
+          const backIsIntro =
+            backMenuItem && backMenuItem.nombreRuta.includes('introduccion')
+
+          if (backIsTheme || backIsIntro) {
             // si el anterior objeto es un tema o introduccion
-            return {
-              next: {
-                name: this.$route.name,
-                hash: nextHash,
-              },
-              back: {
-                name: lastMenuItem.nombreRuta,
-                hash: '',
-              },
+            routeObj.back = {
+              name: backMenuItem.nombreRuta,
+              hash: '',
             }
           } else {
             // si el objeto anterior no es tema o introduccion
-            return {
-              next: {
-                name: this.$route.name,
-                hash: nextHash,
-              },
-              back: {
-                name: '',
-                hash: '',
-              },
+            routeObj.back = {
+              name: '',
+              hash: '',
             }
           }
         } else if (idxCurrentHash === menuObject.subMenu.length - 1) {
           // SI EL ULTIMO HASH ESTA SELECCIONADO
-
-          const isTheme =
-            this.menuData.length > idxOfMenuItem + 1 &&
-            this.menuData[idxOfMenuItem + 1].nombreRuta.includes('tema')
           const backHash = menuObject.subMenu[idxCurrentHash - 1].hash
-          if (isTheme) {
-            // SI EL SIGUIENTE OBJETO EN EL MENU ES UN TEMA
-            const nextTheme = this.menuData[idxOfMenuItem + 1]
-            return {
-              next: {
-                name: nextTheme.nombreRuta,
-                hash: '',
-              },
-              back: {
-                name: this.$route.name,
-                hash: backHash,
-              },
-            }
-          } else {
-            // SI EL SIGUIENTE OBJETO EN EL MENU NO ES TEMA
-            return {
-              next: {
-                name: '',
-                hash: '',
-              },
-              back: {
-                name: this.$route.name,
-                hash: backHash,
-              },
-            }
+
+          routeObj.back = {
+            name: this.$route.name,
+            hash: backHash,
           }
         } else {
           // SI ESTOY ENMEDIO DE LOS HASH
-          return {
-            next: {
-              name: this.$route.name,
-              hash: menuObject.subMenu[idxCurrentHash + 1].hash,
-            },
-            back: {
-              name: this.$route.name,
-              hash: menuObject.subMenu[idxCurrentHash - 1].hash,
-            },
+          routeObj.back = {
+            name: this.$route.name,
+            hash: menuObject.subMenu[idxCurrentHash - 1].hash,
           }
         }
+
+        // Next Logic
+        if (idxCurrentHash === menuObject.subMenu.length - 1) {
+          // es el ultimo hash seleccionado
+          const nextMenuItem = this.menuData[idxOfMenuItem + 1]
+
+          const nextIsTheme =
+            nextMenuItem && nextMenuItem.nombreRuta.includes('tema')
+
+          if (nextIsTheme) {
+            // el siguiente objeto del menu es tema
+            routeObj.next = {
+              name: nextMenuItem.nombreRuta,
+              hash: '',
+            }
+          } else {
+            // si es el ultimo tema
+            routeObj.next = {
+              name: '',
+              hash: '',
+            }
+          }
+        } else {
+          // no estoy en el ultimo hash
+          const nextSubMenuItem = menuObject.subMenu[idxCurrentHash + 1]
+          const nextHash = nextSubMenuItem.hash
+          routeObj.next = {
+            name: this.$route.name,
+            hash: nextHash,
+          }
+        }
+
+        return routeObj
       }
     },
     menuOpen() {

@@ -1,6 +1,6 @@
 <template lang="pug">
 .acordion
-  .p-3.pb-0(v-for="elm of elements" :key="elm.id" :class="cardClass")
+  .p-3.pb-0(v-for="elm of elements" :key="elm.id" :class="[cardClass,'mb-3']")
     
     .acordion__header.mb-3(@click="selected = selected != elm.id ? elm.id : 0")
       .acordion__accion
@@ -13,10 +13,9 @@
         .h4.mb-0 {{elm.titulo}}
     
     .acordion__contenido(
-      v-html="elm.html",
-      :ref="elm.id",
       :style="{ height: rendered && selected === elm.id ? getActiveHeight(elm.id) : 0 } "
     )
+      .acordion__contenido__item.pb-3(:ref="elm.id" v-html="elm.html")
 
   .acordion-slot
     slot

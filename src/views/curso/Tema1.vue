@@ -145,17 +145,18 @@
 
     #t_1_10.h2 Acordion
 
-    Acordion(clase-tarjeta="tarjeta tarjeta--azul mb-3")
+    Acordion(clase-tarjeta="tarjeta tarjeta--azul")
       .row(titulo="Titulo item 1")
         .col-md-6
           p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
       
         .col-md-6
-          figure.pb-3
+          figure
             img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
             figcaption Leyenda de la imagen
+
       div(titulo="Titulo item 2")
-        figure.pb-3
+        figure
           img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
           figcaption Leyenda de la imagen
 
