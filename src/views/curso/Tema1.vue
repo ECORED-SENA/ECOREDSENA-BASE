@@ -145,7 +145,7 @@
 
     #t_1_10.h2 Acordion
 
-    Acordion(clase-tarjeta="tarjeta tarjeta--azul")
+    Acordion.mb-5(clase-tarjeta="tarjeta tarjeta--azul")
       .row(titulo="Titulo item 1")
         .col-md-6
           p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
@@ -160,6 +160,27 @@
           img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
           figcaption Leyenda de la imagen
 
+    #t_1_11.h2 Bloques de texto destacado
+
+    .bloque-texto-a.p-3.p-md-4.mb-5
+      .row.m-0.align-items-center.justify-content-between
+        .col-lg-4.mb-4.mb-lg-0
+          .h2.mb-0 Whatever can be captured in words can be conquered with understanding. 
+        .col-lg-7.bloque-texto-a__texto.p-4
+          p Think about all the possibilities. A good composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Nothing of without working at it. Be impossible to ignore.
+            br
+            br
+            | Stand so tall that they can’t look past you. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect accept possibility of failure. 
+  
+    .row
+      .col-lg-6
+        .bloque-texto-b.p-4.mb-5
+          .bloque-texto-b__texto
+            .h2.mb-0 Can we all just agree as the greater design community to stop talking about Comic Sans altogether?
+      .col-lg-6
+        .bloque-texto-c.p-4
+          .h2.mb-0 Then you’ll prove to yourself that you can survive anything.
+          .h6.mb-0 - The graphic designer
 
 </template>
 
