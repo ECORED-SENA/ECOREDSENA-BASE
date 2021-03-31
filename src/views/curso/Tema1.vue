@@ -179,7 +179,7 @@
             .h2.mb-0 Can we all just agree as the greater design community to stop talking about Comic Sans altogether?
       .col-lg-6
         .bloque-texto-c.p-4
-          .h2.mb-0 Then you’ll prove to yourself that you can survive anything.
+          .h2.mb-2 Then you’ll prove to yourself that you can survive anything.
           .h6.mb-0 - The graphic designer
 
 </template>

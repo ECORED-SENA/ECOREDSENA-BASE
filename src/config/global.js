@@ -87,6 +87,12 @@ export const menuPrincipal = {
           titulo: 'Acordion',
           hash: 't_1_10',
         },
+        {
+          icono: 'far fa-file-alt',
+          numero: '1.11',
+          titulo: 'Bloques de texto destacado',
+          hash: 't_1_11',
+        },
       ],
     },
     {
