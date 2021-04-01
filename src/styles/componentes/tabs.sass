@@ -1,0 +1,48 @@
+.tabs
+  &__tab
+    display: block
+    width: 100%
+    text-align: left
+    background-color: $color-sistema-e
+    padding: 15px 20px
+    border-radius: 5px
+    color: $color-sistema-a
+    &__text
+      overflow: hidden
+      text-overflow: ellipsis
+    &:last-child
+      margin-bottom: 0 !important
+    &:hover, &:active, &:focus
+      color: $color-sistema-a
+      background-color: $color-curso-c
+
+    &__selected
+      background-color: $color-curso-c
+      font-weight: $base-bold-font-weight
+      
+      @media (min-width: $bp-min-lg)
+        position: relative
+        &:before
+          content: ''
+          display: block
+          position: absolute
+          right: 0
+          top: 50%
+          width: 15px
+          height: 15px
+          transform: translate(5px,-50%)  rotate(45deg)
+          background-color: $color-curso-c
+
+  &__content-item
+    opacity: 0
+    &--active
+      animation: tab-content-active 0.5s ease-in-out forwards
+
+@keyframes tab-content-active
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+
+

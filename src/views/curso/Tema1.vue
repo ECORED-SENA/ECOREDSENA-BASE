@@ -4,7 +4,8 @@
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
     
     #t_1_1.h1 Elementos basicos
-    
+
+
     #t_1_2.h2 Encabezados
     .row.mb-4.mb-5
       .col
@@ -162,7 +163,7 @@
 
     #t_1_11.h2 Bloques de texto destacado
 
-    .bloque-texto-a.p-3.p-md-4.mb-5
+    .bloque-texto-a.p-4.p-md-5.mb-5
       .row.m-0.align-items-center.justify-content-between
         .col-lg-4.mb-4.mb-lg-0
           .h2.mb-0 Whatever can be captured in words can be conquered with understanding. 
@@ -172,15 +173,69 @@
             br
             | Stand so tall that they can’t look past you. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect accept possibility of failure. 
   
-    .row
+    .row.mb-5
       .col-lg-6
-        .bloque-texto-b.p-4.mb-5
+        .bloque-texto-b.p-4
           .bloque-texto-b__texto
             .h2.mb-0 Can we all just agree as the greater design community to stop talking about Comic Sans altogether?
       .col-lg-6
         .bloque-texto-c.p-4
           .h2.mb-2 Then you’ll prove to yourself that you can survive anything.
           .h6.mb-0 - The graphic designer
+
+    #t_1_12.h2 Pestañas o Tabs
+    Tabs.mb-5
+      .tarjeta.tarjeta--amarilla--borde.p-4(titulo="PASO 1: The splendor asd asd asd as dasd")
+        h4 PASO 1: The splendor
+        p This is a normal paragraph (<code>p</code> element). To add some length to it, let us mention that this page was primarily written for testing the effect of 
+          strong user style sheets
+          |. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.
+        p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+      .tarjeta.tarjeta--amarilla--borde.p-4(titulo="PASO 2: The splendor")
+        h4 PASO 2: The splendor
+
+        .row
+          .col-xl-6.mb-4
+            figure
+              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+              figcaption Leyenda de la imagen
+          .col-xl-6
+            p This is a normal paragraph (<code>p</code> element). To add some length to it, let us mention that this page was primarily written for testing the effect of 
+              strong user style sheets
+              |. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+      .tarjeta.tarjeta--amarilla--borde.p-4(titulo="PASO 3: The splendor")
+        h4 PASO 3: The splendor
+        p This is a normal paragraph (<code>p</code> element). To add some length to it, let us mention that this page was primarily written for testing the effect of 
+          strong user style sheets
+          |. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.
+        p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+      .tarjeta.tarjeta--amarilla--borde.p-4(titulo="PASO 4: The splendor")
+        h4 PASO 4: The splendor
+        p This is a normal paragraph (<code>p</code> element). To add some length to it, let us mention that this page was primarily written for testing the effect of 
+          strong user style sheets
+          |. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.
+        p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+      .tarjeta.tarjeta--amarilla--borde.p-4(titulo="PASO 5: The splendor")
+        h4 PASO 5: The splendor
+        p This is a normal paragraph (<code>p</code> element). To add some length to it, let us mention that this page was primarily written for testing the effect of 
+          strong user style sheets
+          |. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.
+        p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+      .tarjeta.tarjeta--amarilla--borde.p-4(titulo="PASO 6: The splendor")
+        h4 PASO 6: The splendor
+        p This is a normal paragraph (<code>p</code> element). To add some length to it, let us mention that this page was primarily written for testing the effect of 
+          strong user style sheets
+          |. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.
+        p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+
+    
 
 </template>
 

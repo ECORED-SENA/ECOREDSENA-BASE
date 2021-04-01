@@ -93,6 +93,12 @@ export const menuPrincipal = {
           titulo: 'Bloques de texto destacado',
           hash: 't_1_11',
         },
+        {
+          icono: 'far fa-file-alt',
+          numero: '1.12',
+          titulo: 'Pestañas o Tabs',
+          hash: 't_1_12',
+        },
       ],
     },
     {
