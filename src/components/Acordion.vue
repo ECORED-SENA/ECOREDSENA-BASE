@@ -47,38 +47,6 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-
-.acordion
-  position: relative
-
-  &__header
-    display: flex
-    align-items: center
-    margin-bottom: 25px
-    cursor: pointer
-
-  &__accion
-    &__btn
-      width: 40px
-      height: 40px
-      border-radius: 50%
-      background-color: $white
-      position: relative
-      box-shadow: 0px 3px 5px 0px rgba($color-sistema-a,0.3)
-
-      i
-        position: absolute
-        top: 50%
-        left: 50%
-        transform: translate(-50%,-50%)
-
-  &__titulo
-    margin-left: 15px
-
-  &__contenido
-    overflow: hidden
-    transition: height 0.5s ease-in-out
-
 .acordion-slot
   position: absolute
   opacity: 0

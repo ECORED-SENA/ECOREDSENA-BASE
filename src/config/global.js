@@ -30,19 +30,19 @@ export const menuPrincipal = {
         {
           icono: 'far fa-file-alt',
           numero: '1.1',
-          titulo: 'Elementos basicos',
+          titulo: 'Estilos tipográficos',
           hash: 't_1_1',
         },
         {
           icono: 'far fa-file-alt',
           numero: '1.2',
-          titulo: 'Encabezados',
+          titulo: 'Párrafos',
           hash: 't_1_2',
         },
         {
           icono: 'far fa-file-alt',
           numero: '1.3',
-          titulo: 'Textos',
+          titulo: 'Bloques de texto destacado',
           hash: 't_1_3',
         },
         {
@@ -90,14 +90,8 @@ export const menuPrincipal = {
         {
           icono: 'far fa-file-alt',
           numero: '1.11',
-          titulo: 'Bloques de texto destacado',
-          hash: 't_1_11',
-        },
-        {
-          icono: 'far fa-file-alt',
-          numero: '1.12',
           titulo: 'Pestañas o Tabs',
-          hash: 't_1_12',
+          hash: 't_1_11',
         },
       ],
     },

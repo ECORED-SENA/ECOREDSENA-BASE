@@ -35,6 +35,21 @@
   & > div
     position: relative
   &__texto
+    // display: flex
+    &:before, &:after
+      content: ''
+      display: inline-block
+      width: 36px
+      height: 31px
+      flex-shrink: 0
+      background-image: url('../assets/componentes/icon-bloque-texto-c.svg')
+      background-repeat: no-repeat
+    &:before
+      margin-right: 15px
+      transform: rotate(180deg)
+    &:after
+      margin-left: 15px
+      align-self: flex-end
 
 
 

@@ -3,63 +3,345 @@
   BannerInterno(titulo="Tema 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia risus")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
     
-    #t_1_1.h1 Elementos basicos
+    #t_1_1.h4 Estilos tipográficos
+
+    .titulo-principal
+      .titulo-principal__numero
+        .h3 1
+      .h3 Título principal, 30pt
+
+    p.mb-5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis. Maecenas cursus ante a diam porttitor mollis. Etiam vehicula dictum diam, eu pulvinar odio ultrices non. Vivamus viverra fermentum tortor, sit amet interdum nisl fermentum sed.
+
+    .titulo-segundo
+      .h4 1.1  Título de segundo nivel, 24pt
+
+    p.mb-5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis. Maecenas cursus ante a diam porttitor mollis. Etiam vehicula dictum diam, eu pulvinar odio ultrices non. Vivamus viverra fermentum tortor, sit amet interdum nisl fermentum sed.
+
+    .h5 Título de tercer nivel, 20pt
+
+    p.mb-5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis. Maecenas cursus ante a diam porttitor mollis. Etiam vehicula dictum diam, eu pulvinar odio ultrices non. Vivamus viverra fermentum tortor, sit amet interdum nisl fermentum sed.
+
+    .h6 Título de cuarto nivel, 18pt
+
+    p.mb-5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis. Maecenas cursus ante a diam porttitor mollis. Etiam vehicula dictum diam, eu pulvinar odio ultrices non. Vivamus viverra fermentum tortor, sit amet interdum nisl fermentum sed.
+
+    #t_1_2.h4 Párrafos
+
+    p.mb-5 Los párrafos mantienen un tamaño regular de 16 pt con interlineado base de 24 pt, sin embargo, existe excepciones para resaltar contenido donde se puede hacer uso de pesos
+      span.text-thin THIN, 
+      span.text-bold BOLD, 
+      | y 
+      span.text-black BLACK 
+      | o 
+      span.etiqueta--morada etiquetas
+      | de color (según paleta del programa). Así mismo, el ancho de los cajones textos permite variación en las doce (12) columnas.
+
+    .row.mb-5
+      .col-lg-4
+        .cajon--azul.p-4.mb-5.mb-lg-0
+          .h5 Cajón texto color
+          p Se puede usar dos o más columnas para diagramar el texto, estos elementos pueden presentar contenedores que permitan diferenciar ideas o conceptos.
+      .col-lg-8
+        .cajon--rojo.p-4
+          .h5 Cajón texto color
+          p Se puede usar dos o más columnas para diagramar el texto, estos elementos pueden presentar contenedores que permitan diferenciar ideas o conceptos.
+
+    .row.mb-5
+      .col-md-6
+        .h4 La cantidad de texto “Destacado” sea menor a tres líneas en breakpoint xl de bootstrap y tendrá un tamaño máximo de h4
+      .col-md-6
+        p La cantidad de texto “Destacado” sea menor a tres líneas tendrá un tamaño máximo de 24 e interlineado 30 puntos utilizando Roboto Bold, ya si el texto supera las 3 líneas se utilizará un tamaño de 20 puntos y un interlineado 27 puntos con una fuente de Roboto Regular.
+
+    hr
+
+    #t_1_3.h4 Bloques de texto destacado
+
+    .bloque-texto-a.p-4.p-md-5.mb-5
+      .row.m-0.align-items-center.justify-content-between
+        .col-lg-4.mb-4.mb-lg-0
+          .h2.mb-0 Whatever can be captured in words can be conquered with understanding. 
+        .col-lg-7
+          .bloque-texto-a__texto.p-4
+            p Think about all the possibilities. A good composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Nothing of without working at it. Be impossible to ignore.
+              br
+              br
+              | Stand so tall that they can’t look past you. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect accept possibility of failure. 
+  
+    .row.mb-5
+      .col-lg-6.mb-5.mb-lg-0
+        .bloque-texto-b.p-4
+          .bloque-texto-b__texto.h2.mb-0 Can we all just agree as the greater design community to stop talking about Comic Sans altogether?
+      .col-lg-6
+        .bloque-texto-c.p-4
+          .h2.mb-2 Then you’ll prove to yourself that you can survive anything.
+          span - The graphic designer
 
 
-    #t_1_2.h2 Encabezados
-    .row.mb-4.mb-5
-      .col
-        h1 H1: Header 1
-        h2 H2: Header 2
-        h3 H3: Header 3
-        h4 H4: Header 4
-        h5 H5: Header 5
-        h6 H6: Header 6
-      .col
-        .h1 .H1: Clase Header 1
-        .h2 .H2: Clase Header 2
-        .h3 .H3: Clase Header 3
-        .h4 .H4: Clase Header 4
-        .h5 .H5: Clase Header 5
-        .h6 .H6: Clase Header 6
 
-    #t_1_3.h2 Textos
+
+    hr
+    #t_1_4.h4 Listas
+    .h5 Listado ordenado
     .row.mb-5
       .col
-        h4.mb-0 Parrafo
-        p This is a normal paragraph (<code>p</code> element). To add some length to it, let us mention that this page was primarily written for testing the effect of 
-          strong user style sheets
-          |. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.
-        p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-      
-        h4.mb-0 Texto pequeño
-        p.text-small This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-
+        .h6 Listado ordenado básico
+        ol.lista-ol
+          li 
+            span.text-bold 1. 
+            | Item lista ordenada 1
+          li 
+            span.text-bold 2. 
+            | Item lista ordenada 2
+          li 
+            span.text-bold 3. 
+            | Item lista ordenada 3
+          li 
+            span.text-bold 4. 
+            | Item lista ordenada 4
+          li 
+            span.text-bold 5. 
+            | Item lista ordenada 5
       .col
-        h4.mb-0 Texto thin
-        p.text-thin This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+        .h6 Listado ordenado básico
+        ol.lista-ol
+          li 
+            span.text-bold a. 
+            | Item lista ordenada a
+          li 
+            span.text-bold b. 
+            | Item lista ordenada b
+          li 
+            span.text-bold c. 
+            | Item lista ordenada c
+          li 
+            span.text-bold d. 
+            | Item lista ordenada d
+          li 
+            span.text-bold e. 
+            | Item lista ordenada e
+      .col
+        .h6 Listado ordenado básico + separadores
+        ol.lista-ol.lista-ol--separador
+          li 
+            span.text-bold a. 
+            | Item lista ordenada a
+          li 
+            span.text-bold b. 
+            | Item lista ordenada b
+          li 
+            span.text-bold c. 
+            | Item lista ordenada c
+          li 
+            span.text-bold d. 
+            | Item lista ordenada d
+          li 
+            span.text-bold e. 
+            | Item lista ordenada e
 
-        h4.mb-0 Texto bold
-        p.text-bold This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+    .row
+      .col
+        .h6 Listado ordenado cuadro color
+        ol.lista-ol--cuadro
+          li 
+            .lista-ol--cuadro__vineta
+              span 1
+            | Item lista ordenada 1
+          li 
+            .lista-ol--cuadro__vineta
+              span 2
+            | Item lista ordenada 2
+          li 
+            .lista-ol--cuadro__vineta
+              span 3
+            | Item lista ordenada 3
+          li 
+            .lista-ol--cuadro__vineta
+              span 4
+            | Item lista ordenada 4
+          li 
+            .lista-ol--cuadro__vineta
+              span 5
+            | Item lista ordenada 5
+      .col
+        .h6 Listado ordenado cuadro color
+        ol.lista-ol--cuadro
+          li 
+            .lista-ol--cuadro__vineta
+              span a
+            | Item lista ordenada a
+          li 
+            .lista-ol--cuadro__vineta
+              span b
+            | Item lista ordenada b
+          li 
+            .lista-ol--cuadro__vineta
+              span c
+            | Item lista ordenada c
+          li 
+            .lista-ol--cuadro__vineta
+              span d
+            | Item lista ordenada d
+          li 
+            .lista-ol--cuadro__vineta
+              span e
+            | Item lista ordenada e
+      .col
+        .h6 Listado ordenado cuadro color + separadores
+        ol.lista-ol--cuadro.lista-ol--separador
+          li 
+            .lista-ol--cuadro__vineta
+              span a
+            | Item lista ordenada a
+          li 
+            .lista-ol--cuadro__vineta
+              span b
+            | Item lista ordenada b
+          li 
+            .lista-ol--cuadro__vineta
+              span c
+            | Item lista ordenada c
+          li 
+            .lista-ol--cuadro__vineta
+              span d
+            | Item lista ordenada d
+          li 
+            .lista-ol--cuadro__vineta
+              span e
+            | Item lista ordenada e
 
-        h4.mb-0 Texto black
-        p.text-black This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-    hr
-    #t_1_4.h2 Listas
+    .h5 Listado no ordenado
+
     .row.mb-5
       .col
-        h3 listas desordenadas
-        ul
-          li List Item 1
-          li List Item 2
-          li List Item 3
+        .h6 Listado no ordenado básico
+        ul.lista-ul
+          li 
+            i.lista-ul__vineta
+            | Item lista no ordenada
+          li
+            ul
+              li 
+                i.lista-ul__vineta
+                | Item lista no ordenada
+              li 
+                i.lista-ul__vineta
+                | Item lista no ordenada
+          li 
+            i.lista-ul__vineta
+            | Item lista no ordenada
+          li 
+            i.lista-ul__vineta
+            | Item lista no ordenada
+
       .col
-        h3 listas ordenadas
-        ol
-          li List Item 1
-          li List Item 2
-          li List Item 3
+        .h6 Listado no ordenado básico
+        ul.lista-ul
+          li 
+            i.fas.fa-angle-right
+            | Item lista no ordenada
+          li
+            ul
+              li 
+                i.fas.fa-angle-right
+                | Item lista no ordenada
+              li 
+                i.fas.fa-angle-right
+                | Item lista no ordenada
+          li 
+            i.fas.fa-angle-right
+            | Item lista no ordenada
+          li 
+            i.fas.fa-angle-right
+            | Item lista no ordenada
+
+      .col
+        .h6 Listado no ordenado básico + separadores
+        ul.lista-ul--separador
+          li 
+            i.fas.fa-angle-right
+            | Item lista no ordenada
+          li.pb-0
+            ul
+              li 
+                i.fas.fa-angle-right
+                | Item lista no ordenada
+              li 
+                i.fas.fa-angle-right
+                | Item lista no ordenada
+          li 
+            i.fas.fa-angle-right
+            | Item lista no ordenada
+          li 
+            i.fas.fa-angle-right
+            | Item lista no ordenada
+
+
+    .row.mb-5
+      .col
+        .h6 Listado no ordenado color
+        ul.lista-ul--color
+          li 
+            i.lista-ul__vineta
+            | Item lista no ordenada
+          li
+            ul
+              li 
+                i.lista-ul__vineta
+                | Item lista no ordenada
+              li 
+                i.lista-ul__vineta
+                | Item lista no ordenada
+          li 
+            i.lista-ul__vineta
+            | Item lista no ordenada
+          li 
+            i.lista-ul__vineta
+            | Item lista no ordenada
+
+      .col
+        .h6 Listado no ordenado color
+        ul.lista-ul--color
+          li 
+            i.fas.fa-brain
+            | Item lista no ordenada
+          li
+            ul
+              li 
+                i.fas.fa-bug
+                | Item lista no ordenada
+              li 
+                i.fas.fa-car-side
+                | Item lista no ordenada
+          li 
+            i.fas.fa-compass
+            | Item lista no ordenada
+          li 
+            i.fas.fa-eye
+            | Item lista no ordenada
+
+      .col
+        .h6 Listado no ordenado color + separadores
+        ul.lista-ul--color.lista-ul--separador
+          li 
+            i.fas.fa-feather
+            | Item lista no ordenada
+          li.pb-0
+            ul
+              li 
+                i.fas.fa-hand-middle-finger
+                | Item lista no ordenada
+              li 
+                i.fas.fa-hat-wizard
+                | Item lista no ordenada
+          li 
+            i.fas.fa-hippo
+            | Item lista no ordenada
+          li 
+            i.fas.fa-kiwi-bird
+            | Item lista no ordenada
+
     hr
+
     #t_1_5.h2 Tablas
     table
       caption Leyenda de la tabla
@@ -161,29 +443,8 @@
           img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
           figcaption Leyenda de la imagen
 
-    #t_1_11.h2 Bloques de texto destacado
 
-    .bloque-texto-a.p-4.p-md-5.mb-5
-      .row.m-0.align-items-center.justify-content-between
-        .col-lg-4.mb-4.mb-lg-0
-          .h2.mb-0 Whatever can be captured in words can be conquered with understanding. 
-        .col-lg-7.bloque-texto-a__texto.p-4
-          p Think about all the possibilities. A good composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Nothing of without working at it. Be impossible to ignore.
-            br
-            br
-            | Stand so tall that they can’t look past you. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect accept possibility of failure. 
-  
-    .row.mb-5
-      .col-lg-6
-        .bloque-texto-b.p-4
-          .bloque-texto-b__texto
-            .h2.mb-0 Can we all just agree as the greater design community to stop talking about Comic Sans altogether?
-      .col-lg-6
-        .bloque-texto-c.p-4
-          .h2.mb-2 Then you’ll prove to yourself that you can survive anything.
-          .h6.mb-0 - The graphic designer
-
-    #t_1_12.h2 Pestañas o Tabs
+    #t_1_11.h2 Pestañas o Tabs
     Tabs.mb-5
       .tarjeta.tarjeta--amarilla--borde.p-4(titulo="PASO 1: The splendor asd asd asd as dasd")
         h4 PASO 1: The splendor
