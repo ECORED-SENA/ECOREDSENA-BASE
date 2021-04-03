@@ -93,6 +93,12 @@ export const menuPrincipal = {
           titulo: 'Pestañas o Tabs',
           hash: 't_1_11',
         },
+        {
+          icono: 'far fa-file-alt',
+          numero: '1.12',
+          titulo: 'Líneas de tiempo',
+          hash: 't_1_12',
+        },
       ],
     },
     {

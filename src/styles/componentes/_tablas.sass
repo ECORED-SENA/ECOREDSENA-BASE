@@ -11,7 +11,9 @@ table
     // border: $base-border
   
 .tabla-a
-  
+  overflow-y: scroll
+  table
+    min-width: 700px
   thead
     border-top: 5px solid $color-curso-b
     color: $table-header-color
@@ -27,7 +29,7 @@ table
   
 
 .tabla-b
-
+  overflow-y: scroll
   &__header
     background-color: $color-curso-b
     padding: 15px
@@ -37,6 +39,7 @@ table
   
   table
     table-layout: auto
+    min-width: 700px
   tr
     &:nth-child(even)
       background-color: transparentize($color-sistema-f, 0.6)

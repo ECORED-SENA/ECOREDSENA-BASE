@@ -343,34 +343,35 @@
     hr
 
     #t_1_5.h2 Tablas
-    table.tabla-a.mb-5 
-      caption Leyenda de la tabla
-      thead
-        tr
-          th Encabezado 1
-          th Encabezado 2
-          th Encabezado 3
-          th Encabezado 4
-          th Encabezado 5
-      tbody
-        tr
-          td Celda 1
-          td Celda 2
-          td Celda 3
-          td Celda 4
-          td Celda 5
-        tr
-          td Celda 1
-          td Celda 2
-          td Celda 3
-          td Celda 4
-          td Celda 5
-        tr
-          td Celda 1
-          td Celda 2
-          td Celda 3
-          td Celda 4
-          td Celda 5
+    .tabla-a.mb-5 
+      table
+        caption Leyenda de la tabla
+        thead
+          tr
+            th Encabezado 1
+            th Encabezado 2
+            th Encabezado 3
+            th Encabezado 4
+            th Encabezado 5
+        tbody
+          tr
+            td Celda 1
+            td Celda 2
+            td Celda 3
+            td Celda 4
+            td Celda 5
+          tr
+            td Celda 1
+            td Celda 2
+            td Celda 3
+            td Celda 4
+            td Celda 5
+          tr
+            td Celda 1
+            td Celda 2
+            td Celda 3
+            td Celda 4
+            td Celda 5
     .tabla-b.mb-5
       .tabla-b__header
         .h6.mb-0 Niveles del lenguaje
@@ -400,56 +401,56 @@
           td 
             p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
           td
-            .h5.mb-0 $12.500.200
+            .h6.mb-0 $12.500.200
           td
-            .h5.mb-0 $12.500.200
+            .h6.mb-0 $12.500.200
             span.text-small Textos pequeños
           td
-            .h5 FDSD33
+            .h6 FDSD33
         tr
           th 03 de marzo
           td 
             p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
           td
-            .h5.mb-0 $12.500.200
+            .h6.mb-0 $12.500.200
           td
-            .h5.mb-0 $12.500.200
+            .h6.mb-0 $12.500.200
             span.text-small Textos pequeños
           td
-            .h5 FDSD33
+            .h6 FDSD33
         tr
           th 03 de marzo
           td 
             p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
           td
-            .h5.mb-0 $12.500.200
+            .h6.mb-0 $12.500.200
           td
-            .h5.mb-0 $12.500.200
+            .h6.mb-0 $12.500.200
             span.text-small Textos pequeños
           td
-            .h5 FDSD33
+            .h6 FDSD33
         tr
           th 03 de marzo
           td 
             p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
           td
-            .h5.mb-0 $12.500.200
+            .h6.mb-0 $12.500.200
           td
-            .h5.mb-0 $12.500.200
+            .h6.mb-0 $12.500.200
             span.text-small Textos pequeños
           td
-            .h5 FDSD33
+            .h6 FDSD33
         tr
           th 03 de marzo
           td 
             p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
           td
-            .h5.mb-0 $12.500.200
+            .h6.mb-0 $12.500.200
           td
-            .h5.mb-0 $12.500.200
+            .h6.mb-0 $12.500.200
             span.text-small Textos pequeños
           td
-            .h5 FDSD33
+            .h6 FDSD33
 
     hr
     #t_1_6.h2 Imagen
@@ -562,7 +563,9 @@
           |. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.
         p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
       
+    #t_1_12.h2 Líneas de tiempo
 
+    LineaTiempoA(:datos="datosLineaTiempoA")
     
 
 </template>
@@ -575,6 +578,26 @@ export default {
   components: {
     BannerInterno,
   },
+  data: () => ({
+    datosLineaTiempoA: [
+      {
+        ano: '100.000 - 10.000 A.C.',
+        titulo: 'Período Paleolítico',
+        texto: 'Pieles, pelo de animales, hojas, huesos y conchas.',
+      },
+      {
+        ano: '10.000 - 5.000 A.C.',
+        titulo: 'Periodo Mesolítico',
+        texto:
+          'Broches hechos con hueso, abrigos, gorros, botas y zapatillas de cuero.',
+      },
+      {
+        ano: '10.000 - 5.000 A.C.',
+        titulo: 'Periodo Neolítico',
+        texto: 'Vestimenta de fibras animales y vegetales, pulseras de marfil.',
+      },
+    ],
+  }),
   mounted() {
     this.increment()
     setTimeout(() => {
