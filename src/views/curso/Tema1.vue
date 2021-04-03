@@ -343,7 +343,7 @@
     hr
 
     #t_1_5.h2 Tablas
-    table
+    table.tabla-a.mb-5 
       caption Leyenda de la tabla
       thead
         tr
@@ -352,13 +352,6 @@
           th Encabezado 3
           th Encabezado 4
           th Encabezado 5
-      tfoot
-        tr
-          td pie de tabla 1
-          td pie de tabla 2
-          td pie de tabla 3
-          td pie de tabla 4
-          td pie de tabla 5
       tbody
         tr
           td Celda 1
@@ -378,12 +371,86 @@
           td Celda 3
           td Celda 4
           td Celda 5
+    .tabla-b.mb-5
+      .tabla-b__header
+        .h6.mb-0 Niveles del lenguaje
+      table
+        caption Leyenda de la tabla
         tr
-          td Celda 1
-          td Celda 2
-          td Celda 3
-          td Celda 4
-          td Celda 5
+          th Vulgar
+          td Get back to work. Learn from criticism. Creativity is a work-ethic. Design as if your life depended on it. Keep going. It isn’t what you are.
+        tr
+          th Coloquial
+          td It isn’t what you are, but what you’re going to become. Don’t censor yourself.  Sterility leads to susceptibility.It is, in effect, conditioned to prefer bad design.
+        tr
+          th Convencional o estándar
+          td Paul Rand once said, “The public is more familiar with bad design than good design. leassuring. You are not your work. Don’t fucking lie to yourself. Life depended on it. Keep going
+        tr
+          th Técnico
+          td The new becomes threatening, the old reassuring.” You are not your work. Don’t lie to yourself. Never, never assume that what Respect your craft. Widows and orphans are terrible.
+        tr
+          th Formal
+          td Design as if your life depended on it. Keep going. It isn’t what you are, but what you’re going to become. Don’t censor yourself. 
+
+    .tabla-c.mb-5
+      table
+        caption Leyenda de la tabla
+        tr
+          th 03 de marzo
+          td 
+            p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
+          td
+            .h5.mb-0 $12.500.200
+          td
+            .h5.mb-0 $12.500.200
+            span.text-small Textos pequeños
+          td
+            .h5 FDSD33
+        tr
+          th 03 de marzo
+          td 
+            p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
+          td
+            .h5.mb-0 $12.500.200
+          td
+            .h5.mb-0 $12.500.200
+            span.text-small Textos pequeños
+          td
+            .h5 FDSD33
+        tr
+          th 03 de marzo
+          td 
+            p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
+          td
+            .h5.mb-0 $12.500.200
+          td
+            .h5.mb-0 $12.500.200
+            span.text-small Textos pequeños
+          td
+            .h5 FDSD33
+        tr
+          th 03 de marzo
+          td 
+            p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
+          td
+            .h5.mb-0 $12.500.200
+          td
+            .h5.mb-0 $12.500.200
+            span.text-small Textos pequeños
+          td
+            .h5 FDSD33
+        tr
+          th 03 de marzo
+          td 
+            p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
+          td
+            .h5.mb-0 $12.500.200
+          td
+            .h5.mb-0 $12.500.200
+            span.text-small Textos pequeños
+          td
+            .h5 FDSD33
+
     hr
     #t_1_6.h2 Imagen
     figure
