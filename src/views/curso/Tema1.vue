@@ -673,6 +673,32 @@
             p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
           
 
+    #t_1_13.h2 tarjetas
+
+    .row
+      .col
+        .tarjeta-Avatar
+          img(src='@/assets/template/icono-pdf.svg' alt='AvatarTop')
+          .tarjeta.tarjeta--morada.p-4
+            .h4
+              b John Doe
+            p Architect &amp; Engineer
+
+      .col
+        .tarjeta-Avatar
+          img(src='@/assets/template/icono-pdf.svg' alt='AvatarTop')
+          .tarjeta.tarjeta--amarilla.p-4
+            .h4
+              b John Doe
+            p Architect &amp; Engineer
+
+      .col
+        .tarjeta-Avatar
+          img(src='@/assets/template/icono-pdf.svg' alt='AvatarTop')
+          .tarjeta.tarjeta--azul.p-4
+            .h4
+              b John Doe
+            p Architect &amp; Engineer
 
 
 
