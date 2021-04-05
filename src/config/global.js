@@ -99,6 +99,12 @@ export const menuPrincipal = {
           titulo: 'Líneas de tiempo',
           hash: 't_1_12',
         },
+        {
+          icono: 'far fa-file-alt',
+          numero: '1.13',
+          titulo: 'Llamados a la acción',
+          hash: 't_1_13',
+        },
       ],
     },
     {
@@ -242,7 +248,7 @@ export const menuPrincipal = {
 
 export const creditos = {
   liderEquipo: {
-    nombre: 'Ingry Dayanna Bonilla Monzon',
+    nombre: 'Maria Camila Garcia Santamaria',
     cargo: 'Líder del equipo',
   },
   contenidoInstruccional: [

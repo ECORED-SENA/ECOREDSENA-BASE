@@ -1,6 +1,6 @@
 <template lang="pug">
 .curso-main-container.pb-3
-  BannerInterno(titulo="Tema 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia risus")
+  BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
     
     #t_1_1.h4 Estilos tipográficos
@@ -27,7 +27,7 @@
 
     #t_1_2.h4 Párrafos
 
-    p.mb-5 Los párrafos mantienen un tamaño regular de 16 pt con interlineado base de 24 pt, sin embargo, existe excepciones para resaltar contenido donde se puede hacer uso de pesos
+    p.mb-5 Los párrafos mantienen un tamaño regular de 16 pt con interlineado base de 24 pt, sin embargo, existe excepciones para resaltar contenido donde se puede hacer uso de pesos 
       span.text-thin THIN, 
       span.text-bold BOLD, 
       | y 
@@ -454,9 +454,26 @@
 
     hr
     #t_1_6.h2 Imagen
-    figure
+    figure.mb-5
       img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
       figcaption Leyenda de la imagen
+
+    .row.justify-content-between
+      .col-md-6.col-lg-4
+        .imagen-titulo--der
+          figure.mb-5
+            img(src='@/assets/template/img-placeholder-1-1.svg', alt='Texto que describa la imagen')
+
+          .imagen-titulo__titulo
+            .h4.m-0 Titulo de imagen
+      
+      .col-md-6.col-lg-4
+        .imagen-titulo--izq
+          figure.mb-5
+            img(src='@/assets/template/img-placeholder-1-1.svg', alt='Texto que describa la imagen')
+
+          .imagen-titulo__titulo
+            .h4.m-0 Titulo de imagen
     hr
     #t_1_7.h2 Video
     figure
@@ -565,8 +582,99 @@
       
     #t_1_12.h2 Líneas de tiempo
 
-    LineaTiempoA(:datos="datosLineaTiempoA")
-    
+    LineaTiempoA.mb-5(:datos="datosLineaTiempoA")
+
+    #t_1_13.h2 Llamados a la acción
+
+    .tarjeta.tarjeta--amarilla.p-4.p-md-5.mb-5
+      .row.justify-content-around.align-items-center
+        .col-8.col-sm-6.col-md-4.mb-4.mb-md-0
+          img(src="@/assets/componentes/ej-01.png")
+
+        .col-md.col-lg-6
+          .h2 Título del recurso
+          p.mb-4 There is no right answer. The splendor of the mystery is that you don’t understand. Your rapidograph pens are dried up, the x-acto blades in your bag are rusty, and your mind is dull. Stop clicking your mouse, get messy, go back to the basics and make something original. Why are you reading all of this?
+          
+          a.boton.boton--b(href="/downloads/archivo.pdf" target="_blank")
+            span Descargar
+            i.fas.fa-file-download
+
+    .tarjeta.tarjeta--morada.p-3.mb-5
+      .row.justify-content-around.align-items-center
+        .col-3.col-sm-2.col-lg-1
+          img(src="@/assets/componentes/ej-02.svg")
+        .col
+          .row.justify-content-between.align-items-center
+            .col.mb-3.mb-sm-0
+              .h5.mb-0 Título del recurso
+              p PDF 
+            .col-auto
+              a.boton.boton--b(href="/downloads/archivo.pdf" target="_blank")
+                span Descargar
+                i.fas.fa-file-download
+
+    .tarjeta.tarjeta--amarilla.p-3.mb-5
+      .row.justify-content-around.align-items-center
+        .col-3.col-sm-2.col-lg-1
+          img(src="@/assets/componentes/ej-02.svg")
+        .col
+          .row.justify-content-between.align-items-center
+            .col.mb-3.mb-sm-0
+              .h5.mb-0 Título del recurso
+              p.text-small Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias 
+            .col-auto
+              a.boton.boton--b(href="/downloads/archivo.pdf" target="_blank")
+                span Descargar
+                i.fas.fa-file-download
+
+    .row
+      .col-lg-6
+        a.anexo.mb-4(href="/downloads/archivo.pdf" target="_blank")
+          .anexo__icono
+            img(src="@/assets/template/icono-pdf.svg")
+          .anexo__texto
+            p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
+          
+        a.anexo.mb-4(href="/downloads/archivo.pdf" target="_blank")
+          .anexo__icono
+            img(src="@/assets/template/icono-doc.svg")
+          .anexo__texto
+            p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
+          
+        a.anexo.mb-4(href="/downloads/archivo.pdf" target="_blank")
+          .anexo__icono
+            img(src="@/assets/template/icono-xls.svg")
+          .anexo__texto
+            p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
+          
+        a.anexo.mb-4(href="/downloads/archivo.pdf" target="_blank")
+          .anexo__icono
+            img(src="@/assets/template/icono-link.svg")
+          .anexo__texto
+            p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
+          
+      .col-lg-6
+        a.anexo.mb-4(href="/downloads/archivo.pdf" target="_blank")
+          .anexo__icono
+            img(src="@/assets/template/icono-zip.svg")
+          .anexo__texto
+            p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
+          
+        a.anexo.mb-4(href="/downloads/archivo.pdf" target="_blank")
+          .anexo__icono
+            img(src="@/assets/template/icono-ppt.svg")
+          .anexo__texto
+            p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
+          
+        a.anexo(href="/downloads/archivo.pdf" target="_blank")
+          .anexo__icono
+            img(src="@/assets/template/icono-xml.svg")
+          .anexo__texto
+            p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
+          
+
+
+
 
 </template>
 

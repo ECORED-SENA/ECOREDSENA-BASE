@@ -12,7 +12,10 @@ a
   transform: scale(1)
 
   span, i
-    color: $btn-color !important
+    color: $btn-color
+
+  span + i
+    margin-left: 8px
 
   &:hover
     color: $btn-color
@@ -21,3 +24,10 @@ a
   &--sm
     @extend .boton
     padding: 5px 10px
+
+  &--b
+    background-color: $color-curso-b
+    span, i
+      color: $white
+    &:active, &:focus, &:hover
+      background-color: $color-curso-b

@@ -1,6 +1,6 @@
 <template lang="pug">
 .curso-main-container.pb-3
-  BannerInterno(titulo="Tema 2 Lorem ipsum dolor sit amet, consectetur")
+  BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
     
     #t_2_1.pb-5.h2 tema 2.1
