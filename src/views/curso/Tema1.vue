@@ -83,7 +83,7 @@
     #t_1_4.h4 Listas
     .h5 Listado ordenado
     .row.mb-5
-      .col
+      .col-md.mb-5.mb-sm-0
         .h6 Listado ordenado básico
         ol.lista-ol
           li 
@@ -101,7 +101,7 @@
           li 
             span.text-bold 5. 
             | Item lista ordenada 5
-      .col
+      .col-sm.mb-5.mb-sm-0
         .h6 Listado ordenado básico
         ol.lista-ol
           li 
@@ -119,7 +119,7 @@
           li 
             span.text-bold e. 
             | Item lista ordenada e
-      .col
+      .col-sm
         .h6 Listado ordenado básico + separadores
         ol.lista-ol.lista-ol--separador
           li 
@@ -139,7 +139,7 @@
             | Item lista ordenada e
 
     .row
-      .col
+      .col-sm.mb-5.mb-sm-0
         .h6 Listado ordenado cuadro color
         ol.lista-ol--cuadro
           li 
@@ -162,7 +162,7 @@
             .lista-ol--cuadro__vineta
               span 5
             | Item lista ordenada 5
-      .col
+      .col-sm.mb-5.mb-sm-0
         .h6 Listado ordenado cuadro color
         ol.lista-ol--cuadro
           li 
@@ -185,7 +185,7 @@
             .lista-ol--cuadro__vineta
               span e
             | Item lista ordenada e
-      .col
+      .col-sm.mb-5.mb-sm-0
         .h6 Listado ordenado cuadro color + separadores
         ol.lista-ol--cuadro.lista-ol--separador
           li 
@@ -212,7 +212,7 @@
     .h5 Listado no ordenado
 
     .row.mb-5
-      .col
+      .col-sm.mb-5.mb-sm-0
         .h6 Listado no ordenado básico
         ul.lista-ul
           li 
@@ -233,7 +233,7 @@
             i.lista-ul__vineta
             | Item lista no ordenada
 
-      .col
+      .col-sm.mb-5.mb-sm-0
         .h6 Listado no ordenado básico
         ul.lista-ul
           li 
@@ -254,7 +254,7 @@
             i.fas.fa-angle-right
             | Item lista no ordenada
 
-      .col
+      .col-sm
         .h6 Listado no ordenado básico + separadores
         ul.lista-ul--separador
           li 
@@ -277,7 +277,7 @@
 
 
     .row.mb-5
-      .col
+      .col-sm.mb-5.mb-sm-0
         .h6 Listado no ordenado color
         ul.lista-ul--color
           li 
@@ -298,7 +298,7 @@
             i.lista-ul__vineta
             | Item lista no ordenada
 
-      .col
+      .col-sm.mb-5.mb-sm-0
         .h6 Listado no ordenado color
         ul.lista-ul--color
           li 
@@ -319,7 +319,7 @@
             i.fas.fa-eye
             | Item lista no ordenada
 
-      .col
+      .col-sm
         .h6 Listado no ordenado color + separadores
         ul.lista-ul--color.lista-ul--separador
           li 
@@ -515,7 +515,7 @@
 
     Acordion.mb-5(clase-tarjeta="tarjeta tarjeta--azul")
       .row(titulo="Titulo item 1")
-        .col-md-6
+        .col-md-6.mb-4.mb-md-0
           p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
       
         .col-md-6
@@ -608,7 +608,7 @@
             .col.mb-3.mb-sm-0
               .h5.mb-0 Título del recurso
               p PDF 
-            .col-auto
+            .col-sm-auto
               a.boton.boton--b(href="/downloads/archivo.pdf" target="_blank")
                 span Descargar
                 i.fas.fa-file-download
@@ -622,7 +622,7 @@
             .col.mb-3.mb-sm-0
               .h5.mb-0 Título del recurso
               p.text-small Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias 
-            .col-auto
+            .col-sm-auto
               a.boton.boton--b(href="/downloads/archivo.pdf" target="_blank")
                 span Descargar
                 i.fas.fa-file-download
