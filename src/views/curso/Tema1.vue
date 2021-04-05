@@ -328,7 +328,7 @@
           li.pb-0
             ul
               li 
-                i.fas.fa-hand-middle-finger
+                i.fas.fa-cookie
                 | Item lista no ordenada
               li 
                 i.fas.fa-hat-wizard
