@@ -23,7 +23,7 @@
 <script>
 import componentSlotMixins from '../mixins/componentSlotMixins'
 export default {
-  name: 'Acordion',
+  name: 'AcordionA',
   mixins: [componentSlotMixins],
   props: {
     claseTarjeta: {

@@ -1,4 +1,4 @@
-.tabs
+.tabs-a
   &__tab
     display: block
     width: 100%
@@ -45,4 +45,69 @@
     opacity: 1
 
 
+.tabs-b
+  &__header
+  &__tab
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 20px
+    background-color: $color-sistema-h
+    border-right: 2px solid #AFAFAF
+    border-bottom: 2px solid #AFAFAF
+    cursor: pointer
 
+    &:active, &:focus, &:hover
+      background-color: $color-sistema-f
+
+    &:last-child
+      border-right: none
+    &__icon
+      width: 50px
+      margin-bottom: 20px
+    &__title
+      text-align: center
+      font-size: $h6-font-size
+      line-height: $heading-line-height
+
+    &--active
+      background-color: transparent
+      border-top: 5px solid $color-curso-b !important
+      border-bottom: none
+      &:active, &:focus, &:hover
+        background-color: transparent
+      .tabs-b__tab__title
+        font-weight: $base-bold-font-weight
+
+    @media (min-width: $bp-min-sm) and (max-width: $bp-max-md)
+      border-top: 2px solid #AFAFAF
+      &:first-child
+        border-left: 2px solid #AFAFAF
+      &:last-child
+        border-right: 2px solid #AFAFAF
+      &:nth-child(4)
+        border-left: 2px solid #AFAFAF
+      &:nth-child(n+4)
+        border-top: none
+      &--active
+        &:nth-child(-n+3)
+          border-bottom: 2px solid #AFAFAF
+
+    @media (max-width: $bp-max-xs)
+      &:last-child
+        border-right: 2px solid #AFAFAF
+      &:nth-child(-n+2)
+        border-top: 2px solid #AFAFAF
+      &:nth-child(odd)
+        border-left: 2px solid #AFAFAF
+
+  &__content-item
+
+
+.tabs
+  &__slot
+    position: absolute
+    opacity: 0
+    height: 0
+    overflow: hidden
+    pointer-events: none

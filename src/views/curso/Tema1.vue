@@ -2,7 +2,7 @@
 .curso-main-container.pb-3
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-    
+
     #t_1_1.h4 Estilos tipográficos
 
     .titulo-principal
@@ -342,7 +342,7 @@
 
     hr
 
-    #t_1_5.h2 Tablas
+    #t_1_5.h4 Tablas
     .tabla-a.mb-5 
       table
         caption Leyenda de la tabla
@@ -453,7 +453,7 @@
             .h6 FDSD33
 
     hr
-    #t_1_6.h2 Imagen
+    #t_1_6.h4 Imagen
     figure.mb-5
       img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
       figcaption Leyenda de la imagen
@@ -475,7 +475,7 @@
           .imagen-titulo__titulo
             .h4.m-0 Titulo de imagen
     hr
-    #t_1_7.h2 Video
+    #t_1_7.h4 Video
     figure
       .video
         iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
@@ -484,7 +484,7 @@
 
     h1#t_1_8 Componentes
 
-    #t_1_9.h2 Carrusel
+    #t_1_9.h4 Carrusel
 
     #carouselExampleIndicators.carousel.slide.mb-5(data-bs-ride='carousel')
       .carousel-indicators
@@ -511,9 +511,9 @@
         span.carousel-control-next-icon(aria-hidden='true')
         span.visually-hidden Next
 
-    #t_1_10.h2 Acordion
+    #t_1_10.h4 Acordion
 
-    Acordion.mb-5(clase-tarjeta="tarjeta tarjeta--azul")
+    AcordionA.mb-5(clase-tarjeta="tarjeta tarjeta--azul")
       .row(titulo="Titulo item 1")
         .col-md-6.mb-4.mb-md-0
           p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
@@ -529,8 +529,8 @@
           figcaption Leyenda de la imagen
 
 
-    #t_1_11.h2 Pestañas o Tabs
-    Tabs.mb-5
+    #t_1_11.h4 Pestañas o Tabs
+    TabsA.mb-5
       .tarjeta.tarjeta--amarilla--borde.p-4(titulo="PASO 1: The splendor asd asd asd as dasd")
         h4 PASO 1: The splendor
         p This is a normal paragraph (<code>p</code> element). To add some length to it, let us mention that this page was primarily written for testing the effect of 
@@ -580,11 +580,79 @@
           |. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.
         p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
       
-    #t_1_12.h2 Líneas de tiempo
+    TabsB.mb-5
+      .py-4.py-md-5(titulo="The splendor of the mystery" :icono="require('@/assets/componentes/ej-04.svg')")
+        .row
+          .col-md-6.mb-4.mb-md-0
+            .h4 Celebrate your failures 1
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+        
+          .col-md-6
+            figure
+              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+              figcaption Leyenda de la imagen
+      .py-4.py-md-5(titulo="Don’t lie to yourself" :icono="require('@/assets/componentes/ej-04.svg')")
+        .row
+          .col-md-6.mb-4.mb-md-0
+            figure
+              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+              figcaption Leyenda de la imagen
+          .col-md-6
+            .h4 Celebrate your failures 2
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+        
+      .py-4.py-md-5(titulo="Don’t quit" :icono="require('@/assets/componentes/ej-04.svg')")
+        .row
+          .col-md-6.mb-4.mb-md-0
+            .h4 Celebrate your failures 3
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+        
+          .col-md-6
+            figure
+              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+              figcaption Leyenda de la imagen
+
+      .py-4.py-md-5(titulo="The splendor of the mystery" :icono="require('@/assets/componentes/ej-04.svg')")
+        .row
+          .col-md-6.mb-4.mb-md-0
+            figure
+              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+              figcaption Leyenda de la imagen
+          .col-md-6
+            .h4 Celebrate your failures 4
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+        
+      
+      .py-4.py-md-5(titulo="The splendor of the mystery" :icono="require('@/assets/componentes/ej-04.svg')")
+        .row
+          .col-md-6.mb-4.mb-md-0
+            .h4 Celebrate your failures 5
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+        
+          .col-md-6
+            figure
+              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+              figcaption Leyenda de la imagen
+      
+      .py-4.py-md-5(titulo="The splendor of the mystery" :icono="require('@/assets/componentes/ej-04.svg')")
+        .row
+          .col-md-6.mb-4.mb-md-0
+            figure
+              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+              figcaption Leyenda de la imagen
+          .col-md-6
+            .h4 Celebrate your failures 6
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+        
+      
+
+
+
+    #t_1_12.h4 Líneas de tiempo
 
     LineaTiempoA.mb-5(:datos="datosLineaTiempoA")
 
-    #t_1_13.h2 Llamados a la acción
+    #t_1_13.h4 Llamados a la acción
 
     .tarjeta.tarjeta--amarilla.p-4.p-md-5.mb-5
       .row.justify-content-around.align-items-center
@@ -627,7 +695,7 @@
                 span Descargar
                 i.fas.fa-file-download
 
-    .row
+    .row.mb-5
       .col-lg-6
         a.anexo.mb-4(href="/downloads/archivo.pdf" target="_blank")
           .anexo__icono
@@ -647,7 +715,7 @@
           .anexo__texto
             p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
           
-        a.anexo.mb-4(href="/downloads/archivo.pdf" target="_blank")
+        a.anexo.mb-4.mb-lg-0(href="/downloads/archivo.pdf" target="_blank")
           .anexo__icono
             img(src="@/assets/template/icono-link.svg")
           .anexo__texto
@@ -671,14 +739,85 @@
             img(src="@/assets/template/icono-xml.svg")
           .anexo__texto
             p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
-          
 
-    #t_1_13.h2 tarjetas
+
+
+    #t_1_14.h4 Tarjetas
+    
+    .row.mb-5
+      .col-sm-6.col-lg-3.mb-4.mb-lg-0
+        .tarjeta.tarjeta--boton.p-4
+          .row.justify-content-center.mb-3
+            .col-7
+              figure
+                img(src='@/assets/componentes/ej-03.svg', alt='Texto que describa la imagen')
+
+          .h5.text-center Intuition important
+          p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
+  
+      .col-sm-6.col-lg-3.mb-4.mb-lg-0
+        .tarjeta.tarjeta--boton.p-4
+          .row.justify-content-center.mb-3
+            .col-7
+              figure
+                img(src='@/assets/componentes/ej-03.svg', alt='Texto que describa la imagen')
+
+          .h5.text-center Intuition important
+          p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
+  
+      .col-sm-6.col-lg-3.mb-4.mb-sm-0
+        .tarjeta.tarjeta--boton.p-4
+          .row.justify-content-center.mb-3
+            .col-7
+              figure
+                img(src='@/assets/componentes/ej-03.svg', alt='Texto que describa la imagen')
+
+          .h5.text-center Intuition important
+          p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
+  
+      .col-sm-6.col-lg-3
+        .tarjeta.tarjeta--boton.p-4
+          .row.justify-content-center.mb-3
+            .col-7
+              figure
+                img(src='@/assets/componentes/ej-03.svg', alt='Texto que describa la imagen')
+
+          .h5.text-center Intuition important
+          p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
+
+
+    .tarjeta--container.row.mb-5
+      .col-md.tarjeta.tarjeta--morada.p-5
+        .row.justify-content-center.mb-4
+          .col-6
+            figure
+              img(src='@/assets/componentes/ej-03.svg', alt='Texto que describa la imagen')
+          
+        .h3.text-center Celebrate your<br>failures
+        p To surpass others is fucking tough, if you only do as you are told you don’t have it in you to succeed. Think about all the possibilities. You’ve been placed in the crucial moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+  
+      .col-md.tarjeta.tarjeta--amarilla.p-5
+        .row.justify-content-center.mb-4
+          .col-6
+            figure
+              img(src='@/assets/componentes/ej-03.svg', alt='Texto que describa la imagen')
+          
+        .h3.text-center Sterility leads to<br>susceptibility
+        p Remember it’s called the creative process, it’s not the creative moment. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect and accept the possibility of failure.
+
+      .col-md.tarjeta.tarjeta--roja.p-5
+        .row.justify-content-center.mb-4
+          .col-6
+            figure
+              img(src='@/assets/componentes/ej-03.svg', alt='Texto que describa la imagen')
+          
+        .h3.text-center Sterility leads to<br>susceptibility
+        p Remember it’s called the creative process, it’s not the creative moment. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect and accept the possibility of failure.
 
     .row
       .col
         .tarjeta-Avatar
-          img(src='@/assets/template/icono-pdf.svg' alt='AvatarTop')
+          img(src='@/assets/componentes/ej-03.svg' alt='AvatarTop')
           .tarjeta.tarjeta--morada.p-4
             .h4
               b John Doe
@@ -686,7 +825,7 @@
 
       .col
         .tarjeta-Avatar
-          img(src='@/assets/template/icono-pdf.svg' alt='AvatarTop')
+          img(src='@/assets/componentes/ej-03.svg' alt='AvatarTop')
           .tarjeta.tarjeta--amarilla.p-4
             .h4
               b John Doe
@@ -694,13 +833,11 @@
 
       .col
         .tarjeta-Avatar
-          img(src='@/assets/template/icono-pdf.svg' alt='AvatarTop')
+          img(src='@/assets/componentes/ej-03.svg' alt='AvatarTop')
           .tarjeta.tarjeta--azul.p-4
             .h4
               b John Doe
             p Architect &amp; Engineer
-
-
 
 </template>
 

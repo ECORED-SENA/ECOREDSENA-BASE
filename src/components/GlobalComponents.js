@@ -1,5 +1,6 @@
 import Vue from 'vue'
 
-Vue.component('Acordion', () => import('./Acordion.vue'))
-Vue.component('Tabs', () => import('./Tabs.vue'))
+Vue.component('AcordionA', () => import('./AcordionA.vue'))
+Vue.component('TabsB', () => import('./TabsB.vue'))
+Vue.component('TabsA', () => import('./TabsA.vue'))
 Vue.component('LineaTiempoA', () => import('./LineaTiempoA.vue'))
