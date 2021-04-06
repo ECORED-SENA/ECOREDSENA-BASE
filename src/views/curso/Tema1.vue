@@ -791,7 +791,7 @@
         .row.justify-content-center.mb-4
           .col-6
             figure
-              img(src='@/assets/componentes/ej-03.svg', alt='Texto que describa la imagen')
+              img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
           
         .h3.text-center Celebrate your<br>failures
         p To surpass others is fucking tough, if you only do as you are told you don’t have it in you to succeed. Think about all the possibilities. You’ve been placed in the crucial moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
@@ -800,7 +800,7 @@
         .row.justify-content-center.mb-4
           .col-6
             figure
-              img(src='@/assets/componentes/ej-03.svg', alt='Texto que describa la imagen')
+              img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
           
         .h3.text-center Sterility leads to<br>susceptibility
         p Remember it’s called the creative process, it’s not the creative moment. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect and accept the possibility of failure.
@@ -809,35 +809,32 @@
         .row.justify-content-center.mb-4
           .col-6
             figure
-              img(src='@/assets/componentes/ej-03.svg', alt='Texto que describa la imagen')
+              img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
           
         .h3.text-center Sterility leads to<br>susceptibility
         p Remember it’s called the creative process, it’s not the creative moment. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect and accept the possibility of failure.
 
     .row
-      .col
+      .col-md-6.col-lg.mb-5
         .tarjeta-Avatar
-          img(src='@/assets/componentes/ej-03.svg' alt='AvatarTop')
+          img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
           .tarjeta.tarjeta--morada.p-4
-            .h4
-              b John Doe
-            p Architect &amp; Engineer
+            .h4.text-center John Doe
+            p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
-      .col
+      .col-md-6.col-lg.mb-5
         .tarjeta-Avatar
-          img(src='@/assets/componentes/ej-03.svg' alt='AvatarTop')
+          img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
           .tarjeta.tarjeta--amarilla.p-4
-            .h4
-              b John Doe
-            p Architect &amp; Engineer
+            .h4.text-center John Doe
+            p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
-      .col
+      .col-md-6.col-lg.mb-5
         .tarjeta-Avatar
-          img(src='@/assets/componentes/ej-03.svg' alt='AvatarTop')
-          .tarjeta.tarjeta--azul.p-4
-            .h4
-              b John Doe
-            p Architect &amp; Engineer
+          img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+          .tarjeta.tarjeta--roja.p-4
+            .h4.text-center John Doe a sd asd
+            p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
 </template>
 

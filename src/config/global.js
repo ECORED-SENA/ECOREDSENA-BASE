@@ -105,6 +105,12 @@ export const menuPrincipal = {
           titulo: 'Llamados a la acción',
           hash: 't_1_13',
         },
+        {
+          icono: 'far fa-file-alt',
+          numero: '1.14',
+          titulo: 'Tarjetas',
+          hash: 't_1_14',
+        },
       ],
     },
     {
