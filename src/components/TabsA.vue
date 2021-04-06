@@ -1,5 +1,5 @@
 <template lang="pug">
-.tabs
+.tabs-a
   .row
     .col-lg-4.col-xl-3
       .row
@@ -7,18 +7,18 @@
           v-for="(elm,index) of elements"
           :key="'tabs-menu-'+elm.id"
         )
-          button.tabs__tab(
-            :class="{'tabs__tab__selected': selected === elm.id}"
+          button.tabs-a__tab(
+            :class="{'tabs-a__tab__selected': selected === elm.id}"
             @click="selected = elm.id"
           ) 
-            .tabs__tab__text {{elm.titulo}}
+            .tabs-a__tab__text {{elm.titulo}}
     
     .col-lg-8.col-xl-9
-      .tabs__content-item(
+      .tabs-a__content-item(
         v-for="elm of elements"
-        :key="'tabs-content-'+elm.id"
+        :key="'tabs-a-content-'+elm.id"
         v-show="selected === elm.id"
-        :class="{'tabs__content-item--active' : selected === elm.id}"
+        :class="{'tabs-a__content-item--active' : selected === elm.id}"
         v-html="elm.html"
       )
 
@@ -30,22 +30,12 @@
 <script>
 import componentSlotMixins from '../mixins/componentSlotMixins'
 export default {
-  name: 'Tabs',
+  name: 'TabsA',
   mixins: [componentSlotMixins],
 }
 </script>
 
 <style lang="sass" scoped>
-.tabs
-  &__slot
-    position: absolute
-    opacity: 0
-    height: 0
-    overflow: hidden
-    pointer-events: none
-
-
-
 .fade-enter-active, .fade-leave-active
   transition: opacity .5s
 
