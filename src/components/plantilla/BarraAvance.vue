@@ -239,6 +239,7 @@ export default {
   padding: 10px
   background-color: $color-sistema-e
   transition: transform 0.5s ease-in-out
+  z-index: 100000
 
   &__barra
     margin: 0 20px

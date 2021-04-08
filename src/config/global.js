@@ -102,14 +102,20 @@ export const menuPrincipal = {
         {
           icono: 'far fa-file-alt',
           numero: '1.13',
-          titulo: 'Llamados a la acción',
+          titulo: 'Pasos',
           hash: 't_1_13',
         },
         {
           icono: 'far fa-file-alt',
           numero: '1.14',
-          titulo: 'Tarjetas',
+          titulo: 'Llamados a la acción',
           hash: 't_1_14',
+        },
+        {
+          icono: 'far fa-file-alt',
+          numero: '1.15',
+          titulo: 'Tarjetas',
+          hash: 't_1_15',
         },
       ],
     },

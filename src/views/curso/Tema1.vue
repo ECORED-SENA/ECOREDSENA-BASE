@@ -486,6 +486,36 @@
 
     #t_1_9.h4 Carrusel
 
+    .tarjeta.tarjeta--azul.p-4.mb-5
+      SlyderA
+        .row
+          .col-md-6.mb-4.mb-md-0
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+        
+          .col-md-6
+            figure
+              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+              figcaption Leyenda de la imagen
+
+        div
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+
+        .row
+          .col-md-6.mb-4.mb-md-0
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+        
+          .col-md-6
+            figure
+              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+              figcaption Leyenda de la imagen
+
+        div
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+
     #carouselExampleIndicators.carousel.slide.mb-5(data-bs-ride='carousel')
       .carousel-indicators
         button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
@@ -652,7 +682,13 @@
 
     LineaTiempoA.mb-5(:datos="datosLineaTiempoA")
 
-    #t_1_13.h4 Llamados a la acción
+    
+    #t_1_13.h4 Pasos
+
+    PasosA.mb-5(:datos="datosPasosA")
+
+
+    #t_1_14.h4 Llamados a la acción
 
     .tarjeta.tarjeta--amarilla.p-4.p-md-5.mb-5
       .row.justify-content-around.align-items-center
@@ -742,7 +778,7 @@
 
 
 
-    #t_1_14.h4 Tarjetas
+    #t_1_15.h4 Tarjetas
     
     .row.mb-5
       .col-sm-6.col-lg-3.mb-4.mb-lg-0
@@ -833,8 +869,37 @@
         .tarjeta-Avatar
           img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
           .tarjeta.tarjeta--roja.p-4
-            .h4.text-center John Doe a sd asd
+            .h4.text-center Greatness isn’t the height
             p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+    .row.mb-5
+      .col-md-6.col-lg.tarjeta--tabla.p-4
+        .row.justify-content-center.mb-3
+          .col-4
+            img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+        .h4.text-center John Doe
+        p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+      .col-md-6.col-lg.tarjeta--tabla.p-4
+        .row.justify-content-center.mb-3
+          .col-4
+            img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+        .h4.text-center John Doe
+        p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+      .col-md-6.col-lg.tarjeta--tabla.p-4
+        .row.justify-content-center.mb-3
+          .col-4
+            img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+        .h4.text-center John Doe
+        p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+      .col-md-6.col-lg.tarjeta--tabla.p-4
+        .row.justify-content-center.mb-3
+          .col-4
+            img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+        .h4.text-center John Doe
+        p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
 </template>
 
@@ -863,6 +928,28 @@ export default {
         ano: '10.000 - 5.000 A.C.',
         titulo: 'Periodo Neolítico',
         texto: 'Vestimenta de fibras animales y vegetales, pulseras de marfil.',
+      },
+    ],
+    datosPasosA: [
+      {
+        titulo: 'Dressed for Error',
+        texto:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.',
+      },
+      {
+        titulo: 'Before the Fury',
+        texto:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.',
+      },
+      {
+        titulo: 'Khans Tribute',
+        texto:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.',
+      },
+      {
+        titulo: 'Secret of the Quiet Stranger',
+        texto:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.',
       },
     ],
   }),

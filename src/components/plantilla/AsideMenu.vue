@@ -92,7 +92,7 @@ export default {
   background-color: $color-sistema-g
   transition: flex 0.5s ease-in-out, width 0.5s ease-in-out
   overflow-x: hidden
-  z-index: 10000
+  z-index: 100001
 
   a
     color: $color-sistema-a
