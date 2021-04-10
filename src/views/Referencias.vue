@@ -1,7 +1,7 @@
 <template lang="pug">
 .curso-main-container.referencias
   BannerInterno(icono="fas fa-book" titulo="Referencias bibliográficas")
-  .container.tarjeta--blanca.p-4.p-md-5.mb-5
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
     .referencias__item(v-for="ref in referenciasData" :key="ref.link") 
       | {{ref.referencia}} 
       a(v-v-if="ref.link" :href="ref.link" target="_blank") {{ref.link}} 

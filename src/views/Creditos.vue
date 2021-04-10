@@ -1,7 +1,7 @@
 <template lang="pug">
 .curso-main-container.creditos-vista
   BannerInterno(icono="far fa-registered" titulo="Créditos")
-  .container.tarjeta--blanca.p-4.p-md-5.mb-5
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
     CreditosComp
   Footer.mb-5(all-round)
     

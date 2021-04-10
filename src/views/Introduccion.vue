@@ -1,7 +1,7 @@
 <template lang="pug">
 .curso-main-container.introduccion
   BannerInterno(icono="fas fa-info" titulo="Introducción")
-  .container.tarjeta--blanca.p-4.p-md-5.mb-5
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
     
     figure.mb-5
       .video
