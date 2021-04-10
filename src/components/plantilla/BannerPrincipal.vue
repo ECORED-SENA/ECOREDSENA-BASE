@@ -23,7 +23,7 @@
 
 <script>
 import { global } from '../../config/global'
-import mixins from '../../mixins/mixins'
+import mixins from '../../mixins/plantillaMixins'
 export default {
   name: 'BannerPrincipal',
   mixins: [mixins],

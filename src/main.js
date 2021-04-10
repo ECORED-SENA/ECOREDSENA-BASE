@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/_styles.sass'
 
 import '@/components/GlobalComponents'
+import '@/mixins/globalMixins'
 
 Vue.config.productionTip = false
 

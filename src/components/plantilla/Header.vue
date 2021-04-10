@@ -28,7 +28,7 @@ header.header.container-fluid
 
 <script>
 import { global } from '../../config/global'
-import mixins from '../../mixins/mixins'
+import mixins from '../../mixins/plantillaMixins'
 export default {
   name: 'Header',
   mixins: [mixins],
