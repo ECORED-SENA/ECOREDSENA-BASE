@@ -2,8 +2,6 @@
 section
   BannerPrincipal
 
-  span {{obtenerLink('/downloads/prueba.pdf')}}
-
   //- Desarrollo de contenidos
   #contenidos.pb-5
   .container.tarjeta.tarjeta__template--azul-claro.px-3.py-4.px-sm-5.pb-sm-5
