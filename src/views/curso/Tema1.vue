@@ -699,7 +699,7 @@
           .h2 Título del recurso
           p.mb-4 There is no right answer. The splendor of the mystery is that you don’t understand. Your rapidograph pens are dried up, the x-acto blades in your bag are rusty, and your mind is dull. Stop clicking your mouse, get messy, go back to the basics and make something original. Why are you reading all of this?
           
-          a.boton.boton--b(href="/downloads/prueba.pdf" target="_blank")
+          a.boton.boton--b(href="/downloads/prueba.pdf" target="_blank" type="application/pdf")
             span Descargar
             i.fas.fa-file-download
 
