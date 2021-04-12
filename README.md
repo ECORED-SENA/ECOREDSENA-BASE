@@ -1,4 +1,4 @@
-# **sena-base-2021 v1.1.6**
+# **sena-base-2021 v1.2.0**
 
 ## **Enlace GitHubPages**
 
