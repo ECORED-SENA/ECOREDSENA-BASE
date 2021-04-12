@@ -8,7 +8,9 @@
           :class="getClass(index)"
         )
           .circle
-            .h4 {{index + 1}}
+            .h4(v-if="tipo === 'n'") {{index + 1}}
+            .h4(v-else-if="tipo === 'l'") {{abecedario[index]}}
+
         .col-8.py-3
           .h5 {{item.titulo}}
           p(v-html="item.texto")
@@ -34,7 +36,8 @@
           :class="getClass(index)"
         )
           .circle
-            .h4 {{index + 1}}
+            .h4(v-if="tipo === 'n'") {{index + 1}}
+            .h4(v-else-if="tipo === 'l'") {{abecedario[index]}}
 
       // path between 2-3
       template(v-if="index + 1 != datos.length")
@@ -56,7 +59,14 @@ export default {
       type: Array,
       default: () => [],
     },
+    tipo: {
+      type: String,
+      default: 'n',
+    },
   },
+  data: () => ({
+    abecedario: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+  }),
   methods: {
     getClass(idx) {
       return idx === 0

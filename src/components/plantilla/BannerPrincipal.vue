@@ -45,6 +45,9 @@ export default {
 
 
   &__info
+    display: flex
+    flex-direction: column
+    justify-content: center
 
   &__programa
     display: flex

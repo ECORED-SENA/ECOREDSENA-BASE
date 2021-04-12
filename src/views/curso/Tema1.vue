@@ -673,7 +673,71 @@
           .col-md-6
             .h4 Celebrate your failures 6
             p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+
+    TabsC.mb-5
+      .py-3.py-md-4(titulo="The splendor of the mystery")
+        .row
+          .col-md-6.mb-4.mb-md-0
+            .h4 Celebrate your failures 1
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
         
+          .col-md-6
+            figure
+              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+              figcaption Leyenda de la imagen
+      .py-3.py-md-4(titulo="Don’t lie to yourself")
+        .row
+          .col-md-6.mb-4.mb-md-0
+            figure
+              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+              figcaption Leyenda de la imagen
+          .col-md-6
+            .h4 Celebrate your failures 2
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+        
+      .py-3.py-md-4(titulo="Don’t quit")
+        .row
+          .col-md-6.mb-4.mb-md-0
+            .h4 Celebrate your failures 3
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+        
+          .col-md-6
+            figure
+              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+              figcaption Leyenda de la imagen
+
+      .py-3.py-md-4(titulo="The splendor of the mystery")
+        .row
+          .col-md-6.mb-4.mb-md-0
+            figure
+              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+              figcaption Leyenda de la imagen
+          .col-md-6
+            .h4 Celebrate your failures 4
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+        
+      
+      .py-3.py-md-4(titulo="The splendor of the mystery")
+        .row
+          .col-md-6.mb-4.mb-md-0
+            .h4 Celebrate your failures 5
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+        
+          .col-md-6
+            figure
+              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+              figcaption Leyenda de la imagen
+      
+      .py-3.py-md-4(titulo="The splendor of the mystery")
+        .row
+          .col-md-6.mb-4.mb-md-0
+            figure
+              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+              figcaption Leyenda de la imagen
+          .col-md-6
+            .h4 Celebrate your failures 6
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+
       
 
 
@@ -682,10 +746,13 @@
 
     LineaTiempoA.mb-5(:datos="datosLineaTiempoA")
 
+    LineaTiempoB.mb-5(:datos="datosLineaTiempoB")
     
     #t_1_13.h4 Pasos
 
-    PasosA.mb-5(:datos="datosPasosA")
+    PasosA.mb-5(tipo="n" :datos="datosPasosA")
+
+    PasosA.mb-5(tipo="l" :datos="datosPasosA")
 
 
     #t_1_14.h4 Llamados a la acción
@@ -928,6 +995,32 @@ export default {
         ano: '10.000 - 5.000 A.C.',
         titulo: 'Periodo Neolítico',
         texto: 'Vestimenta de fibras animales y vegetales, pulseras de marfil.',
+      },
+    ],
+    datosLineaTiempoB: [
+      {
+        titulo: '01 de marzo',
+        texto:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus augue, pulvinar ac auctor at, pellentesque id diam. Praesent maximus, felis sollicitudin pharetra vestibulum, turpis tortor tincidunt augue, in efficitur urna diam eleifend magna.',
+        icono: require('@/assets/componentes/ej-05.svg'),
+      },
+      {
+        titulo: '02 de marzo',
+        texto:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus augue, pulvinar ac auctor at, pellentesque id diam. Praesent maximus, felis sollicitudin pharetra vestibulum, turpis tortor tincidunt augue, in efficitur urna diam eleifend magna.',
+        icono: require('@/assets/componentes/ej-05.svg'),
+      },
+      {
+        titulo: '03 de marzo',
+        texto:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus augue, pulvinar ac auctor at, pellentesque id diam. Praesent maximus, felis sollicitudin pharetra vestibulum, turpis tortor tincidunt augue, in efficitur urna diam eleifend magna.',
+        icono: require('@/assets/componentes/ej-05.svg'),
+      },
+      {
+        titulo: '04 de marzo',
+        texto:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus augue, pulvinar ac auctor at, pellentesque id diam. Praesent maximus, felis sollicitudin pharetra vestibulum, turpis tortor tincidunt augue, in efficitur urna diam eleifend magna.',
+        icono: require('@/assets/componentes/ej-05.svg'),
       },
     ],
     datosPasosA: [

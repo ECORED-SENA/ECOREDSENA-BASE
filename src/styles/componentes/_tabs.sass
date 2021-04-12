@@ -104,6 +104,63 @@
   &__content-item
 
 
+.tabs-c
+  &__header
+    margin-bottom: 15px
+  &__tab
+    border-bottom: 4px solid $color-sistema-f
+    line-height: $heading-line-height
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    &:after, &:before
+      content: ''
+      display: block
+      position: absolute
+      transform: translate(-50%,-50%)
+    &:after
+      width: 2px
+      height: 20px
+      top: 50%
+      right: -2px
+      background-color: $color-sistema-f
+    &:last-child
+      &:after
+        display: none
+
+
+    @media (min-width: $bp-min-lg) and (max-width: $bp-max-lg)
+      &:nth-child(3n)
+        &:after
+          display: none
+    @media (min-width: $bp-min-sm) and (max-width: $bp-max-md)
+      &:nth-child(2n)
+        &:after
+          display: none
+    @media (max-width: $bp-max-xs)
+      &:after
+        display: none
+
+    &--active
+      border-bottom: 4px solid $color-curso-b !important
+      &:before
+        width: 0
+        height: 0
+        border-left: 10px solid transparent
+        border-right: 10px solid transparent
+        border-top: 10px solid $color-curso-b
+        left: 50%
+        top: calc(100% + 6px)
+
+      &:active, &:focus, &:hover
+        background-color: transparent
+      .tabs-b__tab__title
+        font-weight: $base-bold-font-weight
+
+
+
 .tabs
   &__slot
     position: absolute
@@ -111,3 +168,9 @@
     height: 0
     overflow: hidden
     pointer-events: none
+
+.fade-enter-active, .fade-leave-active
+  transition: opacity .5s
+
+.fade-enter, .fade-leave-to
+  opacity: 0
