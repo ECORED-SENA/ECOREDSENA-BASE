@@ -92,7 +92,7 @@ const router = new VueRouter({
         return new Promise(resolve => {
           setTimeout(() => {
             resolve(newRoute)
-          }, 300)
+          }, 500)
         })
       }
     } else {

@@ -6,7 +6,6 @@ export default {
     stateStr: '',
     rendered: false,
   }),
-  computed: {},
   watch: {
     menuState() {
       this.domUpdated()
@@ -54,7 +53,7 @@ export default {
       this.rendered = false
       setTimeout(() => {
         this.rendered = true
-      }, 500)
+      }, 100)
     },
   },
 }

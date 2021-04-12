@@ -27,7 +27,6 @@ export default {
   name: 'SlyderA',
   components: { ScrollHorizontal },
   mixins: [componentSlotMixins],
-  data: () => ({}),
   computed: {
     navObj() {
       if (!this.elements.length) return {}
@@ -50,65 +49,4 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-.slyder-a
-  position: relative
-  &__btn
-    &--sigt, &--atrs
-      width: 50px
-      height: 50px
-      background-color: $white
-      border-radius: 50%
-      background-image: url('../assets/componentes/arrow.svg')
-      background-repeat: no-repeat
-      background-size: 16px 24px
-      background-position: center
-      border: 1px solid $color-sistema-e
-      position: absolute
-      top: 50%
-      z-index: 10000
-      opacity: 0.7
-      box-shadow: 0 0 0px 0px rgba(0,0,0,0.3)
-      transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out
-      cursor: pointer
-      &:hover
-        opacity: 1
-        box-shadow: 0 0 5px 0px rgba(0,0,0,0.3)
-        border-color: $white
-
-    &--sigt
-      transform: translateY(-50%) rotate(-90deg)
-      right: 15px
-    &--atrs
-      transform: translateY(-50%) rotate(90deg)
-      left: 15px
-
-  &__bullets
-    display: flex
-    position: absolute
-    bottom: 50px
-    left: 50%
-    z-index: 10000
-    transform: translateX(-50%)
-    &__item
-      width: 15px
-      height: 15px
-      background-color: $white
-      border-radius: 50%
-      box-shadow: 0 0 5px 0px rgba(0,0,0,0)
-      margin: 0 10px
-      cursor: pointer
-      opacity: 0.7
-      transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out
-      border: 1px solid $color-sistema-e
-
-      &--active
-        background-color: $color-sistema-b
-        border-color: $color-sistema-b
-        opacity: 1
-
-      &:hover
-        opacity: 1
-        box-shadow: 0 0 5px 0px rgba(0,0,0,0.3)
-        border-color: $color-sistema-b
-</style>
+<style lang="sass" scoped></style>

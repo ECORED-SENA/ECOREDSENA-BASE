@@ -516,6 +516,12 @@
             img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
             figcaption Leyenda de la imagen
 
+    SlyderB.mb-5(:datos="datosSlyder")
+
+    SlyderC.mb-5(:datos="datosSlyder")
+
+    SlyderD.mb-5(:datos="datosSlyder")
+
     #carouselExampleIndicators.carousel.slide.mb-5(data-bs-ride='carousel')
       .carousel-indicators
         button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
@@ -1058,6 +1064,40 @@ export default {
         titulo: 'Secret of the Quiet Stranger',
         texto:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.',
+      },
+    ],
+    datosSlyder: [
+      {
+        titulo:
+          'Never, never assume that what you have achieved is good enough',
+        texto:
+          'Your rapidograph pens are dried up, the x-acto blades in your bag are rusty, and your mind is dull. Stop clicking your mouse, get messy, go back to the basics and make something original.',
+        imagen: require('@/assets/template/img-placeholder.svg'),
+        // leyendaImagen: 'Leyenda de la imagen',
+      },
+      {
+        titulo:
+          'Never, never assume that what you have achieved is good enough',
+        texto:
+          'Your rapidograph pens are dried up, the x-acto blades in your bag are rusty, and your mind is dull. Stop clicking your mouse, get messy, go back to the basics and make something original.',
+        imagen: require('@/assets/template/img-placeholder.svg'),
+        // leyendaImagen: 'Leyenda de la imagen',
+      },
+      {
+        titulo:
+          'Never, never assume that what you have achieved is good enough',
+        texto:
+          'Your rapidograph pens are dried up, the x-acto blades in your bag are rusty, and your mind is dull. Stop clicking your mouse, get messy, go back to the basics and make something original.',
+        imagen: require('@/assets/template/img-placeholder.svg'),
+        leyendaImagen: 'Leyenda de la imagen',
+      },
+      {
+        titulo:
+          'Never, never assume that what you have achieved is good enough',
+        texto:
+          'Your rapidograph pens are dried up, the x-acto blades in your bag are rusty, and your mind is dull. Stop clicking your mouse, get messy, go back to the basics and make something original.',
+        imagen: require('@/assets/template/img-placeholder.svg'),
+        leyendaImagen: 'Leyenda de la imagen',
       },
     ],
   }),
