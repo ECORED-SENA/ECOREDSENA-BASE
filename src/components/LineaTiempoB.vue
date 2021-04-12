@@ -82,7 +82,7 @@ export default {
       content: ''
       display: block
       position: absolute
-      border-left: 4px dotted $color-curso-d
+      border-left: 4px dotted $color-sistema-b
       top: 0
       bottom: 0
 </style>

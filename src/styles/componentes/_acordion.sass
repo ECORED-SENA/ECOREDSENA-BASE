@@ -6,24 +6,31 @@
     align-items: center
     margin-bottom: 25px
     cursor: pointer
+    justify-content: space-between
 
   &__accion
     &__btn
-      width: 40px
-      height: 40px
-      border-radius: 50%
-      background-color: $white
-      position: relative
-      box-shadow: 0px 3px 5px 0px rgba($color-sistema-a,0.3)
+      &--a, &--b
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        position: relative
 
-      i
-        position: absolute
-        top: 50%
-        left: 50%
-        transform: translate(-50%,-50%)
+        i
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%,-50%)
+
+
+      &--a
+        background-color: $white
+        box-shadow: 0px 3px 5px 0px rgba($color-sistema-a,0.3)
+
+      &--b
+        border: 1px solid $color-sistema-a
 
   &__titulo
-    margin-left: 15px
 
   &__contenido
     overflow: hidden
