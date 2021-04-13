@@ -11,6 +11,7 @@ export default {
   }),
   methods: {
     getId(idx) {
+      if (idx < 0) return null
       return 'sl-' + this.mainId + idx + 1
     },
   },

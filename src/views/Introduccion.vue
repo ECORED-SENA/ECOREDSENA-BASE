@@ -1,7 +1,13 @@
 <template lang="pug">
 .curso-main-container.introduccion
-  BannerInterno(icono="fas fa-info" titulo="Introducción")
+  BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
+  
+    .titulo-principal
+      .titulo-principal__numero
+        .h3
+          i.fas.fa-info
+      .h3 Título principal, 30pt
     
     figure.mb-5
       .video

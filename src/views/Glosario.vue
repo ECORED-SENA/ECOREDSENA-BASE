@@ -7,7 +7,7 @@
         .glosario__letra-item__letra__icono
           span {{letra.letra}}
       .glosario__letra-item__texto
-        p(v-for="termino in letra.terminos")
+        p.mb-3(v-for="termino in letra.terminos")
           strong • {{termino.termino}}: 
           | {{termino.significado}}
 </template>

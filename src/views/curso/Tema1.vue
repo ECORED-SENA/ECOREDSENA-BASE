@@ -484,7 +484,7 @@
 
     h1#t_1_8 Componentes
 
-    #t_1_9.h4 Carrusel
+    #t_1_9.h4 Slyders
 
     .tarjeta.tarjeta--azul.p-4.mb-5
       SlyderA

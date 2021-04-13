@@ -78,7 +78,7 @@ export const menuPrincipal = {
         {
           icono: 'far fa-file-alt',
           numero: '1.9',
-          titulo: 'Carrusel',
+          titulo: 'Slyders',
           hash: 't_1_9',
         },
         {
@@ -358,7 +358,7 @@ export const creditos = {
 export const referencias = [
   {
     referencia:
-      'Blackman, C. (2012). 100 años de moda. Sistema de Bibliotecas SENA: ',
+      'Zlackman, C. (2012). 100 años de moda. Sistema de Bibliotecas SENA: ',
     link:
       'https://sena-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=sena_aleph000060086&vid=SENA&search_scope=sena_completo&tab=sena_completo&lang=es_ES&context=L',
   },
@@ -371,8 +371,6 @@ export const referencias = [
   {
     referencia:
       'Harpersbazaar. (2019). La ropa que eliges afecta a tu estado de ánimo y cerebro, según expertos. En arpersbazaar.mx.',
-    link:
-      'https://www.harpersbazaar.mx/belleza/salud-y-bienestar/la-ropa-que-eliges-afecta-a-tu-estado-de-animo-y-cerebro-segun-expertos/',
   },
   {
     referencia:
@@ -383,8 +381,6 @@ export const referencias = [
   {
     referencia:
       'Laver, J.,  Albizua, H., y Fortea, B. (1990). Breve historia del traje y la moda. Sistema de Bibliotecas SENA. ',
-    link:
-      'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1j5choe/sena_aleph000063748',
   },
   {
     referencia:

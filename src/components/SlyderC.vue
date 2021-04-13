@@ -15,9 +15,9 @@
           .h3.mb-2.mb-md-0 {{item.titulo}}
           .slyder__action
             .slyder__pagination {{index+1}}/{{datos.length}}
-            a.slyder__btn(@click="selected = getId(index -1)")
+            a.slyder__btn(v-if="index -1 >= 0" @click="selected = getId(index -1)")
               i.fas.fa-angle-left
-            a.slyder__btn(@click="selected = getId(index +1)")
+            a.slyder__btn(v-if="index +1 != datos.length -1" @click="selected = getId(index +1)")
               i.fas.fa-angle-right
         .slyder-c__content__body
           p.mb-3(v-html="item.texto")
