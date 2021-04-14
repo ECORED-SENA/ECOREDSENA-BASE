@@ -15,7 +15,7 @@
             td(colspan='2') {{item.tipo}}
             td(colspan='1')
               .complementario__btn
-                a(:href="item.link" target="_blank")
+                a(:href="obtenerLink(item.link)" target="_blank")
                   i.fas.fa-file-download
 
 </template>
