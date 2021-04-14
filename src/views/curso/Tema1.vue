@@ -988,6 +988,25 @@
             img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
         .h4.text-center John Doe
         p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+    #t_1_16.h4 Tarjetas con numero
+
+    .row
+      .col
+        .tarjeta-numerada.p-5
+          .tarjeta-numerada__numero
+            .h4 1
+          p.text-center 
+            b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
+          p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
+
+      .col
+        .tarjeta-numerada.p-5
+          .tarjeta-numerada__numero
+            .h4 1
+          p.text-center 
+            b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
+          p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
+
 
 </template>
 
