@@ -449,7 +449,7 @@ export const complementario = [
     texto:
       'Arnold, M. y Osorio, F., (1998). Introducción a los conceptos básicos de la Teoría general de sistemas. Cinta moebio 3: 40-49',
     tipo: 'Página web',
-    link: 'https://www.google.com/',
+    descarga: '/downloads/prueba.pdf',
   },
   {
     texto:
@@ -460,7 +460,7 @@ export const complementario = [
   {
     texto: 'Economía de Rosquilla. (s.f.).',
     tipo: 'Página web',
-    link: 'https://www.google.com/',
+    descarga: '/downloads/prueba.pdf',
   },
   {
     texto: '2 minutos para entender el desarrollo sostenible – Spanish',

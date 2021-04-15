@@ -10,13 +10,13 @@
             th(colspan='2' scope="col") Tipo de material
             th(colspan='1' scope="col") Enlace
         tbody
-          tr(v-for="item in complementarioData" :key="item.link")
+          tr(v-for="(item, index) in complementarioData" :key="'complementario-'+index")
             td(colspan='8' scope="row") {{item.texto}}
             td(colspan='2') {{item.tipo}}
             td(colspan='1')
               .complementario__btn
-                a(:href="obtenerLink(item.link)" target="_blank")
-                  i.fas.fa-file-download
+                a(:href="item.descarga ? obtenerLink(item.descarga) : item.link" target="_blank")
+                  i.fas.fa-external-link-alt
 
 </template>
 <script>
