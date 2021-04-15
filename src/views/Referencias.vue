@@ -22,8 +22,8 @@ export default {
   computed: {
     orderedData() {
       const ArrayOrdered = [...this.referenciasData].sort((a, b) => {
-        const afl = a.referencia.split(' ')[0]
-        const bfl = b.referencia.split(' ')[0]
+        const afl = a.referencia.split(' ')[0].toLowerCase()
+        const bfl = b.referencia.split(' ')[0].toLowerCase()
         if (afl < bfl) return -1
         if (afl > bfl) return 1
         return 0
