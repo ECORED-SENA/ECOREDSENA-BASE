@@ -3,7 +3,8 @@ Vue.mixin({
   methods: {
     obtenerLink(ruta) {
       const route = window.location.href
-      const baseRoute = route.split('/#/')[0]
+      let separator = route.includes('/index.html#') ? '/index.html#' : '#/'
+      const baseRoute = route.split(separator)[0]
       return baseRoute + ruta
     },
   },
