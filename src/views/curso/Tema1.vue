@@ -3,17 +3,6 @@
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
 
-    ModalA
-      .row.align-items-center
-        .col-md-6.mb-4.mb-md-0
-          .h4 Lorem ipsum dolor sit amet
-          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-      
-        .col-md-6
-          figure
-            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-            figcaption Leyenda de la imagen
-
     #t_1_1.h4 Estilos tipográficos
 
     .titulo-principal
@@ -1001,7 +990,7 @@
         p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
     #t_1_16.h4 Tarjetas con numero
 
-    .row
+    .row.mb-5
       .col
         .tarjeta-numerada.p-5
           .tarjeta-numerada__numero
@@ -1018,6 +1007,20 @@
             b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
           p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
 
+    #t_1_1.h4 Modal
+
+    a.boton.boton--b.mb-5(@click="modal1 = true")
+      span Abrir modal
+    ModalA(:abrir-modal.sync="modal1")
+      .row.align-items-center
+        .col-md-6.mb-4.mb-md-0
+          .h4 Lorem ipsum dolor sit amet
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+        .col-md-6
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
 
 </template>
 
@@ -1030,6 +1033,7 @@ export default {
     BannerInterno,
   },
   data: () => ({
+    modal1: false,
     datosLineaTiempoA: [
       {
         ano: '100.000 - 10.000 A.C.',
