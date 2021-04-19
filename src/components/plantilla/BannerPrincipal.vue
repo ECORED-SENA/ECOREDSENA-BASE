@@ -11,11 +11,11 @@
         .banner-principal__componente
           h1.mb-0 {{globalData.componenteFormativo}}
         .banner-principal__descripcion
-          p.mb-0 {{globalData.descripcionCurso}}
+          p.mb-0(v-html="globalData.descripcionCurso")
         .banner-principal__accion
           router-link.boton(:to="{name: iniciarLnk.nombreRuta }")
             span.me-1 Iniciar
-            i(class="fas fa-angle-right")
+            i.fas.fa-angle-right
 
       .d-none.d-lg-block.col-lg-5.align-self-end
         img(:src="globalData.imagenBannerPrincipal")
