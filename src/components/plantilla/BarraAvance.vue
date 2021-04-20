@@ -32,10 +32,12 @@ export default {
   }),
   computed: {
     showBarra() {
+      const enIntro = this.$route.fullPath.includes('/introduccion')
+      const enCurso = this.$route.fullPath.includes('/curso')
       const haveControls =
         (this.controlLinks.next && this.controlLinks.next.name) ||
         (this.controlLinks.back && this.controlLinks.back.name)
-      return !this.menuOpen && haveControls
+      return !this.menuOpen && (enIntro || enCurso) && haveControls
     },
     // controlLinks() {
     //   const menuObject = this.menuData.find(
