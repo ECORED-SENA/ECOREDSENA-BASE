@@ -1021,7 +1021,7 @@
     ModalA(:abrir-modal.sync="modal1")
       .row.align-items-center
         .col-md-6.mb-4.mb-md-0
-          .h4 Lorem ipsum dolor sit amet
+          .h4 Modal 1
           p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
       
         .col-md-6
@@ -1041,6 +1041,7 @@ export default {
   },
   data: () => ({
     modal1: false,
+    modal2: false,
     datosLineaTiempoA: [
       {
         ano: '100.000 - 10.000 A.C.',

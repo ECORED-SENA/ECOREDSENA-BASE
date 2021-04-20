@@ -9,7 +9,7 @@
       .glosario__letra-item__texto
         p.mb-3(v-for="termino in letra.terminos")
           strong • {{termino.termino}}: 
-          | {{termino.significado}}
+          span(v-html="termino.significado")
 </template>
 
 <script>
