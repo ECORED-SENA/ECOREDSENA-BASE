@@ -52,7 +52,7 @@ export default {
           terminos = terminosOrdenados
         }
         newSortedData.push({
-          letra: letraObj.letra.UpperCase(),
+          letra: letraObj.letra.toUpperCase(),
           terminos: terminos,
         })
       })
