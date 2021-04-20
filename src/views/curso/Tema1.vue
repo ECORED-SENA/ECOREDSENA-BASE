@@ -938,7 +938,7 @@
         .h3.text-center Sterility leads to<br>susceptibility
         p Remember it’s called the creative process, it’s not the creative moment. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect and accept the possibility of failure.
 
-    .row
+    .row.mb-5
       .col-md-6.col-lg.mb-5
         .tarjeta-Avatar
           img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
@@ -1002,15 +1002,22 @@
       .col
         .tarjeta-numerada.p-5
           .tarjeta-numerada__numero
-            .h4 1
+            .h4 2
           p.text-center 
             b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
           p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
 
     #t_1_1.h4 Modal
 
-    a.boton.boton--b.mb-5(@click="modal1 = true")
-      span Abrir modal
+    .row
+      .col-auto
+        a.boton.boton--b.mb-5(@click="modal1 = true")
+          span Abrir modal
+      .col
+        p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t 
+          a.lnk(@click="modal1 = true") Abrir modal 
+          |the height of your stature, it’s the heft of your spirit.
+    
     ModalA(:abrir-modal.sync="modal1")
       .row.align-items-center
         .col-md-6.mb-4.mb-md-0
