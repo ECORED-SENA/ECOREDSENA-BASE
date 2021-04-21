@@ -11,28 +11,15 @@
 </template>
 
 <script>
-import { global } from './config/global'
-import AsideMenu from './components/plantilla/AsideMenu'
-import Header from './components/plantilla/Header'
-import BarraAvance from './components/plantilla/BarraAvance'
 export default {
   name: 'App',
-  components: {
-    AsideMenu,
-    Header,
-    BarraAvance,
-  },
   data: () => ({
     menuOpen: false,
-    globalData: global,
   }),
   computed: {
     menuState() {
       return this.$store.getters.isMenuOpen
     },
-  },
-  created() {
-    document.title = this.globalData.componenteFormativo
   },
 }
 </script>

@@ -24,12 +24,8 @@
 </template>
 
 <script>
-import BannerInterno from '../../components/plantilla/BannerInterno'
 export default {
   name: 'Tema3',
-  components: {
-    BannerInterno,
-  },
 }
 </script>
 

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from './store'
+import store from '../node_modules/ecored-base-pkg/src/store/index.js'
 
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import 'bootstrap'
@@ -9,8 +9,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import './styles/_styles.sass'
 
-import '@/components/GlobalComponents'
-import '@/mixins/globalMixins'
+import '../node_modules/ecored-base-pkg/src/components/GlobalComponents'
+import '../node_modules/ecored-base-pkg/src/mixins/globalMixins'
+
+import config from './config/global'
+Vue.prototype.$config = config
 
 Vue.config.productionTip = false
 

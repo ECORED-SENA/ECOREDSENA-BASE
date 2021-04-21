@@ -516,6 +516,7 @@
             img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
             figcaption Leyenda de la imagen
 
+
     SlyderB.mb-5(:datos="datosSlyder")
 
     SlyderC.mb-5(:datos="datosSlyder")
@@ -1033,12 +1034,8 @@
 
 <script>
 import { mapActions } from 'vuex'
-import BannerInterno from '../../components/plantilla/BannerInterno'
 export default {
   name: 'Tema1',
-  components: {
-    BannerInterno,
-  },
   data: () => ({
     modal1: false,
     modal2: false,

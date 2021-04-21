@@ -139,12 +139,8 @@
 </template>
 
 <script>
-import BannerInterno from '../../components/plantilla/BannerInterno'
 export default {
   name: 'Tema2',
-  components: {
-    BannerInterno,
-  },
 }
 </script>
 
