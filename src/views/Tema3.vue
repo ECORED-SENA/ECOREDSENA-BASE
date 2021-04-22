@@ -26,6 +26,9 @@
 <script>
 export default {
   name: 'Tema3',
+  data: () => ({
+    // variables de vue
+  }),
 }
 </script>
 

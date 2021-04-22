@@ -1,0 +1,1142 @@
+<template lang="pug">
+div
+  #t_1_1.h4 Estilos tipográficos
+
+  .titulo-principal
+    .titulo-principal__numero
+      .h3 1
+    .h3 Título principal, 30pt
+
+  p.mb-5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis. Maecenas cursus ante a diam porttitor mollis. Etiam vehicula dictum diam, eu pulvinar odio ultrices non. Vivamus viverra fermentum tortor, sit amet interdum nisl fermentum sed.
+
+  .titulo-segundo
+    .h4 1.1  Título de segundo nivel, 24pt
+
+  p.mb-5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis. Maecenas cursus ante a diam porttitor mollis. Etiam vehicula dictum diam, eu pulvinar odio ultrices non. Vivamus viverra fermentum tortor, sit amet interdum nisl fermentum sed.
+
+  .h5 Título de tercer nivel, 20pt
+
+  p.mb-5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis. Maecenas cursus ante a diam porttitor mollis. Etiam vehicula dictum diam, eu pulvinar odio ultrices non. Vivamus viverra fermentum tortor, sit amet interdum nisl fermentum sed.
+
+  .h6 Título de cuarto nivel, 18pt
+
+  p.mb-5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis. Maecenas cursus ante a diam porttitor mollis. Etiam vehicula dictum diam, eu pulvinar odio ultrices non. Vivamus viverra fermentum tortor, sit amet interdum nisl fermentum sed.
+
+  #t_1_2.h4 Párrafos
+
+  p.mb-5 Los párrafos mantienen un tamaño regular de 16 pt con interlineado base de 24 pt, sin embargo, existe excepciones para resaltar contenido donde se puede hacer uso de pesos 
+    span.text-thin THIN, 
+    span.text-bold BOLD, 
+    | y 
+    span.text-black BLACK 
+    | o 
+    span.etiqueta--morada etiquetas
+    | de color (según paleta del programa). Así mismo, el ancho de los cajones textos permite variación en las doce (12) columnas.
+
+  .row.mb-5
+    .col-lg-4
+      .cajon--azul.p-4.mb-5.mb-lg-0
+        .h5 Cajón texto color
+        p Se puede usar dos o más columnas para diagramar el texto, estos elementos pueden presentar contenedores que permitan diferenciar ideas o conceptos.
+    .col-lg-8
+      .cajon--rojo.p-4
+        .h5 Cajón texto color
+        p Se puede usar dos o más columnas para diagramar el texto, estos elementos pueden presentar contenedores que permitan diferenciar ideas o conceptos.
+
+  .row.mb-5
+    .col-md-6
+      .h4 La cantidad de texto “Destacado” sea menor a tres líneas en breakpoint xl de bootstrap y tendrá un tamaño máximo de h4
+    .col-md-6
+      p La cantidad de texto “Destacado” sea menor a tres líneas tendrá un tamaño máximo de 24 e interlineado 30 puntos utilizando Roboto Bold, ya si el texto supera las 3 líneas se utilizará un tamaño de 20 puntos y un interlineado 27 puntos con una fuente de Roboto Regular.
+
+  hr
+
+  #t_1_3.h4 Bloques de texto destacado
+
+  .bloque-texto-a.p-4.p-md-5.mb-5
+    .row.m-0.align-items-center.justify-content-between
+      .col-lg-4.mb-4.mb-lg-0
+        .h2.mb-0 Whatever can be captured in words can be conquered with understanding. 
+      .col-lg-7
+        .bloque-texto-a__texto.p-4
+          p Think about all the possibilities. A good composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Nothing of without working at it. Be impossible to ignore.
+            br
+            br
+            | Stand so tall that they can’t look past you. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect accept possibility of failure. 
+
+  .row.mb-5
+    .col-lg-6.mb-5.mb-lg-0
+      .bloque-texto-b.p-4
+        .bloque-texto-b__texto.h2.mb-0 Can we all just agree as the greater design community to stop talking about Comic Sans altogether?
+    .col-lg-6
+      .bloque-texto-c.p-4
+        .h2.mb-2 Then you’ll prove to yourself that you can survive anything.
+        span - The graphic designer
+
+
+
+
+  hr
+  #t_1_4.h4 Listas
+  .h5 Listado ordenado
+  .row.mb-5
+    .col-md.mb-5.mb-sm-0
+      .h6 Listado ordenado básico
+      ol.lista-ol
+        li 
+          span.text-bold 1. 
+          | Item lista ordenada 1
+        li 
+          span.text-bold 2. 
+          | Item lista ordenada 2
+        li 
+          span.text-bold 3. 
+          | Item lista ordenada 3
+        li 
+          span.text-bold 4. 
+          | Item lista ordenada 4
+        li 
+          span.text-bold 5. 
+          | Item lista ordenada 5
+    .col-sm.mb-5.mb-sm-0
+      .h6 Listado ordenado básico
+      ol.lista-ol
+        li 
+          span.text-bold a. 
+          | Item lista ordenada a
+        li 
+          span.text-bold b. 
+          | Item lista ordenada b
+        li 
+          span.text-bold c. 
+          | Item lista ordenada c
+        li 
+          span.text-bold d. 
+          | Item lista ordenada d
+        li 
+          span.text-bold e. 
+          | Item lista ordenada e
+    .col-sm
+      .h6 Listado ordenado básico + separadores
+      ol.lista-ol.lista-ol--separador
+        li 
+          span.text-bold a. 
+          | Item lista ordenada a
+        li 
+          span.text-bold b. 
+          | Item lista ordenada b
+        li 
+          span.text-bold c. 
+          | Item lista ordenada c
+        li 
+          span.text-bold d. 
+          | Item lista ordenada d
+        li 
+          span.text-bold e. 
+          | Item lista ordenada e
+
+  .row
+    .col-sm.mb-5.mb-sm-0
+      .h6 Listado ordenado cuadro color
+      ol.lista-ol--cuadro
+        li 
+          .lista-ol--cuadro__vineta
+            span 1
+          | Item lista ordenada 1
+        li 
+          .lista-ol--cuadro__vineta
+            span 2
+          | Item lista ordenada 2
+        li 
+          .lista-ol--cuadro__vineta
+            span 3
+          | Item lista ordenada 3
+        li 
+          .lista-ol--cuadro__vineta
+            span 4
+          | Item lista ordenada 4
+        li 
+          .lista-ol--cuadro__vineta
+            span 5
+          | Item lista ordenada 5
+    .col-sm.mb-5.mb-sm-0
+      .h6 Listado ordenado cuadro color
+      ol.lista-ol--cuadro
+        li 
+          .lista-ol--cuadro__vineta
+            span a
+          | Item lista ordenada a
+        li 
+          .lista-ol--cuadro__vineta
+            span b
+          | Item lista ordenada b
+        li 
+          .lista-ol--cuadro__vineta
+            span c
+          | Item lista ordenada c
+        li 
+          .lista-ol--cuadro__vineta
+            span d
+          | Item lista ordenada d
+        li 
+          .lista-ol--cuadro__vineta
+            span e
+          | Item lista ordenada e
+    .col-sm.mb-5.mb-sm-0
+      .h6 Listado ordenado cuadro color + separadores
+      ol.lista-ol--cuadro.lista-ol--separador
+        li 
+          .lista-ol--cuadro__vineta
+            span a
+          | Item lista ordenada a
+        li 
+          .lista-ol--cuadro__vineta
+            span b
+          | Item lista ordenada b
+        li 
+          .lista-ol--cuadro__vineta
+            span c
+          | Item lista ordenada c
+        li 
+          .lista-ol--cuadro__vineta
+            span d
+          | Item lista ordenada d
+        li 
+          .lista-ol--cuadro__vineta
+            span e
+          | Item lista ordenada e
+
+  .h5 Listado no ordenado
+
+  .row.mb-5
+    .col-sm.mb-5.mb-sm-0
+      .h6 Listado no ordenado básico
+      ul.lista-ul
+        li 
+          i.lista-ul__vineta
+          | Item lista no ordenada
+        li
+          ul
+            li 
+              i.lista-ul__vineta
+              | Item lista no ordenada
+            li 
+              i.lista-ul__vineta
+              | Item lista no ordenada
+        li 
+          i.lista-ul__vineta
+          | Item lista no ordenada
+        li 
+          i.lista-ul__vineta
+          | Item lista no ordenada
+
+    .col-sm.mb-5.mb-sm-0
+      .h6 Listado no ordenado básico
+      ul.lista-ul
+        li 
+          i.fas.fa-angle-right
+          | Item lista no ordenada
+        li
+          ul
+            li 
+              i.fas.fa-angle-right
+              | Item lista no ordenada
+            li 
+              i.fas.fa-angle-right
+              | Item lista no ordenada
+        li 
+          i.fas.fa-angle-right
+          | Item lista no ordenada
+        li 
+          i.fas.fa-angle-right
+          | Item lista no ordenada
+
+    .col-sm
+      .h6 Listado no ordenado básico + separadores
+      ul.lista-ul--separador
+        li 
+          i.fas.fa-angle-right
+          | Item lista no ordenada
+        li.pb-0
+          ul
+            li 
+              i.fas.fa-angle-right
+              | Item lista no ordenada
+            li 
+              i.fas.fa-angle-right
+              | Item lista no ordenada
+        li 
+          i.fas.fa-angle-right
+          | Item lista no ordenada
+        li 
+          i.fas.fa-angle-right
+          | Item lista no ordenada
+
+
+  .row.mb-5
+    .col-sm.mb-5.mb-sm-0
+      .h6 Listado no ordenado color
+      ul.lista-ul--color
+        li 
+          i.lista-ul__vineta
+          | Item lista no ordenada
+        li
+          ul
+            li 
+              i.lista-ul__vineta
+              | Item lista no ordenada
+            li 
+              i.lista-ul__vineta
+              | Item lista no ordenada
+        li 
+          i.lista-ul__vineta
+          | Item lista no ordenada
+        li 
+          i.lista-ul__vineta
+          | Item lista no ordenada
+
+    .col-sm.mb-5.mb-sm-0
+      .h6 Listado no ordenado color
+      ul.lista-ul--color
+        li 
+          i.fas.fa-brain
+          | Item lista no ordenada
+        li
+          ul
+            li 
+              i.fas.fa-bug
+              | Item lista no ordenada
+            li 
+              i.fas.fa-car-side
+              | Item lista no ordenada
+        li 
+          i.fas.fa-compass
+          | Item lista no ordenada
+        li 
+          i.fas.fa-eye
+          | Item lista no ordenada
+
+    .col-sm
+      .h6 Listado no ordenado color + separadores
+      ul.lista-ul--color.lista-ul--separador
+        li 
+          i.fas.fa-feather
+          | Item lista no ordenada
+        li.pb-0
+          ul
+            li 
+              i.fas.fa-cookie
+              | Item lista no ordenada
+            li 
+              i.fas.fa-hat-wizard
+              | Item lista no ordenada
+        li 
+          i.fas.fa-hippo
+          | Item lista no ordenada
+        li 
+          i.fas.fa-kiwi-bird
+          | Item lista no ordenada
+
+  hr
+
+  #t_1_5.h4 Tablas
+  .tabla-a.mb-5 
+    table
+      caption Leyenda de la tabla
+      thead
+        tr
+          th Encabezado 1
+          th Encabezado 2
+          th Encabezado 3
+          th Encabezado 4
+          th Encabezado 5
+      tbody
+        tr
+          td Celda 1
+          td Celda 2
+          td Celda 3
+          td Celda 4
+          td Celda 5
+        tr
+          td Celda 1
+          td Celda 2
+          td Celda 3
+          td Celda 4
+          td Celda 5
+        tr
+          td Celda 1
+          td Celda 2
+          td Celda 3
+          td Celda 4
+          td Celda 5
+  .tabla-b.mb-5
+    .tabla-b__header
+      .h6.mb-0 Niveles del lenguaje
+    table
+      caption Leyenda de la tabla
+      tr
+        th Vulgar
+        td Get back to work. Learn from criticism. Creativity is a work-ethic. Design as if your life depended on it. Keep going. It isn’t what you are.
+      tr
+        th Coloquial
+        td It isn’t what you are, but what you’re going to become. Don’t censor yourself.  Sterility leads to susceptibility.It is, in effect, conditioned to prefer bad design.
+      tr
+        th Convencional o estándar
+        td Paul Rand once said, “The public is more familiar with bad design than good design. leassuring. You are not your work. Don’t fucking lie to yourself. Life depended on it. Keep going
+      tr
+        th Técnico
+        td The new becomes threatening, the old reassuring.” You are not your work. Don’t lie to yourself. Never, never assume that what Respect your craft. Widows and orphans are terrible.
+      tr
+        th Formal
+        td Design as if your life depended on it. Keep going. It isn’t what you are, but what you’re going to become. Don’t censor yourself. 
+
+  .tabla-c.mb-5
+    table
+      caption Leyenda de la tabla
+      tr
+        th 03 de marzo
+        td 
+          p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
+        td
+          .h6.mb-0 $12.500.200
+        td
+          .h6.mb-0 $12.500.200
+          span.text-small Textos pequeños
+        td
+          .h6 FDSD33
+      tr
+        th 03 de marzo
+        td 
+          p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
+        td
+          .h6.mb-0 $12.500.200
+        td
+          .h6.mb-0 $12.500.200
+          span.text-small Textos pequeños
+        td
+          .h6 FDSD33
+      tr
+        th 03 de marzo
+        td 
+          p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
+        td
+          .h6.mb-0 $12.500.200
+        td
+          .h6.mb-0 $12.500.200
+          span.text-small Textos pequeños
+        td
+          .h6 FDSD33
+      tr
+        th 03 de marzo
+        td 
+          p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
+        td
+          .h6.mb-0 $12.500.200
+        td
+          .h6.mb-0 $12.500.200
+          span.text-small Textos pequeños
+        td
+          .h6 FDSD33
+      tr
+        th 03 de marzo
+        td 
+          p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
+        td
+          .h6.mb-0 $12.500.200
+        td
+          .h6.mb-0 $12.500.200
+          span.text-small Textos pequeños
+        td
+          .h6 FDSD33
+
+  hr
+  #t_1_6.h4 Imagen
+  figure.mb-5
+    img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+    figcaption Leyenda de la imagen
+
+  .row.justify-content-between
+    .col-md-6.col-lg-4
+      .imagen-titulo--der
+        figure.mb-5
+          img(src='@/assets/template/img-placeholder-1-1.svg', alt='Texto que describa la imagen')
+
+        .imagen-titulo__titulo
+          .h4.m-0 Titulo de imagen
+    
+    .col-md-6.col-lg-4
+      .imagen-titulo--izq
+        figure.mb-5
+          img(src='@/assets/template/img-placeholder-1-1.svg', alt='Texto que describa la imagen')
+
+        .imagen-titulo__titulo
+          .h4.m-0 Titulo de imagen
+  hr
+  #t_1_7.h4 Video
+  figure
+    .video
+      iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+    figcaption Video: Leyenda del video
+  hr
+
+  h1#t_1_8 Componentes
+
+  #t_1_9.h4 Slyders
+
+  .tarjeta.tarjeta--azul.p-4.mb-5
+    SlyderA
+      .row
+        .col-md-6.mb-4.mb-md-0
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+        .col-md-6
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+
+      div
+        figure
+          img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+          figcaption Leyenda de la imagen
+
+      .row
+        .col-md-6.mb-4.mb-md-0
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+        .col-md-6
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+
+      div
+        figure
+          img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+          figcaption Leyenda de la imagen
+
+
+  SlyderB.mb-5(:datos="datosSlyder")
+
+  SlyderC.mb-5(:datos="datosSlyder")
+
+  SlyderD.mb-5(:datos="datosSlyder")
+
+  #carouselExampleIndicators.carousel.slide.mb-5(data-bs-ride='carousel')
+    .carousel-indicators
+      button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+      button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1' aria-label='Slide 2')
+      button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='2' aria-label='Slide 3')
+    .carousel-inner
+      .carousel-item.active
+        figure
+          img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+          figcaption Leyenda de la imagen
+      .carousel-item
+        figure
+          img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+          figcaption Leyenda de la imagen
+      .carousel-item
+        figure
+          img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+          figcaption Leyenda de la imagen
+    button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.visually-hidden Previous
+    button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.visually-hidden Next
+
+  #t_1_10.h4 Acordion
+
+  AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")
+    .row(titulo="Titulo item 1")
+      .col-md-6.mb-4.mb-md-0
+        p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+    
+      .col-md-6
+        figure
+          img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+          figcaption Leyenda de la imagen
+
+    div(titulo="Titulo item 2")
+      figure
+        img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+        figcaption Leyenda de la imagen
+
+  AcordionA.mb-5(tipo="b" clase-tarjeta="tarjeta tarjeta--azul")
+    .row(titulo="Titulo item 1")
+      .col-md-6.mb-4.mb-md-0
+        p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+    
+      .col-md-6
+        figure
+          img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+          figcaption Leyenda de la imagen
+
+    div(titulo="Titulo item 2")
+      figure
+        img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+        figcaption Leyenda de la imagen
+
+
+  #t_1_11.h4 Pestañas o Tabs
+  TabsA.mb-5
+    .tarjeta.tarjeta--amarilla--borde.p-4(titulo="PASO 1: The splendor asd asd asd as dasd")
+      h4 PASO 1: The splendor
+      p This is a normal paragraph (<code>p</code> element). To add some length to it, let us mention that this page was primarily written for testing the effect of 
+        strong user style sheets
+        |. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.
+      p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+    
+    .tarjeta.tarjeta--amarilla--borde.p-4(titulo="PASO 2: The splendor")
+      h4 PASO 2: The splendor
+
+      .row
+        .col-xl-6.mb-4
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+        .col-xl-6
+          p This is a normal paragraph (<code>p</code> element). To add some length to it, let us mention that this page was primarily written for testing the effect of 
+            strong user style sheets
+            |. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+    
+    .tarjeta.tarjeta--amarilla--borde.p-4(titulo="PASO 3: The splendor")
+      h4 PASO 3: The splendor
+      p This is a normal paragraph (<code>p</code> element). To add some length to it, let us mention that this page was primarily written for testing the effect of 
+        strong user style sheets
+        |. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.
+      p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+    
+    .tarjeta.tarjeta--amarilla--borde.p-4(titulo="PASO 4: The splendor")
+      h4 PASO 4: The splendor
+      p This is a normal paragraph (<code>p</code> element). To add some length to it, let us mention that this page was primarily written for testing the effect of 
+        strong user style sheets
+        |. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.
+      p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+    
+    .tarjeta.tarjeta--amarilla--borde.p-4(titulo="PASO 5: The splendor")
+      h4 PASO 5: The splendor
+      p This is a normal paragraph (<code>p</code> element). To add some length to it, let us mention that this page was primarily written for testing the effect of 
+        strong user style sheets
+        |. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.
+      p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+    
+    .tarjeta.tarjeta--amarilla--borde.p-4(titulo="PASO 6: The splendor")
+      h4 PASO 6: The splendor
+      p This is a normal paragraph (<code>p</code> element). To add some length to it, let us mention that this page was primarily written for testing the effect of 
+        strong user style sheets
+        |. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.
+      p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+    
+  TabsB.mb-5
+    .py-4.py-md-5(titulo="The splendor of the mystery" :icono="require('@/assets/componentes/ej-04.svg')")
+      .row
+        .col-md-6.mb-4.mb-md-0
+          .h4 Celebrate your failures 1
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+        .col-md-6
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+    .py-4.py-md-5(titulo="Don’t lie to yourself" :icono="require('@/assets/componentes/ej-04.svg')")
+      .row
+        .col-md-6.mb-4.mb-md-0
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+        .col-md-6
+          .h4 Celebrate your failures 2
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+    .py-4.py-md-5(titulo="Don’t quit" :icono="require('@/assets/componentes/ej-04.svg')")
+      .row
+        .col-md-6.mb-4.mb-md-0
+          .h4 Celebrate your failures 3
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+        .col-md-6
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+
+    .py-4.py-md-5(titulo="The splendor of the mystery" :icono="require('@/assets/componentes/ej-04.svg')")
+      .row
+        .col-md-6.mb-4.mb-md-0
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+        .col-md-6
+          .h4 Celebrate your failures 4
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+    
+    .py-4.py-md-5(titulo="The splendor of the mystery" :icono="require('@/assets/componentes/ej-04.svg')")
+      .row
+        .col-md-6.mb-4.mb-md-0
+          .h4 Celebrate your failures 5
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+        .col-md-6
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+    
+    .py-4.py-md-5(titulo="The splendor of the mystery" :icono="require('@/assets/componentes/ej-04.svg')")
+      .row
+        .col-md-6.mb-4.mb-md-0
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+        .col-md-6
+          .h4 Celebrate your failures 6
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+
+  TabsC.mb-5
+    .py-3.py-md-4(titulo="The splendor of the mystery")
+      .row
+        .col-md-6.mb-4.mb-md-0
+          .h4 Celebrate your failures 1
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+        .col-md-6
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+    .py-3.py-md-4(titulo="Don’t lie to yourself")
+      .row
+        .col-md-6.mb-4.mb-md-0
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+        .col-md-6
+          .h4 Celebrate your failures 2
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+    .py-3.py-md-4(titulo="Don’t quit")
+      .row
+        .col-md-6.mb-4.mb-md-0
+          .h4 Celebrate your failures 3
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+        .col-md-6
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+
+    .py-3.py-md-4(titulo="The splendor of the mystery")
+      .row
+        .col-md-6.mb-4.mb-md-0
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+        .col-md-6
+          .h4 Celebrate your failures 4
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+    
+    .py-3.py-md-4(titulo="The splendor of the mystery")
+      .row
+        .col-md-6.mb-4.mb-md-0
+          .h4 Celebrate your failures 5
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+        .col-md-6
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+    
+    .py-3.py-md-4(titulo="The splendor of the mystery")
+      .row
+        .col-md-6.mb-4.mb-md-0
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+        .col-md-6
+          .h4 Celebrate your failures 6
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+
+    
+
+
+
+  #t_1_12.h4 Líneas de tiempo
+
+  LineaTiempoA.mb-5(:datos="datosLineaTiempoA")
+
+  LineaTiempoB.mb-5(:datos="datosLineaTiempoB")
+  
+  #t_1_13.h4 Pasos
+
+  PasosA.mb-5(tipo="n" :datos="datosPasosA")
+
+  PasosA.mb-5(tipo="l" :datos="datosPasosA")
+
+
+  #t_1_14.h4 Llamados a la acción
+
+  .tarjeta.tarjeta--amarilla.p-4.p-md-5.mb-5
+    .row.justify-content-around.align-items-center
+      .col-8.col-sm-6.col-md-4.mb-4.mb-md-0
+        img(src="@/assets/componentes/ej-01.png")
+
+      .col-md.col-lg-6
+        .h2 Título del recurso
+        p.mb-4 There is no right answer. The splendor of the mystery is that you don’t understand. Your rapidograph pens are dried up, the x-acto blades in your bag are rusty, and your mind is dull. Stop clicking your mouse, get messy, go back to the basics and make something original. Why are you reading all of this?
+        
+        a.boton.boton--b(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+          span Descargar
+          i.fas.fa-file-download
+
+  .tarjeta.tarjeta--morada.p-3.mb-5
+    .row.justify-content-around.align-items-center
+      .col-3.col-sm-2.col-lg-1
+        img(src="@/assets/componentes/ej-02.svg")
+      .col
+        .row.justify-content-between.align-items-center
+          .col.mb-3.mb-sm-0
+            .h5.mb-0 Título del recurso
+            p PDF 
+          .col-sm-auto
+            a.boton.boton--b(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+              span Descargar
+              i.fas.fa-file-download
+
+  .tarjeta.tarjeta--amarilla.p-3.mb-5
+    .row.justify-content-around.align-items-center
+      .col-3.col-sm-2.col-lg-1
+        img(src="@/assets/componentes/ej-02.svg")
+      .col
+        .row.justify-content-between.align-items-center
+          .col.mb-3.mb-sm-0
+            .h5.mb-0 Título del recurso
+            p.text-small Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias 
+          .col-sm-auto
+            a.boton.boton--b(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+              span Descargar
+              i.fas.fa-file-download
+
+  .row.mb-5
+    .col-lg-6
+      a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+        .anexo__icono
+          img(src="@/assets/template/icono-pdf.svg")
+        .anexo__texto
+          p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
+        
+      a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+        .anexo__icono
+          img(src="@/assets/template/icono-doc.svg")
+        .anexo__texto
+          p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
+        
+      a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+        .anexo__icono
+          img(src="@/assets/template/icono-xls.svg")
+        .anexo__texto
+          p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
+        
+      a.anexo.mb-4.mb-lg-0(href="https://en.wikipedia.org/wiki/Main_Page" target="_blank")
+        .anexo__icono
+          img(src="@/assets/template/icono-link.svg")
+        .anexo__texto
+          p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
+        
+    .col-lg-6
+      a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+        .anexo__icono
+          img(src="@/assets/template/icono-zip.svg")
+        .anexo__texto
+          p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
+        
+      a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+        .anexo__icono
+          img(src="@/assets/template/icono-ppt.svg")
+        .anexo__texto
+          p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
+        
+      a.anexo(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+        .anexo__icono
+          img(src="@/assets/template/icono-xml.svg")
+        .anexo__texto
+          p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
+
+
+
+  #t_1_15.h4 Tarjetas
+  
+  .row.mb-5
+    .col-sm-6.col-lg-3.mb-4.mb-lg-0
+      .tarjeta.tarjeta--boton.p-4
+        .row.justify-content-center.mb-3
+          .col-7
+            figure
+              img(src='@/assets/componentes/ej-03.svg', alt='Texto que describa la imagen')
+
+        .h5.text-center Intuition important
+        p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
+
+    .col-sm-6.col-lg-3.mb-4.mb-lg-0
+      .tarjeta.tarjeta--boton.p-4
+        .row.justify-content-center.mb-3
+          .col-7
+            figure
+              img(src='@/assets/componentes/ej-03.svg', alt='Texto que describa la imagen')
+
+        .h5.text-center Intuition important
+        p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
+
+    .col-sm-6.col-lg-3.mb-4.mb-sm-0
+      .tarjeta.tarjeta--boton.p-4
+        .row.justify-content-center.mb-3
+          .col-7
+            figure
+              img(src='@/assets/componentes/ej-03.svg', alt='Texto que describa la imagen')
+
+        .h5.text-center Intuition important
+        p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
+
+    .col-sm-6.col-lg-3
+      .tarjeta.tarjeta--boton.p-4
+        .row.justify-content-center.mb-3
+          .col-7
+            figure
+              img(src='@/assets/componentes/ej-03.svg', alt='Texto que describa la imagen')
+
+        .h5.text-center Intuition important
+        p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
+
+
+  .tarjeta--container.row.mb-5
+    .col-md.tarjeta.tarjeta--morada.p-5
+      .row.justify-content-center.mb-4
+        .col-6
+          figure
+            img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
+        
+      .h3.text-center Celebrate your<br>failures
+      p To surpass others is fucking tough, if you only do as you are told you don’t have it in you to succeed. Think about all the possibilities. You’ve been placed in the crucial moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+    .col-md.tarjeta.tarjeta--amarilla.p-5
+      .row.justify-content-center.mb-4
+        .col-6
+          figure
+            img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
+        
+      .h3.text-center Sterility leads to<br>susceptibility
+      p Remember it’s called the creative process, it’s not the creative moment. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect and accept the possibility of failure.
+
+    .col-md.tarjeta.tarjeta--roja.p-5
+      .row.justify-content-center.mb-4
+        .col-6
+          figure
+            img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
+        
+      .h3.text-center Sterility leads to<br>susceptibility
+      p Remember it’s called the creative process, it’s not the creative moment. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect and accept the possibility of failure.
+
+  .row.mb-5
+    .col-md-6.col-lg.mb-5
+      .tarjeta-Avatar
+        img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+        .tarjeta.tarjeta--morada.p-4
+          .h4.text-center John Doe
+          p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+    .col-md-6.col-lg.mb-5
+      .tarjeta-Avatar
+        img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+        .tarjeta.tarjeta--amarilla.p-4
+          .h4.text-center John Doe
+          p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+    .col-md-6.col-lg.mb-5
+      .tarjeta-Avatar
+        img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+        .tarjeta.tarjeta--roja.p-4
+          .h4.text-center Greatness isn’t the height
+          p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+  .row.mb-5
+    .col-md-6.col-lg.tarjeta--tabla.p-4
+      .row.justify-content-center.mb-3
+        .col-4
+          img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+      .h4.text-center John Doe
+      p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+    .col-md-6.col-lg.tarjeta--tabla.p-4
+      .row.justify-content-center.mb-3
+        .col-4
+          img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+      .h4.text-center John Doe
+      p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+    .col-md-6.col-lg.tarjeta--tabla.p-4
+      .row.justify-content-center.mb-3
+        .col-4
+          img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+      .h4.text-center John Doe
+      p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+    .col-md-6.col-lg.tarjeta--tabla.p-4
+      .row.justify-content-center.mb-3
+        .col-4
+          img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+      .h4.text-center John Doe
+      p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+  #t_1_16.h4 Tarjetas con numero
+
+  .row.mb-5
+    .col
+      .tarjeta-numerada.p-5
+        .tarjeta-numerada__numero
+          .h4 1
+        p.text-center 
+          b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
+        p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
+
+    .col
+      .tarjeta-numerada.p-5
+        .tarjeta-numerada__numero
+          .h4 2
+        p.text-center 
+          b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
+        p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
+
+  #t_1_1.h4 Modal
+
+  .row
+    .col-auto
+      a.boton.boton--b.mb-5(@click="modal1 = true")
+        span Abrir modal
+    .col
+      p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t 
+        a.lnk(@click="modal1 = true") Abrir modal 
+        |the height of your stature, it’s the heft of your spirit.
+  
+  ModalA(:abrir-modal.sync="modal1")
+    .row.align-items-center
+      .col-md-6.mb-4.mb-md-0
+        .h4 Modal 1
+        p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+    
+      .col-md-6
+        figure
+          img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+          figcaption Leyenda de la imagen
+
+</template>
+
+<script>
+export default {
+  name: 'Muestras',
+  data: () => ({
+    modal1: false,
+    modal2: false,
+    datosLineaTiempoA: [
+      {
+        ano: '100.000 - 10.000 A.C.',
+        titulo: 'Período Paleolítico',
+        texto: 'Pieles, pelo de animales, hojas, huesos y conchas.',
+      },
+      {
+        ano: '10.000 - 5.000 A.C.',
+        titulo: 'Periodo Mesolítico',
+        texto:
+          'Broches hechos con hueso, abrigos, gorros, botas y zapatillas de cuero.',
+      },
+      {
+        ano: '10.000 - 5.000 A.C.',
+        titulo: 'Periodo Neolítico',
+        texto: 'Vestimenta de fibras animales y vegetales, pulseras de marfil.',
+      },
+    ],
+    datosLineaTiempoB: [
+      {
+        titulo: '01 de marzo',
+        texto:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus augue, pulvinar ac auctor at, pellentesque id diam. Praesent maximus, felis sollicitudin pharetra vestibulum, turpis tortor tincidunt augue, in efficitur urna diam eleifend magna.',
+        icono: require('@/assets/componentes/ej-05.svg'),
+      },
+      {
+        titulo: '02 de marzo',
+        texto:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus augue, pulvinar ac auctor at, pellentesque id diam. Praesent maximus, felis sollicitudin pharetra vestibulum, turpis tortor tincidunt augue, in efficitur urna diam eleifend magna.',
+        icono: require('@/assets/componentes/ej-05.svg'),
+      },
+      {
+        titulo: '03 de marzo',
+        texto:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus augue, pulvinar ac auctor at, pellentesque id diam. Praesent maximus, felis sollicitudin pharetra vestibulum, turpis tortor tincidunt augue, in efficitur urna diam eleifend magna.',
+        icono: require('@/assets/componentes/ej-05.svg'),
+      },
+      {
+        titulo: '04 de marzo',
+        texto:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus augue, pulvinar ac auctor at, pellentesque id diam. Praesent maximus, felis sollicitudin pharetra vestibulum, turpis tortor tincidunt augue, in efficitur urna diam eleifend magna.',
+        icono: require('@/assets/componentes/ej-05.svg'),
+      },
+    ],
+    datosPasosA: [
+      {
+        titulo: 'Dressed for Error',
+        texto:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.',
+      },
+      {
+        titulo: 'Before the Fury',
+        texto:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.',
+      },
+      {
+        titulo: 'Khans Tribute',
+        texto:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.',
+      },
+      {
+        titulo: 'Secret of the Quiet Stranger',
+        texto:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.',
+      },
+    ],
+    datosSlyder: [
+      {
+        titulo:
+          'Never, never assume that what you have achieved is good enough',
+        texto:
+          'Your rapidograph pens are dried up, the x-acto blades in your bag are rusty, and your mind is dull. Stop clicking your mouse, get messy, go back to the basics and make something original.',
+        imagen: require('@/assets/template/img-placeholder.svg'),
+        // leyendaImagen: 'Leyenda de la imagen',
+      },
+      {
+        titulo:
+          'Never, never assume that what you have achieved is good enough',
+        texto:
+          'Your rapidograph pens are dried up, the x-acto blades in your bag are rusty, and your mind is dull. Stop clicking your mouse, get messy, go back to the basics and make something original.',
+        imagen: require('@/assets/template/img-placeholder.svg'),
+        // leyendaImagen: 'Leyenda de la imagen',
+      },
+      {
+        titulo:
+          'Never, never assume that what you have achieved is good enough',
+        texto:
+          'Your rapidograph pens are dried up, the x-acto blades in your bag are rusty, and your mind is dull. Stop clicking your mouse, get messy, go back to the basics and make something original.',
+        imagen: require('@/assets/template/img-placeholder.svg'),
+        leyendaImagen: 'Leyenda de la imagen',
+      },
+      {
+        titulo:
+          'Never, never assume that what you have achieved is good enough',
+        texto:
+          'Your rapidograph pens are dried up, the x-acto blades in your bag are rusty, and your mind is dull. Stop clicking your mouse, get messy, go back to the basics and make something original.',
+        imagen: require('@/assets/template/img-placeholder.svg'),
+        leyendaImagen: 'Leyenda de la imagen',
+      },
+    ],
+  }),
+}
+</script>
+
+<style lang="sass" scoped></style>

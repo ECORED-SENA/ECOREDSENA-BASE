@@ -16,9 +16,7 @@ const router = new VueRouter({
       path: '/introduccion',
       name: 'introduccion',
       component: () =>
-        import(
-          /* webpackChunkName: "intro" */ '../../node_modules/ecored-base-pkg/src/views/Introduccion.vue'
-        ),
+        import(/* webpackChunkName: "intro" */ '../views/Introduccion.vue'),
     },
     {
       path: '/curso',
