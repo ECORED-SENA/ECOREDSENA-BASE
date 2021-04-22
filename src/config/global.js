@@ -117,6 +117,12 @@ export default {
             titulo: 'Tarjetas',
             hash: 't_1_15',
           },
+          {
+            icono: 'far fa-file-alt',
+            numero: '1.16',
+            titulo: 'Modal',
+            hash: 't_1_16',
+          },
         ],
       },
       {
