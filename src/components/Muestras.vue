@@ -73,7 +73,33 @@ div
         .h2.mb-2 Then you’ll prove to yourself that you can survive anything.
         span - The graphic designer
 
+  .row.mb-5
+    .col-lg-6.mb-5.mb-lg-0
+      .bloque-texto-e.p-4
+        .h5.text-bold.bloque-texto-e__texto Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt augue in augue tempus, in dapibus justo interdum. Sed viverra sed odio quis rhoncus. In elementum purus massa, id venenatis purus ullamcorper ut. Vestibulum vel dictum dolor, nec fringilla orci. Nulla vestibulum, metus nec porttitor bibendum, lectus ligula viverra eros, eget tempor risus nulla pretium justo. Nullam turpis dolor, pharetra vel fermentum at, rutrum in elit. Maecenas vitae hendrerit libero, et ornare augue. Vestibulum iaculis, metus et accumsan malesuada.
+        .row.align-items-end
+          .col
+            .bloque-texto-e__autor 
+              .h5.mb-0 The graphic designer
+              .h6.mb-0 Lorem ipsum dolor sit amet
+          .col-4
+            img(src='@/assets/template/img-placeholder-1-1.svg', alt='Texto que describa la imagen')
 
+    .col-lg-6
+      .bloque-texto-d.p-4
+        .h5.text-bold.bloque-texto-d__texto Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt augue in augue tempus, in dapibus justo interdum. Sed viverra sed odio quis rhoncus. In elementum purus massa, id venenatis purus ullamcorper ut. Vestibulum vel dictum dolor, nec fringilla orci. Nulla vestibulum, metus nec porttitor bibendum, lectus ligula viverra eros, eget tempor risus nulla pretium justo. Nullam turpis dolor, pharetra vel fermentum at, rutrum in elit. Maecenas vitae hendrerit libero, et ornare augue. Vestibulum iaculis, metus et accumsan malesuada, ligula sapien convallis risus, a iaculis velit ante at turpis. Vivamus bibendum tellus sed tincidunt rhoncus. Nam velit massa, porttitor eget quam et, porttitor viverra eros. Donec eget pharetra metus. Cras porta arcu eu mauris iaculis euismod. Sed fringilla vel nisl quis aliquam.
+        .bloque-texto-d__autor 
+          .h5.mb-0 The graphic designer
+          .h6.mb-0 Lorem ipsum dolor sit amet
+
+  .bloque-texto-f.pt-4.px-5.mb-5
+    .bloque-texto-f__comillas
+    .h5.text-bold.bloque-texto-f__texto Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt augue in augue tempus, in dapibus justo interdum. Sed viverra sed odio quis rhoncus. In elementum purus massa, id venenatis purus ullamcorper ut. Vestibulum vel dictum dolor, nec fringilla orci. Nulla vestibulum, metus nec porttitor bibendum, lectus ligula viverra eros, eget tempor risus nulla pretium justo. Nullam turpis dolor, pharetra vel fermentum at, rutrum in elit. Maecenas vitae hendrerit libero, et ornare augue. Vestibulum iaculis, metus et accumsan malesuada, ligula sapien convallis risus, a iaculis velit ante at turpis. Vivamus bibendum tellus sed tincidunt rhoncus. Nam velit massa, porttitor eget quam et, porttitor viverra eros. Donec eget pharetra metus. Cras porta arcu eu mauris iaculis euismod. Sed fringilla vel nisl quis aliquam.
+    .bloque-texto-f__autor.mb-3
+      .h5.mb-0 The graphic designer
+    .bloque-texto-f__avatar
+      .bloque-texto-f__avatar__img
+        img(src='@/assets/template/img-placeholder-1-1.svg', alt='Texto que describa la imagen')
 
 
   hr
@@ -512,7 +538,6 @@ div
         figure
           img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
           figcaption Leyenda de la imagen
-
 
   SlyderB.mb-5(:datos="datosSlyder")
 
@@ -1026,7 +1051,6 @@ div
         figure
           img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
           figcaption Leyenda de la imagen
-
 </template>
 
 <script>

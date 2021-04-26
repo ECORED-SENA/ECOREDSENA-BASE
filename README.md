@@ -1,4 +1,4 @@
-# **sena-base-2021 v2.0.1**
+# **sena-base-2021 v2.1.0**
 
 ## **Enlace GitHubPages**
 
@@ -12,7 +12,11 @@
 
 ### 2. Instalar extención [EsLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-### 3. Instalación de dependencias
+### 3. Asegurarce que el repositorio tiene TODOS los archivos de la [BASE](https://github.com/ECORED-SENA/ECORED-BASE-2021)
+
+### 4. Revisar que el archivo package.json en la línea ``"ecored-base-pkg": "*.*.*"`` tenga la [última versión](https://www.npmjs.com/package/ecored-base-pkg)
+
+### 5. Instalación de dependencias
 
 ```
 npm install
@@ -44,7 +48,7 @@ npm run lint
 
 ### **Creación de subtree para GitHub Pages**
 
-#### 1. Entrar al repositorion en GitHub
+#### 1. Entrar al repositorio en GitHub
 
 #### 2. Entrar a la pestaña "Actions"
 
@@ -62,11 +66,11 @@ npm run lint
 
 ## **Asignar nuevo subtree a GitHub Pages**
 
-#### 1. Entrar al repositorion en GitHub
+#### 1. Entrar al repositorio en GitHub
 
 #### 2. Entrar a la pestaña "Settings"
 
-#### 3. En la seccion "GitHub Pages", en "Source" seleccionamos "gh-pages" y hacer clik en "Save"
+#### 3. En la sección "GitHub Pages", en "Source" seleccionamos "gh-pages" y hacer clik en "Save"
 
 #### 4. Copiar y pegar el link en el README.md
 
