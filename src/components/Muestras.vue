@@ -791,13 +791,73 @@ div
   LineaTiempoA.mb-5(:datos="datosLineaTiempoA")
 
   LineaTiempoB.mb-5(:datos="datosLineaTiempoB")
-  
+
+  .tarjeta.tarjeta--gris.p-4.mb-5
+    LineaTiempoC
+
+      .row(titulo="1761")
+        .col-md-6.mb-4.mb-md-0
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+        .col-md-6
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+
+
+      .row(titulo="1798")
+        .col-md-6.mb-4.mb-md-0
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+        .col-md-6
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+
+
+      .row(titulo="1887")
+        .col-md-6.mb-4.mb-md-0
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+        .col-md-6
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+
+      div(titulo="1889")
+        figure
+          img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+          figcaption Leyenda de la imagen
+
+      .row(titulo="1899")
+        .col-md-6.mb-4.mb-md-0
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+        .col-md-6
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+
+      div(titulo="1901")
+        figure
+          img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+          figcaption Leyenda de la imagen
+
+      div(titulo="1930")
+        figure
+          img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+          figcaption Leyenda de la imagen
+
+      div(titulo="1987")
+        figure
+          img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+          figcaption Leyenda de la imagen
+
   #t_1_13.h4 Pasos
 
   PasosA.mb-5(tipo="n" :datos="datosPasosA")
 
   PasosA.mb-5(tipo="l" :datos="datosPasosA")
-
 
   #t_1_14.h4 Llamados a la acción
 
@@ -961,6 +1021,24 @@ div
       .h3.text-center Sterility leads to<br>susceptibility
       p Remember it’s called the creative process, it’s not the creative moment. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect and accept the possibility of failure.
 
+  .tarjeta-Avatar-b.mb-5
+    img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+    .tarjeta.tarjeta--azul.p-4
+      .h4 John Doe
+      p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+  .tarjeta-Avatar-b.mb-5
+    img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+    .tarjeta.tarjeta--amarilla.p-4
+      .h4 John Doe
+      p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+  .tarjeta-Avatar-b.mb-5
+    img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+    .tarjeta.tarjeta--roja.p-4
+      .h4 Greatness isn’t the height
+      p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
   .row.mb-5
     .col-md-6.col-lg.mb-5
       .tarjeta-Avatar
@@ -1051,6 +1129,7 @@ div
         figure
           img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
           figcaption Leyenda de la imagen
+
 </template>
 
 <script>
