@@ -265,7 +265,7 @@ export default {
       },
       {
         nombre: 'Rafael Neftalí Lizcano Reyes',
-        cargo: 'Asesor pedagógico',
+        cargo: 'Asesor metodológico y pedagógico',
         centro: 'Centro Industrial del Diseño y la Manufactura',
         regional: 'Regional Santander',
       },
@@ -323,7 +323,7 @@ export default {
       },
       {
         nombre: 'Leyson Fabian Castaño Perez',
-        cargo: 'Integración de recursos y pruebas',
+        cargo: 'Soporte organizacional',
       },
       {
         nombre: ['Adriana Rincón Avendaño', 'Eulises Orduz Amezquita'],

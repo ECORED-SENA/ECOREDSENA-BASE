@@ -76,7 +76,7 @@ div
   .row.mb-5
     .col-lg-6.mb-5.mb-lg-0
       .bloque-texto-e.p-4
-        .h5.text-bold.bloque-texto-e__texto Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt augue in augue tempus, in dapibus justo interdum. Sed viverra sed odio quis rhoncus. In elementum purus massa, id venenatis purus ullamcorper ut. Vestibulum vel dictum dolor, nec fringilla orci. Nulla vestibulum, metus nec porttitor bibendum, lectus ligula viverra eros, eget tempor risus nulla pretium justo. Nullam turpis dolor, pharetra vel fermentum at, rutrum in elit. Maecenas vitae hendrerit libero, et ornare augue. Vestibulum iaculis, metus et accumsan malesuada.
+        .h5.text-regular.bloque-texto-e__texto Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt augue in augue tempus, in dapibus justo interdum. Sed viverra sed odio quis rhoncus. In elementum purus massa, id venenatis purus ullamcorper ut. Vestibulum vel dictum dolor, nec fringilla orci. Nulla vestibulum, metus nec porttitor bibendum, lectus ligula viverra eros, eget tempor risus nulla pretium justo. Nullam turpis dolor, pharetra vel fermentum at, rutrum in elit. Maecenas vitae hendrerit libero, et ornare augue. Vestibulum iaculis, metus et accumsan malesuada.
         .row.align-items-end
           .col
             .bloque-texto-e__autor 
@@ -87,14 +87,14 @@ div
 
     .col-lg-6
       .bloque-texto-d.p-4
-        .h5.text-bold.bloque-texto-d__texto Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt augue in augue tempus, in dapibus justo interdum. Sed viverra sed odio quis rhoncus. In elementum purus massa, id venenatis purus ullamcorper ut. Vestibulum vel dictum dolor, nec fringilla orci. Nulla vestibulum, metus nec porttitor bibendum, lectus ligula viverra eros, eget tempor risus nulla pretium justo. Nullam turpis dolor, pharetra vel fermentum at, rutrum in elit. Maecenas vitae hendrerit libero, et ornare augue. Vestibulum iaculis, metus et accumsan malesuada, ligula sapien convallis risus, a iaculis velit ante at turpis. Vivamus bibendum tellus sed tincidunt rhoncus. Nam velit massa, porttitor eget quam et, porttitor viverra eros. Donec eget pharetra metus. Cras porta arcu eu mauris iaculis euismod. Sed fringilla vel nisl quis aliquam.
+        .h5.text-regular.bloque-texto-d__texto Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt augue in augue tempus, in dapibus justo interdum. Sed viverra sed odio quis rhoncus. In elementum purus massa, id venenatis purus ullamcorper ut. Vestibulum vel dictum dolor, nec fringilla orci. Nulla vestibulum, metus nec porttitor bibendum, lectus ligula viverra eros, eget tempor risus nulla pretium justo. Nullam turpis dolor, pharetra vel fermentum at, rutrum in elit. Maecenas vitae hendrerit libero, et ornare augue. Vestibulum iaculis, metus et accumsan malesuada, ligula sapien convallis risus, a iaculis velit ante at turpis. Vivamus bibendum tellus sed tincidunt rhoncus. Nam velit massa, porttitor eget quam et, porttitor viverra eros. Donec eget pharetra metus. Cras porta arcu eu mauris iaculis euismod. Sed fringilla vel nisl quis aliquam.
         .bloque-texto-d__autor 
           .h5.mb-0 The graphic designer
           .h6.mb-0 Lorem ipsum dolor sit amet
 
   .bloque-texto-f.pt-4.px-5.mb-5
     .bloque-texto-f__comillas
-    .h5.text-bold.bloque-texto-f__texto Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt augue in augue tempus, in dapibus justo interdum. Sed viverra sed odio quis rhoncus. In elementum purus massa, id venenatis purus ullamcorper ut. Vestibulum vel dictum dolor, nec fringilla orci. Nulla vestibulum, metus nec porttitor bibendum, lectus ligula viverra eros, eget tempor risus nulla pretium justo. Nullam turpis dolor, pharetra vel fermentum at, rutrum in elit. Maecenas vitae hendrerit libero, et ornare augue. Vestibulum iaculis, metus et accumsan malesuada, ligula sapien convallis risus, a iaculis velit ante at turpis. Vivamus bibendum tellus sed tincidunt rhoncus. Nam velit massa, porttitor eget quam et, porttitor viverra eros. Donec eget pharetra metus. Cras porta arcu eu mauris iaculis euismod. Sed fringilla vel nisl quis aliquam.
+    .h5.text-regular.bloque-texto-f__texto Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt augue in augue tempus, in dapibus justo interdum. Sed viverra sed odio quis rhoncus. In elementum purus massa, id venenatis purus ullamcorper ut. Vestibulum vel dictum dolor, nec fringilla orci. Nulla vestibulum, metus nec porttitor bibendum, lectus ligula viverra eros, eget tempor risus nulla pretium justo. Nullam turpis dolor, pharetra vel fermentum at, rutrum in elit. Maecenas vitae hendrerit libero, et ornare augue. Vestibulum iaculis, metus et accumsan malesuada, ligula sapien convallis risus, a iaculis velit ante at turpis. Vivamus bibendum tellus sed tincidunt rhoncus. Nam velit massa, porttitor eget quam et, porttitor viverra eros. Donec eget pharetra metus. Cras porta arcu eu mauris iaculis euismod. Sed fringilla vel nisl quis aliquam.
     .bloque-texto-f__autor.mb-3
       .h5.mb-0 The graphic designer
     .bloque-texto-f__avatar
@@ -1021,25 +1021,36 @@ div
       .h3.text-center Sterility leads to<br>susceptibility
       p Remember it’s called the creative process, it’s not the creative moment. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect and accept the possibility of failure.
 
-  .tarjeta-Avatar-b.mb-5
-    img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-    .tarjeta.tarjeta--azul.p-4
-      .h4 John Doe
-      p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+  .row
+    .col-lg-6
+      .tarjeta-Avatar-b.mb-5
+        img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+        .tarjeta.tarjeta--azul.p-4
+          .h4 John Doe
+          p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
-  .tarjeta-Avatar-b.mb-5
-    img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-    .tarjeta.tarjeta--amarilla.p-4
-      .h4 John Doe
-      p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+    .col-lg-6
+      .tarjeta-Avatar-b.mb-5
+        img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+        .tarjeta.tarjeta--amarilla.p-4
+          .h4 John Doe
+          p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
-  .tarjeta-Avatar-b.mb-5
-    img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-    .tarjeta.tarjeta--roja.p-4
-      .h4 Greatness isn’t the height
-      p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+    .col-lg-6
+      .tarjeta-Avatar-b.mb-5
+        img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+        .tarjeta.tarjeta--roja.p-4
+          .h4 Greatness isn’t the height
+          p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
-  .row.mb-5
+    .col-lg-6
+      .tarjeta-Avatar-b.mb-5
+        img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+        .tarjeta.tarjeta--morada.p-4
+          .h4 Greatness isn’t the height
+          p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+  .row
     .col-md-6.col-lg.mb-5
       .tarjeta-Avatar
         img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
@@ -1089,10 +1100,11 @@ div
           img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
       .h4.text-center John Doe
       p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+  
   #t_1_16.h4 Tarjetas con numero
 
   .row.mb-5
-    .col
+    .col-md-6.mb-4.mb-md-0
       .tarjeta-numerada.p-5
         .tarjeta-numerada__numero
           .h4 1
@@ -1100,7 +1112,7 @@ div
           b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
         p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
 
-    .col
+    .col-md-6
       .tarjeta-numerada.p-5
         .tarjeta-numerada__numero
           .h4 2
