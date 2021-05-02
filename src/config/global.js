@@ -258,12 +258,6 @@ export default {
     },
     contenidoInstruccional: [
       {
-        nombre: 'Gloria Matilde Lee Mejía',
-        cargo: 'Responsable del equipo',
-        centro: 'Centro de Comercio y Servicios',
-        regional: 'Regional Tolima',
-      },
-      {
         nombre: 'Rafael Neftalí Lizcano Reyes',
         cargo: 'Asesor metodológico y pedagógico',
         centro: 'Centro Industrial del Diseño y la Manufactura',
