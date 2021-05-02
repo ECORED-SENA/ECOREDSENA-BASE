@@ -566,7 +566,7 @@ div
 
   h1#t_1_8 Componentes
 
-  #t_1_9.h4 Slyders
+  #t_1_9.h4 Sliders
 
   p.mb-3 Es una sección dinámica que permite mostrar varios contenidos repartidos en diapositivas, su función principal es mostrar el contenido más importante de manera concisa y con la menor cantidad de texto posible, haciendo uso extensivo de imágenes o íconos de acompañamiento.
 
@@ -1011,6 +1011,68 @@ div
   PasosA.mb-5(tipo="n" :datos="datosPasosA")
 
   PasosA.mb-5(tipo="l" :datos="datosPasosA")
+
+  .tarjeta.tarjeta--gris.p-4.mb-5
+    PasosB
+
+      .row(titulo="Palabra")
+        .col-md-6.mb-4.mb-md-0
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+        .col-md-6
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+
+
+      .row(titulo="I think it needs to be")
+        .col-md-6.mb-4.mb-md-0
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+        .col-md-6
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+
+
+      .row(titulo="I have selected those elements")
+        .col-md-6.mb-4.mb-md-0
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+        .col-md-6
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+
+      div(titulo="Etiam eu mauris sit amet")
+        figure
+          img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+          figcaption Leyenda de la imagen
+
+      .row(titulo="Praesent luctus")
+        .col-md-6.mb-4.mb-md-0
+          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      
+        .col-md-6
+          figure
+            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+            figcaption Leyenda de la imagen
+
+      div(titulo="arcu porta, vel finibus eros posuere")
+        figure
+          img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+          figcaption Leyenda de la imagen
+
+      div(titulo="Praesent")
+        figure
+          img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+          figcaption Leyenda de la imagen
+
+      div(titulo="Sed vehicula velit vel arcu porta,")
+        figure
+          img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+          figcaption Leyenda de la imagen
+
 
   #t_1_14.h4 Llamados a la acción
 
