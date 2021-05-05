@@ -6,7 +6,7 @@
     #t_3_1.pb-5.h2 tema 3.1
     .pb-5(v-for="item of 15")
 
-    #t_3_3.pb-5.h2 tema 3.2
+    #t_3_2.pb-5.h2 tema 3.2
     .pb-5(v-for="item of 15")
 
     #t_3_3.pb-5.h2 tema 3.3
