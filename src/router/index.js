@@ -102,7 +102,13 @@ const router = new VueRouter({
         })
       }
     } else {
-      return { x: 0, y: 0, behavior: 'auto' }
+      setTimeout(() => {
+        window.scrollTo({
+          left: 0,
+          top: 0,
+          behavior: 'auto',
+        })
+      }, 100)
     }
   },
 })

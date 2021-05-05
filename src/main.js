@@ -15,6 +15,9 @@ import '../node_modules/ecored-base-pkg/src/mixins/globalMixins'
 import config from './config/global'
 Vue.prototype.$config = config
 
+const packageJson = require('../package.json')
+Vue.prototype.$package = packageJson
+
 Vue.config.productionTip = false
 
 new Vue({
