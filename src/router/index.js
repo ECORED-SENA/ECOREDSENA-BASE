@@ -47,10 +47,10 @@ const router = new VueRouter({
       ],
     },
     {
-      path: '/actividad/:index?',
+      path: '/actividad',
       name: 'actividad',
-      // component: () =>
-      //   import(/* webpackChunkName: "actividad" */ '../views/Actividad.vue'),
+      component: () =>
+        import(/* webpackChunkName: "actividad" */ '../views/Actividad.vue'),
     },
     {
       path: '/glosario',
