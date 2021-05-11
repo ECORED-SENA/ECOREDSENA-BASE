@@ -1408,7 +1408,7 @@ div
   .row
     .col-lg-6
       .tarjeta-Avatar-b.mb-5
-        img(src='@/assets/componentes/arrow.svg' alt='AvatarTop')
+        img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
         .tarjeta.tarjeta--azul.p-4
           .h4 John Doe
           p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
