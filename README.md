@@ -44,15 +44,13 @@ npm run lint
 
 #
 
-## **Despues del primer Push**
-
-### **Creación de subtree para GitHub Pages**
+## **Actualizar dist en GitHub Pages**
 
 #### 1. Entrar al repositorio en GitHub
 
 #### 2. Entrar a la pestaña "Actions"
 
-#### 3. Seleccionar "Primera acción" en "workflows"
+#### 3. Seleccionar "Crear Dist" en "workflows"
 
 #### 4. Hacer clik en "Run workflow"
 
@@ -61,23 +59,5 @@ npm run lint
 #### 6. Hacer clik "Run workflow
 
 ![instrucciones despues del primer push](src/assets/template/pasos.jpg 'Title')
-
-#
-
-## **Asignar nuevo subtree a GitHub Pages**
-
-#### 1. Entrar al repositorio en GitHub
-
-#### 2. Entrar a la pestaña "Settings"
-
-#### 3. En la sección "GitHub Pages", en "Source" seleccionamos "gh-pages" y hacer clik en "Save"
-
-#### 4. Copiar y pegar el link en el README.md
-
-#
-
-## **Actualizar dist en GitHub Pages**
-
-#### Seguir los pasos anteriores pero en el paso 3 seleccionar "Crear Dist" en lugar de "Primera acción"
 
 #
