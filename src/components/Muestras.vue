@@ -858,7 +858,7 @@ div
     
   //- TabsB debe ir acompañado de una de una de estas clases => 
   //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-  TabsB.color-primario.mb-5
+  TabsB.color-acento-contenido.mb-5
     .py-4.py-md-5(titulo="The splendor of the mystery" :icono="require('@/assets/componentes/ej-04.svg')")
       .row
         .col-md-6.mb-4.mb-md-0
@@ -1017,16 +1017,16 @@ div
 
   //- LineaTiempoA debe ir acompañado de una de una de estas clases => 
   //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-  LineaTiempoA.color-secundario.mb-5(:datos="datosLineaTiempoA")
+  LineaTiempoA.color-acento-contenido.mb-5(:datos="datosLineaTiempoA")
 
   //- LineaTiempoB debe ir acompañado de una de una de estas clases => 
   //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-  LineaTiempoB.color-acento-contenido.mb-5(:datos="datosLineaTiempoB")
+  LineaTiempoB.color-secundario.mb-5(:datos="datosLineaTiempoB")
 
   .tarjeta.tarjeta--gris.p-4.mb-5
     //- LineaTiempoC debe ir acompañado de una de una de estas clases => 
     //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-    LineaTiempoC.color-secundario
+    LineaTiempoC.color-acento-contenido
       .row(titulo="1761")
         .col-md-6.mb-4.mb-md-0
           p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
