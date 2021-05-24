@@ -157,7 +157,7 @@ div
       .bloque-texto-b.color-secundario.p-4
         .bloque-texto-b__texto
           i.fas.fa-quote-left
-          span.h2.mb-0 Can we all just agree as the greater design community to stop talking about Comic Sans altogether?
+          span.h4.mb-0 Can we all just agree as the greater design community to stop talking about Comic Sans altogether?
           i.fas.fa-quote-right
 
     .col-lg-6
@@ -165,7 +165,7 @@ div
       //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
       .bloque-texto-c.color-secundario.p-4
         i.fas.fa-quote-right
-        .h2.mb-2 Then you’ll prove to yourself that you can survive anything.
+        .h4.mb-2 Then you’ll prove to yourself that you can survive anything.
         span - The graphic designer
 
   .row.mb-5
