@@ -2,6 +2,39 @@
 
 Estos son los cambios hechos en la ECORED-BASE-2021
 
+## 3.1.0 - 24-05-2021
+
+### Cambios
+
+- /package.json => "ecored-base-pkg": "2.1.0"
+- /src/assets/template/puntero.svg
+- /src/styles/_variables.sass
+- /src/components/Muestras.vue
+- /src/styles/_styles.sass
+
+### Agregado
+
+- Nuevo Componente ImagenInfográfica
+- Nuevo Componente LineaTiempoD
+- Componente .tarjeta-Avatar-b tiene una variable que controla el ancho de su avatar
+- Los botones ahora tienen el nuevo esquema de colorización (.color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones)
+- esquema de colorización tiene color de texto basado en luminancia del color de fondo
+- Nueva distribucion de creditos
+- Nuevo componente de indicador de interacción
+- Nueva distribución en Muestras
+
+### Arreglado
+
+- Arreglo de escroleo del menú
+- Mejora de especificidad en .text-white, .texto-blanco
+
+### Borrado
+
+- Variables: $color-btn-b-fondo, $color-btn-b-texto (quedan de manera provisional para compatibilidad con anteriores versiones)
+- Clase .boton--b, los botones se van a manejar con el nuevo esquema de colorización
+
+#
+
 ## 3.0.0 - 11-05-2021
 
 ### Cambios
