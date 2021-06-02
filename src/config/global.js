@@ -48,38 +48,38 @@ export default {
           {
             icono: 'far fa-file-alt',
             numero: '1.4',
-            titulo: 'Bloques de texto destacado',
-            hash: 'texto_destacado',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '1.5',
             titulo: 'Listas',
             hash: 'listas',
           },
           {
             icono: 'far fa-file-alt',
-            numero: '1.6',
+            numero: '1.5',
             titulo: 'Tablas',
             hash: 'tablas',
           },
           {
             icono: 'far fa-file-alt',
-            numero: '1.7',
+            numero: '1.6',
             titulo: 'Imagen',
             hash: 'imagen',
           },
           {
             icono: 'far fa-file-alt',
-            numero: '1.8',
+            numero: '1.7',
             titulo: 'Imagen Infográfica',
             hash: 'imagen_infografica',
           },
           {
             icono: 'far fa-file-alt',
-            numero: '1.9',
+            numero: '1.8',
             titulo: 'Video',
             hash: 'video',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '1.9',
+            titulo: 'Bloques de texto destacado',
+            hash: 'texto_destacado',
           },
           {
             icono: 'far fa-file-alt',
