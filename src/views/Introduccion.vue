@@ -5,9 +5,9 @@
   
     .titulo-principal
       .titulo-principal__numero
-        .h3
+        span
           i.fas.fa-info
-      .h3 Introducción
+      h1 Introducción
     
     figure.mb-5
       .video
