@@ -30,7 +30,15 @@ div
 
   p.mb-5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis. Maecenas cursus ante a diam porttitor mollis. Etiam vehicula dictum diam, eu pulvinar odio ultrices non. Vivamus viverra fermentum tortor, sit amet interdum nisl fermentum sed.
 
-  .separador
+  //- .titulo-sexto debe ir acompañado de una de una de estas clases => 
+  //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+  .titulo-sexto.color-acento-contenido
+    h5 Título de sexto nivel, 16pt
+    span subtitulo
+
+  p.mb-5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis. Maecenas cursus ante a diam porttitor mollis. Etiam vehicula dictum diam, eu pulvinar odio ultrices non. Vivamus viverra fermentum tortor, sit amet interdum nisl fermentum sed.
+
+  Separador
 
   #parrafos.titulo-segundo
     h2 Párrafos
@@ -44,7 +52,7 @@ div
     span.etiqueta etiquetas
     | de color (según paleta del programa). Así mismo, el ancho de los cajones textos permite variación en las doce (12) columnas.
 
-  .separador
+  Separador
 
   #botones.titulo-segundo
     h2 Botones
@@ -96,7 +104,7 @@ div
         span Descargar
         i.fas.fa-file-download
 
-  .separador
+  Separador
 
 
   #listas.titulo-segundo
@@ -131,10 +139,10 @@ div
       i.lista-ul__vineta
       | Cuando desee comunicar un procedimiento paso por paso y cuando el orden de los elementos sea necesario.
 
-  .h3 Listado ordenado
+  h3 Listado ordenado
   .row.mb-5
     .col-md.mb-5.mb-sm-0
-      .h4 Listado ordenado básico
+      h4 Listado ordenado básico
       ol.lista-ol
         li 
           span.text-bold 1. 
@@ -152,7 +160,7 @@ div
           span.text-bold 5. 
           | Item lista ordenada 5
     .col-sm.mb-5.mb-sm-0
-      .h4 Listado ordenado básico
+      h4 Listado ordenado básico
       ol.lista-ol
         li 
           span.text-bold a. 
@@ -170,7 +178,7 @@ div
           span.text-bold e. 
           | Item lista ordenada e
     .col-sm
-      .h4 Listado ordenado básico + separadores
+      h4 Listado ordenado básico + separadores
       ol.lista-ol.lista-ol--separador
         li 
           span.text-bold a. 
@@ -190,7 +198,7 @@ div
 
   .row.mb-5
     .col-sm.mb-5.mb-sm-0
-      .h4 Listado ordenado cuadro color
+      h4 Listado ordenado cuadro color
       ol.lista-ol--cuadro
         li 
           .lista-ol--cuadro__vineta
@@ -213,7 +221,7 @@ div
             span 5
           | Item lista ordenada 5
     .col-sm.mb-5.mb-sm-0
-      .h4 Listado ordenado cuadro color
+      h4 Listado ordenado cuadro color
       ol.lista-ol--cuadro
         li 
           .lista-ol--cuadro__vineta
@@ -236,7 +244,7 @@ div
             span e
           | Item lista ordenada e
     .col-sm.mb-5.mb-sm-0
-      .h4 Listado ordenado cuadro color + separadores
+      h4 Listado ordenado cuadro color + separadores
       ol.lista-ol--cuadro.lista-ol--separador
         li 
           .lista-ol--cuadro__vineta
@@ -259,11 +267,11 @@ div
             span e
           | Item lista ordenada e
 
-  .h3 Listado no ordenado
+  h3 Listado no ordenado
 
   .row.mb-5
     .col-sm.mb-5.mb-sm-0
-      .h4 Listado no ordenado básico
+      h4 Listado no ordenado básico
       ul.lista-ul
         li 
           i.lista-ul__vineta
@@ -284,7 +292,7 @@ div
           | Item lista no ordenada
 
     .col-sm.mb-5.mb-sm-0
-      .h4 Listado no ordenado básico
+      h4 Listado no ordenado básico
       ul.lista-ul
         li 
           i.fas.fa-angle-right
@@ -305,7 +313,7 @@ div
           | Item lista no ordenada
 
     .col-sm
-      .h4 Listado no ordenado básico + separadores
+      h4 Listado no ordenado básico + separadores
       ul.lista-ul--separador
         li 
           i.fas.fa-angle-right
@@ -328,7 +336,7 @@ div
 
   .row.mb-5
     .col-sm.mb-5.mb-sm-0
-      .h4 Listado no ordenado color
+      h4 Listado no ordenado color
       ul.lista-ul--color
         li 
           i.lista-ul__vineta
@@ -349,7 +357,7 @@ div
           | Item lista no ordenada
 
     .col-sm.mb-5.mb-sm-0
-      .h4 Listado no ordenado color
+      h4 Listado no ordenado color
       ul.lista-ul--color
         li 
           i.fas.fa-brain
@@ -370,7 +378,7 @@ div
           | Item lista no ordenada
 
     .col-sm
-      .h4 Listado no ordenado color + separadores
+      h4 Listado no ordenado color + separadores
       ul.lista-ul--color.lista-ul--separador
         li 
           i.fas.fa-feather
@@ -390,7 +398,7 @@ div
           i.fas.fa-kiwi-bird
           | Item lista no ordenada
 
-  .separador
+  Separador
 
   #tablas.titulo-segundo
     h2 Tablas
@@ -438,7 +446,7 @@ div
   //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
   .tabla-b.color-acento-contenido.mb-5
     .tabla-b__header
-      .h6.mb-0 Niveles del lenguaje
+      h5.mb-0 Niveles del lenguaje
     table
       caption Leyenda de la tabla
       tr
@@ -516,7 +524,7 @@ div
         td
           .h6 FDSD33
 
-  .separador
+  Separador
 
   #imagen.titulo-segundo
     h2 Imagen
@@ -534,7 +542,7 @@ div
           img(src='@/assets/template/img-placeholder-1-1.svg', alt='Texto que describa la imagen')
 
         .imagen-titulo__titulo
-          .h4.m-0 Titulo de imagen
+          h4.m-0 Titulo de imagen
     
     .col-md-6.col-lg-4
       //- .imagen-titulo--izq debe ir acompañado de una de una de estas clases => 
@@ -544,8 +552,8 @@ div
           img(src='@/assets/template/img-placeholder-1-1.svg', alt='Texto que describa la imagen')
 
         .imagen-titulo__titulo
-          .h4.m-0 Titulo de imagen
-  .separador
+          h4.m-0 Titulo de imagen
+  Separador
 
   #imagen_infografica.titulo-segundo
     h2 Imagen Infográfica
@@ -569,7 +577,7 @@ div
       .h5.mb-2 titulo
       p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
 
-  .separador
+  Separador
 
   #video.titulo-segundo
     h2 Video
@@ -579,7 +587,7 @@ div
       iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
     figcaption Video: Leyenda del video
 
-  .separador
+  Separador
 
   #texto_destacado.titulo-segundo
     h2 Bloques de texto destacado
@@ -608,7 +616,7 @@ div
 
   .row.mb-5
     .col-md-6
-      .h4 La cantidad de texto “Destacado” sea menor a tres líneas en breakpoint xl de bootstrap y tendrá un tamaño máximo de h4
+      h2 La cantidad de texto “Destacado” sea menor a tres líneas en breakpoint xl de bootstrap y tendrá un tamaño máximo de h4
     .col-md-6
       p La cantidad de texto “Destacado” sea menor a tres líneas tendrá un tamaño máximo de 24 e interlineado 30 puntos utilizando Roboto Bold, ya si el texto supera las 3 líneas se utilizará un tamaño de 20 puntos y un interlineado 27 puntos con una fuente de Roboto Regular.
 
@@ -638,7 +646,7 @@ div
   .bloque-texto-a.color-secundario.p-4.p-md-5.mb-5 
     .row.m-0.align-items-center.justify-content-between
       .col-lg-4.mb-4.mb-lg-0
-        .h3.mb-0 Whatever can be captured in words can be conquered with understanding. 
+        h2.mb-0 Whatever can be captured in words can be conquered with understanding. 
       .col-lg-8
         .bloque-texto-a__texto.p-4
           p Think about all the possibilities. A good composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Nothing of without working at it. Be impossible to ignore.
@@ -653,7 +661,7 @@ div
       .bloque-texto-b.color-secundario.p-4
         .bloque-texto-b__texto
           i.fas.fa-quote-left
-          span.h2.mb-0 Can we all just agree as the greater design community to stop talking about Comic Sans altogether?
+          h2.mb-0 Can we all just agree as the greater design community to stop talking about Comic Sans altogether?
           i.fas.fa-quote-right
 
     .col-lg-6
@@ -661,7 +669,7 @@ div
       //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
       .bloque-texto-c.color-secundario.p-4
         i.fas.fa-quote-right
-        .h1.mb-2 Then you’ll prove to yourself that you can survive anything.
+        h2.mb-2 Then you’ll prove to yourself that you can survive anything.
         span - The graphic designer
 
   .row.mb-5
@@ -671,7 +679,7 @@ div
       .bloque-texto-d.color-secundario.p-4
         .bloque-texto-d__texto.mb-2
           i.fas.fa-quote-left
-          span.h3.text-regular Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt augue in augue tempus, in dapibus justo interdum. Sed viverra sed odio quis rhoncus. In elementum purus massa, id venenatis purus ullamcorper ut. Vestibulum vel dictum dolor, nec fringilla orci. Nulla vestibulum, metus nec porttitor bibendum, lectus ligula viverra eros, eget tempor risus nulla pretium justo. Nullam turpis dolor, pharetra vel fermentum at, rutrum in elit. Maecenas vitae hendrerit libero, et ornare augue. Vestibulum iaculis, metus et accumsan malesuada, ligula sapien convallis risus, a iaculis velit ante at turpis. Vivamus bibendum tellus sed tincidunt rhoncus. Nam velit massa, porttitor eget quam et, porttitor viverra eros. Donec eget pharetra metus. Cras porta arcu eu mauris iaculis euismod. Sed fringilla vel nisl quis aliquam.
+          h3.text-regular Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt augue in augue tempus, in dapibus justo interdum. Sed viverra sed odio quis rhoncus. In elementum purus massa, id venenatis purus ullamcorper ut. Vestibulum vel dictum dolor, nec fringilla orci. Nulla vestibulum, metus nec porttitor bibendum, lectus ligula viverra eros, eget tempor risus nulla pretium justo. Nullam turpis dolor, pharetra vel fermentum at, rutrum in elit. Maecenas vitae hendrerit libero, et ornare augue. Vestibulum iaculis, metus et accumsan malesuada, ligula sapien convallis risus, a iaculis velit ante at turpis. Vivamus bibendum tellus sed tincidunt rhoncus. Nam velit massa, porttitor eget quam et, porttitor viverra eros. Donec eget pharetra metus. Cras porta arcu eu mauris iaculis euismod. Sed fringilla vel nisl quis aliquam.
           i.fas.fa-quote-right
         .bloque-texto-d__autor 
           .h5.mb-0 The graphic designer
@@ -683,7 +691,7 @@ div
       .bloque-texto-e.color-secundario.p-4
         .bloque-texto-e__text
           i.fas.fa-quote-left
-          span.h2.text-regular Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt augue in augue tempus, in dapibus justo interdum. Sed viverra sed odio quis rhoncus. In elementum purus massa, id venenatis purus ullamcorper ut. Vestibulum vel dictum dolor, nec fringilla orci. Nulla vestibulum, metus nec porttitor bibendum, lectus ligula viverra eros, eget tempor risus nulla pretium justo. Nullam turpis dolor, pharetra vel fermentum at, rutrum in elit. Maecenas vitae hendrerit libero, et ornare augue. Vestibulum iaculis, metus et accumsan malesuada.
+          h2.text-regular Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt augue in augue tempus, in dapibus justo interdum. Sed viverra sed odio quis rhoncus. In elementum purus massa, id venenatis purus ullamcorper ut. Vestibulum vel dictum dolor, nec fringilla orci. Nulla vestibulum, metus nec porttitor bibendum, lectus ligula viverra eros, eget tempor risus nulla pretium justo. Nullam turpis dolor, pharetra vel fermentum at, rutrum in elit. Maecenas vitae hendrerit libero, et ornare augue. Vestibulum iaculis, metus et accumsan malesuada.
           i.fas.fa-quote-right
         .row.align-items-end
           .col
@@ -699,14 +707,14 @@ div
     .bloque-texto-f__comillas
       i.fas.fa-quote-left
       i.fas.fa-quote-right
-    .h4.text-regular.bloque-texto-f__texto Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt augue in augue tempus, in dapibus justo interdum. Sed viverra sed odio quis rhoncus. In elementum purus massa, id venenatis purus ullamcorper ut. Vestibulum vel dictum dolor, nec fringilla orci. Nulla vestibulum, metus nec porttitor bibendum, lectus ligula viverra eros, eget tempor risus nulla pretium justo. Nullam turpis dolor, pharetra vel fermentum at, rutrum in elit. Maecenas vitae hendrerit libero, et ornare augue. Vestibulum iaculis, metus et accumsan malesuada, ligula sapien convallis risus, a iaculis velit ante at turpis. Vivamus bibendum tellus sed tincidunt rhoncus. Nam velit massa, porttitor eget quam et, porttitor viverra eros. Donec eget pharetra metus. Cras porta arcu eu mauris iaculis euismod. Sed fringilla vel nisl quis aliquam.
+    h4.text-regular.bloque-texto-f__texto Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt augue in augue tempus, in dapibus justo interdum. Sed viverra sed odio quis rhoncus. In elementum purus massa, id venenatis purus ullamcorper ut. Vestibulum vel dictum dolor, nec fringilla orci. Nulla vestibulum, metus nec porttitor bibendum, lectus ligula viverra eros, eget tempor risus nulla pretium justo. Nullam turpis dolor, pharetra vel fermentum at, rutrum in elit. Maecenas vitae hendrerit libero, et ornare augue. Vestibulum iaculis, metus et accumsan malesuada, ligula sapien convallis risus, a iaculis velit ante at turpis. Vivamus bibendum tellus sed tincidunt rhoncus. Nam velit massa, porttitor eget quam et, porttitor viverra eros. Donec eget pharetra metus. Cras porta arcu eu mauris iaculis euismod. Sed fringilla vel nisl quis aliquam.
     .bloque-texto-f__autor.mb-3
-      .h3.mb-0 The graphic designer
+      h3.mb-0 The graphic designer
     .bloque-texto-f__avatar
       .bloque-texto-f__avatar__img
         img(src='@/assets/template/img-placeholder-1-1.svg', alt='Texto que describa la imagen')
 
-  .separador
+  Separador
 
   #sliders.titulo-segundo
     h2 Sliders
@@ -787,7 +795,7 @@ div
       span.carousel-control-next-icon(aria-hidden='true')
       span.visually-hidden Next
 
-  .separador
+  Separador
 
   #acordiones.titulo-segundo
     h2 Acordiones
@@ -849,7 +857,7 @@ div
         img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
         figcaption Leyenda de la imagen
 
-  .separador
+  Separador
 
   #tabs.titulo-segundo
     h2 Pestañas o Tabs
@@ -957,7 +965,7 @@ div
     .py-4.py-md-5(titulo="The splendor of the mystery" :icono="require('@/assets/componentes/ej-04.svg')")
       .row
         .col-md-6.mb-4.mb-md-0
-          .h4 Celebrate your failures 1
+          h4 Celebrate your failures 1
           p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
       
         .col-md-6
@@ -971,13 +979,13 @@ div
             img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
             figcaption Leyenda de la imagen
         .col-md-6
-          .h4 Celebrate your failures 2
+          h4 Celebrate your failures 2
           p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
       
     .py-4.py-md-5(titulo="Don’t quit" :icono="require('@/assets/componentes/ej-04.svg')")
       .row
         .col-md-6.mb-4.mb-md-0
-          .h4 Celebrate your failures 3
+          h4 Celebrate your failures 3
           p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
       
         .col-md-6
@@ -992,14 +1000,14 @@ div
             img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
             figcaption Leyenda de la imagen
         .col-md-6
-          .h4 Celebrate your failures 4
+          h4 Celebrate your failures 4
           p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
       
     
     .py-4.py-md-5(titulo="The splendor of the mystery" :icono="require('@/assets/componentes/ej-04.svg')")
       .row
         .col-md-6.mb-4.mb-md-0
-          .h4 Celebrate your failures 5
+          h4 Celebrate your failures 5
           p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
       
         .col-md-6
@@ -1014,7 +1022,7 @@ div
             img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
             figcaption Leyenda de la imagen
         .col-md-6
-          .h4 Celebrate your failures 6
+          h4 Celebrate your failures 6
           p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
 
   //- TabsC debe ir acompañado de una de una de estas clases => 
@@ -1023,7 +1031,7 @@ div
     .py-3.py-md-4(titulo="The splendor of the mystery")
       .row
         .col-md-6.mb-4.mb-md-0
-          .h4 Celebrate your failures 1
+          h4 Celebrate your failures 1
           p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
       
         .col-md-6
@@ -1037,13 +1045,13 @@ div
             img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
             figcaption Leyenda de la imagen
         .col-md-6
-          .h4 Celebrate your failures 2
+          h4 Celebrate your failures 2
           p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
       
     .py-3.py-md-4(titulo="Don’t quit")
       .row
         .col-md-6.mb-4.mb-md-0
-          .h4 Celebrate your failures 3
+          h4 Celebrate your failures 3
           p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
       
         .col-md-6
@@ -1058,14 +1066,14 @@ div
             img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
             figcaption Leyenda de la imagen
         .col-md-6
-          .h4 Celebrate your failures 4
+          h4 Celebrate your failures 4
           p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
       
     
     .py-3.py-md-4(titulo="The splendor of the mystery")
       .row
         .col-md-6.mb-4.mb-md-0
-          .h4 Celebrate your failures 5
+          h4 Celebrate your failures 5
           p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
       
         .col-md-6
@@ -1080,10 +1088,10 @@ div
             img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
             figcaption Leyenda de la imagen
         .col-md-6
-          .h4 Celebrate your failures 6
+          h4 Celebrate your failures 6
           p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
 
-  .separador
+  Separador
 
   #lineas_tiempo.titulo-segundo
     h2 Líneas de tiempo
@@ -1257,7 +1265,7 @@ div
           img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
           figcaption Leyenda de la imagen
 
-  .separador
+  Separador
 
   #pasos.titulo-segundo
     h2 Pasos
@@ -1267,7 +1275,7 @@ div
   PasosA.color-primario.mb-5(tipo="n")
     .row
       .col-md-6.mb-4.mb-md-0
-        .h3 Lorem ipsum dolor sit amet.
+        h3 Lorem ipsum dolor sit amet.
         p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
       .col-md-6
         figure
@@ -1280,13 +1288,13 @@ div
           img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
           figcaption Leyenda de la Imagen
       .col-md-6
-        .h3 Nullam vulputate mauris eros, ut.
+        h3 Nullam vulputate mauris eros, ut.
         p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
         
 
     .row
       .col-md-6.mb-4.mb-md-0
-        .h3 Duis laoreet est non ligula.
+        h3 Duis laoreet est non ligula.
         p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
     
       .col-md-6
@@ -1296,7 +1304,7 @@ div
 
     .row
       .col-md-6.mb-4.mb-md-0
-        .h3 Duis laoreet est non ligula.
+        h3 Duis laoreet est non ligula.
         p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
     
       .col-md-6
@@ -1308,19 +1316,19 @@ div
   //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
   PasosA.color-acento-botones.mb-5(tipo="l")
     div
-      .h3 Lorem ipsum dolor sit amet.
+      h3 Lorem ipsum dolor sit amet.
       p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id risus eu tortor vulputate luctus. Fusce ligula tortor, euismod vel scelerisque nec, dapibus sit amet enim. Mauris aliquet tempor neque non faucibus. Etiam ex urna, viverra ut velit maximus, malesuada tincidunt lectus. Aliquam tincidunt ipsum turpis, at lacinia purus ultricies eget. Curabitur at fringilla elit. Mauris id rhoncus sapien. Integer mollis ante enim, at congue enim suscipit et. Aliquam erat volutpat. Maecenas dolor ex, laoreet sed egestas pellentesque, molestie vitae mauris. Quisque cursus eros eget odio consequat egestas.
 
     div
-      .h3 Nullam vulputate mauris eros, ut.
+      h3 Nullam vulputate mauris eros, ut.
       p Duis non elit arcu. In luctus placerat dapibus. Praesent auctor nunc vitae iaculis iaculis. Aenean efficitur lectus in elit ullamcorper porttitor. Phasellus sit amet scelerisque magna, eget rhoncus urna. Integer mollis faucibus hendrerit. Nullam blandit vel tortor vel elementum.
 
     div
-      .h3 Duis laoreet est non ligula.
+      h3 Duis laoreet est non ligula.
       p Nulla lobortis orci quis posuere fringilla. Mauris sit amet ligula et tortor euismod mollis laoreet sit amet nisl. Sed ac suscipit sapien. Aliquam commodo magna quis nisl porttitor pulvinar. Donec efficitur sapien pulvinar, dictum tortor ac, pellentesque felis. Sed in nunc quis enim mattis sodales. Suspendisse sodales sem mauris, nec vehicula felis rhoncus in.
 
     div
-      .h3 Lorem ipsum dolor sit amet.
+      h3 Lorem ipsum dolor sit amet.
       p Aliquam ornare sem in mauris lobortis accumsan. Suspendisse sollicitudin tellus eget bibendum cursus. Praesent tincidunt cursus mattis. Fusce nec convallis mauris, eu tincidunt neque. Proin justo orci, fermentum vel est vel, ornare sodales dui. Etiam consequat commodo tincidunt. Maecenas imperdiet ante eu mauris imperdiet, Phasellus pretium tortor quis varius sagittis. Suspendisse eu posuere enim, sed lacinia justo. Praesent eget tempor erat, a pretium ante. Nulla facilisi.
 
   .tarjeta.tarjeta--gris.p-4.mb-5
@@ -1386,7 +1394,7 @@ div
           img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
           figcaption Leyenda de la imagen
 
-  .separador
+  Separador
 
   #llamados_accion.titulo-segundo
     h2 Llamados a la acción
@@ -1434,7 +1442,7 @@ div
         img(src="@/assets/componentes/ej-01.png")
 
       .col-md.col-lg-6
-        .h1 Título del recurso
+        h3 Título del recurso
         p.mb-4 There is no right answer. The splendor of the mystery is that you don’t understand. Your rapidograph pens are dried up, the x-acto blades in your bag are rusty, and your mind is dull. Stop clicking your mouse, get messy, go back to the basics and make something original. Why are you reading all of this?
         
         a.boton.color-acento-contenido.texto-blanco(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
@@ -1452,8 +1460,8 @@ div
       .col
         .row.justify-content-between.align-items-center
           .col.mb-3.mb-sm-0
-            .h3.mb-1 Título del recurso
-            p Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias  
+            h3.mb-1 Título del recurso
+            p.text-small Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias  
           .col-sm-auto
             a.boton.color-acento-contenido.texto-blanco(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
               span Descargar
@@ -1469,7 +1477,7 @@ div
       .col
         .row.justify-content-between.align-items-center
           .col.mb-3.mb-sm-0
-            .h3.mb-1 Título del recurso
+            h3.mb-1 Título del recurso
             p.text-small Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias 
           .col-sm-auto
             a.boton.color-acento-contenido(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
@@ -1522,7 +1530,7 @@ div
         .anexo__texto
           p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
 
-  .separador
+  Separador
 
   #tarjetas.titulo-segundo
     h2 Tarjetas
@@ -1553,7 +1561,7 @@ div
             figure
               img(src='@/assets/componentes/ej-03.svg', alt='Texto que describa la imagen')
 
-        .h3.text-center Intuition important
+        h3.text-center Intuition important
         p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
 
     .col-sm-6.col-lg-3.mb-4.mb-lg-0
@@ -1566,7 +1574,7 @@ div
             figure
               img(src='@/assets/componentes/ej-03.svg', alt='Texto que describa la imagen')
 
-        .h3.text-center Intuition important
+        h3.text-center Intuition important
         p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
 
     .col-sm-6.col-lg-3.mb-4.mb-sm-0
@@ -1579,7 +1587,7 @@ div
             figure
               img(src='@/assets/componentes/ej-03.svg', alt='Texto que describa la imagen')
 
-        .h3.text-center Intuition important
+        h3.text-center Intuition important
         p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
 
     .col-sm-6.col-lg-3
@@ -1592,7 +1600,7 @@ div
             figure
               img(src='@/assets/componentes/ej-03.svg', alt='Texto que describa la imagen')
 
-        .h3.text-center Intuition important
+        h3.text-center Intuition important
         p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
 
 
@@ -1606,7 +1614,7 @@ div
           figure
             img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
         
-      .h2.text-center Celebrate your<br>failures
+      h2.text-center Celebrate your<br>failures
       p To surpass others is fucking tough, if you only do as you are told you don’t have it in you to succeed. Think about all the possibilities. You’ve been placed in the crucial moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
     //- .tarjeta debe ir acompañado de una de una de estas clases => 
@@ -1618,7 +1626,7 @@ div
           figure
             img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
         
-      .h2.text-center Sterility leads to<br>susceptibility
+      h2.text-center Sterility leads to<br>susceptibility
       p Remember it’s called the creative process, it’s not the creative moment. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect and accept the possibility of failure.
 
     //- .tarjeta debe ir acompañado de una de una de estas clases => 
@@ -1630,7 +1638,7 @@ div
           figure
             img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
         
-      .h2.text-center Sterility leads to<br>susceptibility
+      h2.text-center Sterility leads to<br>susceptibility
       p Remember it’s called the creative process, it’s not the creative moment. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect and accept the possibility of failure.
 
   .row
@@ -1639,7 +1647,7 @@ div
         img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
         .tarjeta.tarjeta--azul
           .p-4
-            .h2 John Doe
+            h2 John Doe
             p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
     .col-lg-6
@@ -1650,7 +1658,7 @@ div
         //- estas clases tambien tienen un modificador --borde
         .tarjeta.color-acento-botones
           .p-4
-            .h2 John Doe
+            h2 John Doe
             p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
     .col-lg-6
@@ -1661,7 +1669,7 @@ div
         //- estas clases tambien tienen un modificador --borde
         .tarjeta.color-acento-contenido
           .p-4
-            .h2 Greatness isn’t the height
+            h2 Greatness isn’t the height
             p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
     .col-lg-6
@@ -1672,7 +1680,7 @@ div
         //- estas clases tambien tienen un modificador --borde
         .tarjeta.color-primario.text-white
           .p-4
-            .h2 Greatness isn’t the height
+            h2 Greatness isn’t the height
             p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
   .row.mb-5
@@ -1684,7 +1692,7 @@ div
         //- estas clases tambien tienen un modificador --borde
         .tarjeta.color-primario
           .text-white.p-4
-            .h2.text-center John Doe
+            h2.text-center John Doe
             p moment. K askdnaskjda sjkdn akjsndasd ajshd akjshd kajshd ask djhak sjdha ksjdha kjsdha kjsdha kjsdh akjshda kjshd aksjdh kajsd djkhakjshdka jsak Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
     .col-md-6.col-lg.mb-5.mb-lg-0
@@ -1695,7 +1703,7 @@ div
         //- estas clases tambien tienen un modificador --borde
         .tarjeta.color-acento-botones
           .p-4
-            .h2.text-center John Doe
+            h2.text-center John Doe
             p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
     .col-md-6.col-lg.mb-5.mb-lg-0
@@ -1706,7 +1714,7 @@ div
         //- estas clases tambien tienen un modificador --borde
         .tarjeta.color-acento-contenido
           .p-4
-            .h2.text-center Greatness isn’t the height
+            h2.text-center Greatness isn’t the height
             p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
   .row.mb-5
@@ -1714,31 +1722,31 @@ div
       .row.justify-content-center.mb-3
         .col-4
           img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-      .h2.text-center John Doe
+      h2.text-center John Doe
       p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
     .col-md-6.col-lg.tarjeta--tabla.p-4
       .row.justify-content-center.mb-3
         .col-4
           img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-      .h2.text-center John Doe
+      h2.text-center John Doe
       p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
     .col-md-6.col-lg.tarjeta--tabla.p-4
       .row.justify-content-center.mb-3
         .col-4
           img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-      .h2.text-center John Doe
+      h2.text-center John Doe
       p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
     .col-md-6.col-lg.tarjeta--tabla.p-4
       .row.justify-content-center.mb-3
         .col-4
           img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-      .h2.text-center John Doe
+      h2.text-center John Doe
       p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
-  .separador
+  Separador
 
   #tarjeta_numero.titulo-segundo
     h2 Tarjetas con número
@@ -1788,7 +1796,7 @@ div
           b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
         p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
 
-  .separador
+  Separador
 
   #modal.titulo-segundo
     h2 Modal
@@ -1806,7 +1814,7 @@ div
   ModalA(:abrir-modal.sync="modal1")
     .row.align-items-center
       .col-md-6.mb-4.mb-md-0
-        .h4 Modal 1
+        h4 Modal 1
         p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
     
       .col-md-6

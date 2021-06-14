@@ -20,6 +20,12 @@ Vue.prototype.$package = packageJson
 
 Vue.config.productionTip = false
 
+Vue.directive('child', {
+  bind(el, binding) {
+    el.appendChild(binding.value)
+  },
+})
+
 new Vue({
   router,
   store,

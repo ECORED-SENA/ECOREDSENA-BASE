@@ -2,6 +2,39 @@
 
 Estos son los cambios hechos en la ECORED-BASE-2021
 
+## 3.3.0 - 14-06-2021
+
+### Cambios
+
+- /package.json
+- /src/main.js
+- /src/app.vue
+- /src/views/Actividad.vue
+- /src/styles/_variables.sass
+- /src/components/Muestras.vue
+- /src/config/global.js
+- /src/assets/[multiples imagenes]
+
+### Agregado
+
+- Ultima version de Bootstrap 5.0.1
+- Separador en forma de componente de Vue 'Separador'
+- Directiva que permite que los componentes dinamicos interactuen con Vue
+- Titulo '.titulo-sexto'
+- Creditos
+- Creditos en inicio
+- Botones de accesibilidad
+
+### Arreglado
+
+- Jerarquias de titulos de la plantilla
+- Banner principal si no hay imagen de fondo va a quedar con el color en variables
+- Imagenes dentro de tarjetas con avatar
+- Los titulos ahora son elementos h
+- Unificacion de pie de imagen y pie de tabla
+- Mejor contraste en el encabezado de la tabla de material complementario
+- Tamano de titulo de .tabla-b
+
 ## 3.2.0 - 02-06-2021
 
 ### Cambios
