@@ -27,6 +27,9 @@ export default {
       this.$aosRefresh()
     })
   },
+  updated() {
+    this.$aosRefresh()
+  },
 }
 </script>
 

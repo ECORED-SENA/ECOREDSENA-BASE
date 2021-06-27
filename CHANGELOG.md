@@ -26,6 +26,7 @@ Estos son los cambios hechos en la ECORED-BASE-2021
 
 - Bug en componente ScrollHorizontal
 - arreglo de overflow-x en el contenedor de tema
+- la version 5.0.2 de bootstrap tiene un problema con la grilla
 
 ## 3.3.0 - 14-06-2021
 

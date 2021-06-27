@@ -1793,7 +1793,7 @@ div.mb-5
   h3 Tarjetas con número
 
   .row.mb-5
-    .col-md-6.col-xl.mb-4.mb-xl-0
+    .col-md-6.col-xxl.mb-4.mb-xxl-0
       //- .tarjeta-numerada debe ir acompañado de una de una de estas clases => 
       //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
       //- estas clases tambien tienen un modificador --borde
@@ -1804,7 +1804,7 @@ div.mb-5
           b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
         p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
 
-    .col-md-6.col-xl.mb-4.mb-xl-0
+    .col-md-6.col-xxl.mb-4.mb-xxl-0
       //- .tarjeta-numerada debe ir acompañado de una de una de estas clases => 
       //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
       //- estas clases tambien tienen un modificador --borde
@@ -1815,7 +1815,7 @@ div.mb-5
           b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
         p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
 
-    .col-md-6.col-xl.mb-4.mb-xl-0
+    .col-md-6.col-xxl.mb-4.mb-xxl-0
       //- .tarjeta-numerada debe ir acompañado de una de una de estas clases => 
       //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
       //- estas clases tambien tienen un modificador --borde
@@ -1826,7 +1826,7 @@ div.mb-5
           b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
         p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
 
-    .col-md-6.col-xl.mb-4.mb-xl-0
+    .col-md-6.col-xxl.mb-4.mb-xxl-0
       //- .tarjeta-numerada debe ir acompañado de una de una de estas clases => 
       //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
       //- estas clases tambien tienen un modificador --borde
