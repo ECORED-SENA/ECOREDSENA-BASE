@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+div.mb-5
   #encabezados.titulo-segundo
     h2 Encabezados
 
@@ -410,6 +410,7 @@ div
       i.lista-ul__vineta
       | Se requiere que la información contenida dentro de las tablas propuestas en los materiales, se encuentre digitalizada únicamente en formato excel. 
 
+  h3.titulo-tercero Tabla A
   //- .tabla-a debe ir acompañado de una de una de estas clases => 
   //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
   .tabla-a.color-acento-botones.mb-5 
@@ -442,6 +443,7 @@ div
           td Celda 4
           td Celda 5
 
+  h3.titulo-tercero Tabla B
   //- .tabla-a debe ir acompañado de una de una de estas clases => 
   //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
   .tabla-b.color-acento-contenido.mb-5
@@ -465,6 +467,7 @@ div
         th Formal
         td Design as if your life depended on it. Keep going. It isn’t what you are, but what you’re going to become. Don’t censor yourself. 
 
+  h3.titulo-tercero Tabla C
   .tabla-c.mb-5
     table
       caption Leyenda de la tabla
@@ -620,6 +623,8 @@ div
     .col-md-6
       p La cantidad de texto “Destacado” sea menor a tres líneas tendrá un tamaño máximo de 24 e interlineado 30 puntos utilizando Roboto Bold, ya si el texto supera las 3 líneas se utilizará un tamaño de 20 puntos y un interlineado 27 puntos con una fuente de Roboto Regular.
 
+
+  h3.titulo-tercero Cajón texto color
   //- .cajon debe ir acompañado de una de una de estas clases => 
   //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
   .row.mb-5 
@@ -641,6 +646,7 @@ div
         p Se puede usar dos o más columnas para diagramar el texto, estos elementos pueden presentar contenedores que permitan diferenciar ideas o conceptos.
     
 
+  h3.titulo-tercero Cajón texto color A
   //- .bloque-texto-a debe ir acompañado de una de una de estas clases => 
   //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
   .bloque-texto-a.color-secundario.p-4.p-md-5.mb-5 
@@ -656,6 +662,7 @@ div
 
   .row.mb-5
     .col-lg-6.mb-5.mb-lg-0
+      h3.titulo-tercero Cajón texto color B
       //- .bloque-texto-b debe ir acompañado de una de una de estas clases => 
       //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
       .bloque-texto-b.color-secundario.p-4
@@ -665,6 +672,7 @@ div
           i.fas.fa-quote-right
 
     .col-lg-6
+      h3.titulo-tercero Cajón texto color C
       //- .bloque-texto-c debe ir acompañado de una de una de estas clases => 
       //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
       .bloque-texto-c.color-secundario.p-4
@@ -674,6 +682,7 @@ div
 
   .row.mb-5
     .col-lg-6.mb-5.mb-lg-0
+      h3.titulo-tercero Cajón texto color D
       //- .bloque-texto-d debe ir acompañado de una de una de estas clases => 
       //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
       .bloque-texto-d.color-secundario.p-4
@@ -686,6 +695,7 @@ div
           .h6.mb-0 Lorem ipsum dolor sit amet
 
     .col-lg-6
+      h3.titulo-tercero Cajón texto color E
       //- .bloque-texto-e debe ir acompañado de una de una de estas clases => 
       //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
       .bloque-texto-e.color-secundario.p-4
@@ -701,6 +711,7 @@ div
           .col-4
             img(src='@/assets/template/img-placeholder-1-1.svg', alt='Texto que describa la imagen')
 
+  h3.titulo-tercero Cajón texto color F
   //- .bloque-texto-f debe ir acompañado de una de una de estas clases => 
   //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
   .bloque-texto-f.color-secundario.pt-4.px-5.mb-5
@@ -713,6 +724,17 @@ div
     .bloque-texto-f__avatar
       .bloque-texto-f__avatar__img
         img(src='@/assets/template/img-placeholder-1-1.svg', alt='Texto que describa la imagen')
+
+  h3.titulo-tercero Cajón texto color G
+  .bloque-texto-g.color-secundario.p-3.p-sm-4.p-md-5.mb-5
+    .bloque-texto-g__img(
+      :style="{'background-image': `url(${require('@/assets/curso/img.jpg')})`}"
+    )
+    .bloque-texto-g__texto.p-4
+      p.mb-0 Think about all the possibilities. A good composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Nothing of without working at it. Be impossible to ignore.
+        br
+        br
+        | Stand so tall that they can’t look past you. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect accept possibility of failure. 
 
   Separador
 
@@ -734,6 +756,7 @@ div
       i.lista-ul__vineta
       | Textos puntuales y claros.
 
+  h3.titulo-tercero Slider A
   .tarjeta.tarjeta--azul.p-4.mb-5
     SlyderA
       .row
@@ -764,12 +787,16 @@ div
           img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
           figcaption Leyenda de la imagen
 
+  h3 Slider B
   SlyderB.mb-5(:datos="datosSlyder")
 
+  h3 Slider C
   SlyderC.mb-5(:datos="datosSlyder")
 
+  h3 Slider D
   SlyderD.mb-5(:datos="datosSlyder")
 
+  h3 Slider Bootstrap
   #carouselExampleIndicators.carousel.slide.mb-5(data-bs-ride='carousel')
     .carousel-indicators
       button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
@@ -827,6 +854,7 @@ div
       i.lista-ul__vineta
       | No se debe utilizar dentro del acordeón vídeos.
 
+  h3 Acordion A tipo A
   AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")
     .row(titulo="Titulo item 1")
       .col-md-6.mb-4.mb-md-0
@@ -842,6 +870,7 @@ div
         img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
         figcaption Leyenda de la imagen
 
+  h3 Acordion A tipo B
   AcordionA.mb-5(tipo="b" clase-tarjeta="tarjeta tarjeta--azul")
     .row(titulo="Titulo item 1")
       .col-md-6.mb-4.mb-md-0
@@ -889,6 +918,7 @@ div
       i.lista-ul__vineta
       | No se debe utilizar dentro de la pestaña o tab vídeos.
 
+  h3 Pestañas A
   //- TabsA debe ir acompañado de una de una de estas clases => 
   //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
   TabsA.color-acento-botones.mb-5
@@ -959,6 +989,7 @@ div
         |. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.
       p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
     
+  h3 Pestañas B
   //- TabsB debe ir acompañado de una de una de estas clases => 
   //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
   TabsB.color-acento-contenido.mb-5
@@ -1025,6 +1056,7 @@ div
           h4 Celebrate your failures 6
           p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
 
+  h3 Pestañas C
   //- TabsC debe ir acompañado de una de una de estas clases => 
   //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
   TabsC.color-primario.mb-5
@@ -1120,14 +1152,17 @@ div
       i.lista-ul__vineta
       | El peso de los anexos o archivos descargables no debe ser superior a 12MB.
 
+  h3 Linea Tiempo A
   //- LineaTiempoA debe ir acompañado de una de una de estas clases => 
   //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
   LineaTiempoA.color-acento-contenido.mb-5(:datos="datosLineaTiempoA")
 
+  h3 Linea Tiempo B
   //- LineaTiempoB debe ir acompañado de una de una de estas clases => 
   //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
   LineaTiempoB.color-secundario.mb-5(:datos="datosLineaTiempoB")
 
+  h3 Linea Tiempo C
   .tarjeta.tarjeta--gris.p-4.mb-5
     //- LineaTiempoC debe ir acompañado de una de una de estas clases => 
     //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
@@ -1190,7 +1225,7 @@ div
           img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
           figcaption Leyenda de la imagen
 
-
+  h3 Linea Tiempo D
   .row.mb-5
     .col-md-6.mb-5.mb-md-0
       //- LineaTiempoD debe ir acompañado de una de una de estas clases => 
@@ -1270,6 +1305,7 @@ div
   #pasos.titulo-segundo
     h2 Pasos
 
+  h3 Pasos A tipo n
   //- PasosA debe ir acompañado de una de una de estas clases => 
   //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
   PasosA.color-primario.mb-5(tipo="n")
@@ -1312,6 +1348,7 @@ div
           img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
           figcaption Leyenda de la imagen
 
+  h3 Pasos A tipo l
   //- PasosA debe ir acompañado de una de una de estas clases => 
   //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
   PasosA.color-acento-botones.mb-5(tipo="l")
@@ -1331,6 +1368,7 @@ div
       h3 Lorem ipsum dolor sit amet.
       p Aliquam ornare sem in mauris lobortis accumsan. Suspendisse sollicitudin tellus eget bibendum cursus. Praesent tincidunt cursus mattis. Fusce nec convallis mauris, eu tincidunt neque. Proin justo orci, fermentum vel est vel, ornare sodales dui. Etiam consequat commodo tincidunt. Maecenas imperdiet ante eu mauris imperdiet, Phasellus pretium tortor quis varius sagittis. Suspendisse eu posuere enim, sed lacinia justo. Praesent eget tempor erat, a pretium ante. Nulla facilisi.
 
+  h3 Pasos B
   .tarjeta.tarjeta--gris.p-4.mb-5
     //- PasosB debe ir acompañado de una de una de estas clases => 
     //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
@@ -1550,6 +1588,8 @@ div
       i.lista-ul__vineta
       | Se sugiere una cantidad de texto igual o menor a 4 líneas de word tamaño carta.
 
+
+  h3 Tarjetas botones
   .row.mb-5
     .col-sm-6.col-lg-3.mb-4.mb-lg-0
       //- .tarjeta--boton debe ir acompañado de una de una de estas clases => 
@@ -1604,6 +1644,7 @@ div
         p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
 
 
+  h3 Tarjetas conectadas
   .tarjeta--container.row.mb-5
     //- .tarjeta debe ir acompañado de una de una de estas clases => 
     //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
@@ -1641,6 +1682,7 @@ div
       h2.text-center Sterility leads to<br>susceptibility
       p Remember it’s called the creative process, it’s not the creative moment. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect and accept the possibility of failure.
 
+  h3 Tarjetas avatar A
   .row
     .col-lg-6
       .tarjeta-avatar-b.mb-5
@@ -1683,6 +1725,7 @@ div
             h2 Greatness isn’t the height
             p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
+  h3 Tarjetas avatar B
   .row.mb-5
     .col-md-6.col-lg.mb-5.mb-lg-0
       .tarjeta-avatar
@@ -1717,6 +1760,7 @@ div
             h2.text-center Greatness isn’t the height
             p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
+  h3 Tarjetas Tabla
   .row.mb-5
     .col-md-6.col-lg.tarjeta--tabla.p-4
       .row.justify-content-center.mb-3
@@ -1746,10 +1790,7 @@ div
       h2.text-center John Doe
       p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
-  Separador
-
-  #tarjeta_numero.titulo-segundo
-    h2 Tarjetas con número
+  h3 Tarjetas con número
 
   .row.mb-5
     .col-md-6.col-xl.mb-4.mb-xl-0
@@ -1821,6 +1862,107 @@ div
         figure
           img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
           figcaption Leyenda de la imagen
+
+  Separador
+
+  #modal.titulo-segundo
+    h2 Animaciones
+
+  h3.titulo-tercero Fade
+  .row.mb-5
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-primario.text-center.p-3(data-aos="fade")
+        h3.mb-0 fade
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-secundario.text-center.p-3(data-aos="fade-up")
+        h3.mb-0 fade-up
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-acento-contenido.text-center.p-3(data-aos="fade-down")
+        h3.mb-0 fade-down
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-acento-botones.text-center.p-3(data-aos="fade-left")
+        h3.mb-0 fade-left
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-primario.text-center.p-3(data-aos="fade-right")
+        h3.mb-0 fade-right
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-secundario.text-center.p-3(data-aos="fade-up-right")
+        h3.mb-0 fade-up-right
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-acento-contenido.text-center.p-3(data-aos="fade-up-left")
+        h3.mb-0 fade-up-left
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-acento-botones.text-center.p-3(data-aos="fade-down-right")
+        h3.mb-0 fade-down-right
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-primario.text-center.p-3(data-aos="fade-down-left")
+        h3.mb-0 fade-down-left
+
+
+  h3.titulo-tercero Flip
+  .row.mb-5
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-primario.text-center.p-3(data-aos="flip-up")
+        h3.mb-0 flip-up
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-secundario.text-center.p-3(data-aos="flip-down")
+        h3.mb-0 flip-down
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-acento-contenido.text-center.p-3(data-aos="flip-left")
+        h3.mb-0 flip-left
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-acento-botones.text-center.p-3(data-aos="flip-right")
+        h3.mb-0 flip-right
+
+
+  h3.titulo-tercero Slide
+  .row.mb-5
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-primario.text-center.p-3(data-aos="slide-up")
+        h3.mb-0 slide-up
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-secundario.text-center.p-3(data-aos="slide-down")
+        h3.mb-0 slide-down
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-acento-contenido.text-center.p-3(data-aos="slide-left")
+        h3.mb-0 slide-left
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-acento-botones.text-center.p-3(data-aos="slide-right")
+        h3.mb-0 slide-right
+
+
+  h3.titulo-tercero Zoom
+  .row.mb-5
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-primario.text-center.p-3(data-aos="zoom-in")
+        h3.mb-0 zoom-in
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-secundario.text-center.p-3(data-aos="zoom-in-up")
+        h3.mb-0 zoom-in-up
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-acento-contenido.text-center.p-3(data-aos="zoom-in-down")
+        h3.mb-0 zoom-in-down
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-acento-botones.text-center.p-3(data-aos="zoom-in-left")
+        h3.mb-0 zoom-in-left
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-primario.text-center.p-3(data-aos="zoom-in-right")
+        h3.mb-0 zoom-in-right
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-secundario.text-center.p-3(data-aos="zoom-out")
+        h3.mb-0 zoom-out
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-acento-contenido.text-center.p-3(data-aos="zoom-out-up")
+        h3.mb-0 zoom-out-up
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-acento-botones.text-center.p-3(data-aos="zoom-out-down")
+        h3.mb-0 zoom-out-down
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-primario.text-center.p-3(data-aos="zoom-out-left")
+        h3.mb-0 zoom-out-left
+    .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+      .tarjeta.color-secundario.text-center.p-3(data-aos="zoom-out-right")
+        h3.mb-0 zoom-out-right
 
 </template>
 

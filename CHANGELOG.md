@@ -2,6 +2,31 @@
 
 Estos son los cambios hechos en la ECORED-BASE-2021
 
+## 4.0.0 - 26-06-2021
+
+### Cambios
+
+- /package.json
+- /src/main.js
+- /src/app.vue
+- /src/components/Muestras.vue
+- /src/assets
+- /src/views/Tema1.vue
+- /src/views/Tema2.vue
+- /src/views/Tema3.vue
+
+### Agregado
+
+- componente bloque-texto-g
+- en pantallas pequenas el menu se cierra cuando se da click
+- Objeto Vue arreglado para la base
+- Implementcion de AOS
+
+### Arreglado
+
+- Bug en componente ScrollHorizontal
+- arreglo de overflow-x en el contenedor de tema
+
 ## 3.3.0 - 14-06-2021
 
 ### Cambios

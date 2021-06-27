@@ -20,20 +20,12 @@ export default {
       return this.$store.getters.isMenuOpen
     },
   },
+  mounted() {
+    this.$aos.init({
+      offset: 100,
+    })
+  },
 }
 </script>
 
-<style lang="sass">
-.app
-
-.contenedor-principal
-  display: flex
-  align-items: flex-start
-
-.seccion-principal
-  width: 100%
-
-  &--barra-avance-open
-    .curso-main-container
-      padding-bottom: 80px !important
-</style>
+<style lang="sass"></style>
