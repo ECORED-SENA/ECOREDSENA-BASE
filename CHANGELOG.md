@@ -18,15 +18,16 @@ Estos son los cambios hechos en la ECORED-BASE-2021
 ### Agregado
 
 - componente bloque-texto-g
-- en pantallas pequenas el menu se cierra cuando se da click
+- en pantallas pequeñas el menú se cierra cuando se da click
 - Objeto Vue arreglado para la base
-- Implementcion de AOS
+- Implementacion de AOS
 
 ### Arreglado
 
 - Bug en componente ScrollHorizontal
 - arreglo de overflow-x en el contenedor de tema
-- la version 5.0.2 de bootstrap tiene un problema con la grilla
+- la versión 5.0.2 de bootstrap tiene un problema con la grilla
+- el orden del glosario no toma en cuenta mayúsculas
 
 ## 3.3.0 - 14-06-2021
 
@@ -45,21 +46,21 @@ Estos son los cambios hechos en la ECORED-BASE-2021
 
 - Ultima version de Bootstrap 5.0.1
 - Separador en forma de componente de Vue 'Separador'
-- Directiva que permite que los componentes dinamicos interactuen con Vue
+- Directiva que permite que los componentes dinámicos interactuen con Vue
 - Titulo '.titulo-sexto'
 - Creditos
-- Creditos en inicio
+- Créditos en inicio
 - Botones de accesibilidad
 
 ### Arreglado
 
-- Jerarquias de titulos de la plantilla
+- Jerarquías de títulos de la plantilla
 - Banner principal si no hay imagen de fondo va a quedar con el color en variables
-- Imagenes dentro de tarjetas con avatar
-- Los titulos ahora son elementos h
-- Unificacion de pie de imagen y pie de tabla
+- Imágenes dentro de tarjetas con avatar
+- Los títulos ahora son elementos h
+- Unificación de pie de imagen y pie de tabla
 - Mejor contraste en el encabezado de la tabla de material complementario
-- Tamano de titulo de .tabla-b
+- Tamaño de titulo de .tabla-b
 
 ## 3.2.0 - 02-06-2021
 
@@ -75,7 +76,7 @@ Estos son los cambios hechos en la ECORED-BASE-2021
 - Nuevas clases para titulos .titulo-tercero, .titulo-cuarto y .titulo-quinto
 - nuevo .espaciador
 - PasosA ahora soporta contenido dinámico
-- Indicadores de interaccion .indicador--click y .indicador--hover
+- Indicadores de interacción .indicador--click y .indicador--hover
 - Indicadores de interacción en todos los componentes interactivos
 - Imagen en .tarjeta-avatar ahora tiene tamaños dinámico a travez de $tarjeta-avatar-ancho-img
 
@@ -88,7 +89,7 @@ Estos son los cambios hechos en la ECORED-BASE-2021
 - Cambio de espaciado de p, ul y ol
 - Mejora de padding en componente AcordionA
 - Cambio de nombre de clase .tarjeta-Avatar-b por .tarjeta-avatar-b
-- Mejora de alineacion de las comillas en los componentes de texto destacado
+- Mejora de alineación de las comillas en los componentes de texto destacado
 
 #
 
@@ -128,7 +129,7 @@ Estos son los cambios hechos en la ECORED-BASE-2021
 ## 3.0.0 - 11-05-2021
 
 ### Cambios
-- ## Muchos componentes a partir de esta versión cambian su marcado (html) y sus estilos (css), por esto, se recomienda empezar de nuevo teniendo como guia las nuevas muestras.vue.
+- ## Muchos componentes a partir de esta versión cambian su marcado (html) y sus estilos (css), por esto, se recomienda empezar de nuevo teniendo como guía las nuevas muestras.vue.
 - /package.json => "ecored-base-pkg": "2.0.0"
 - /src/views/Actividad.vue
 - /src/styles/variables.sass
@@ -150,7 +151,7 @@ Estos son los cambios hechos en la ECORED-BASE-2021
   .color-acento-contenido
   .color-acento-botones
   ```
-- Clases para textos están en ingles y en español.
+- Clases para textos están en inglés y en español.
   ```
   .text-thin, .texto-thin
   .text-regular, .texto-regular
@@ -180,7 +181,7 @@ Estos son los cambios hechos en la ECORED-BASE-2021
 
 ### Agregado
 
-- Visualización de la version de la base y del paquete de la base en footer.
+- Visualización de la versión de la base y del paquete de la base en footer.
 - Nueva variable $color-banner-fondo.
 
 ### Arreglos
