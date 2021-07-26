@@ -2,6 +2,36 @@
 
 Estos son los cambios hechos en la ECORED-BASE-2021
 
+## 4.1.0 - 26-07-2021
+
+### Cambios
+
+- /package.json
+
+### Agregado
+
+- Componente SlyderE
+- Componente cajon-b
+- En el componente 'linea-tiempo-c' la opcion de hacer los titulos mas pequenos
+
+### Arreglado
+
+- En el componente 'linea-tiempo-c' el problema generado por la cantidad de texto en el titulo
+- En el componente 'bloque-texto-e' el nombre de la clase 'bloque-texto-e__text' cambio a 'bloque-texto-e__texto' para mejor consistencia
+- En el componente 'tarjeta-avatar-b' ahora la imagen va a estar dentro de '.tarjeta-avatar-b__img" para arreglar el responsive del componente
+- Los textos dentro de estos componentes ahora se pueden utilizar como html
+  - menu principal
+  - banner interno
+  - banner principal
+  - header
+  - material complementario
+  - inicio
+  - referencias bibliograficas
+- En el componente 'pasos' el problema con los circulos en responsive
+- En los componentes de texto destacado, los problemas de alineacion de las comillas
+
+#
+
 ## 4.0.0 - 26-06-2021
 
 ### Cambios
@@ -28,6 +58,8 @@ Estos son los cambios hechos en la ECORED-BASE-2021
 - arreglo de overflow-x en el contenedor de tema
 - la versión 5.0.2 de bootstrap tiene un problema con la grilla
 - el orden del glosario no toma en cuenta mayúsculas
+
+#
 
 ## 3.3.0 - 14-06-2021
 
@@ -61,6 +93,8 @@ Estos son los cambios hechos en la ECORED-BASE-2021
 - Unificación de pie de imagen y pie de tabla
 - Mejor contraste en el encabezado de la tabla de material complementario
 - Tamaño de titulo de .tabla-b
+
+#
 
 ## 3.2.0 - 02-06-2021
 

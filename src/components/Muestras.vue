@@ -3,7 +3,7 @@ div.mb-5
   #encabezados.titulo-segundo
     h2 Encabezados
 
-  .titulo-principal
+  .titulo-principal(data-aos="flip-up")
     .titulo-principal__numero
       span 1
     h1 Título principal, 30pt
@@ -40,7 +40,7 @@ div.mb-5
 
   Separador
 
-  #parrafos.titulo-segundo
+  #parrafos.titulo-segundo(data-aos="flip-up")
     h2 Párrafos
 
   p.mb-5 Los párrafos mantienen un tamaño regular de 16 pt con interlineado base de 24 pt, sin embargo, existe excepciones para resaltar contenido donde se puede hacer uso de pesos 
@@ -627,7 +627,7 @@ div.mb-5
   h3.titulo-tercero Cajón texto color
   //- .cajon debe ir acompañado de una de una de estas clases => 
   //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-  .row.mb-5 
+  .row
     .col-lg-4
       .cajon.color-primario.p-4.mb-4
         .h5 Cajón texto color
@@ -644,7 +644,15 @@ div.mb-5
       .cajon.color-acento-botones.p-4.mb-4
         .h5 Cajón texto color
         p Se puede usar dos o más columnas para diagramar el texto, estos elementos pueden presentar contenedores que permitan diferenciar ideas o conceptos.
-    
+
+  //- .cajon-b debe ir acompañado de una de una de estas clases => 
+  //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+  //- .arriba-derecha, .abajo-derecha, .abajo-izquierda (arriba-izquierda esta por defecto)
+  .cajon-b.color-primario.p-3.mb-5
+    p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel porta justo. Praesent congue nibh a justo ornare, eget vulputate nisl eleifend. Cras interdum finibus lacinia. Fusce dignissim sapien sit amet orci imperdiet, pharetra maximus nisi ullamcorper. Aliquam interdum elit ac nisi viverra, ultrices finibus est ultricies. Fusce tincidunt velit nulla. Aliquam eleifend libero eu neque rhoncus, sed placerat mi ornare.
+      br
+      br
+      | Proin dignissim nisl ac iaculis molestie. Fusce et orci arcu. Cras ac ultricies nisl. Praesent posuere tempor felis in pharetra. Curabitur vestibulum, mi sed placerat accumsan, est nulla sagittis mi, non faucibus tortor ex ac lacus. Nunc condimentum dolor sem, et pulvinar sapien cursus ut. Aenean consequat pharetra rutrum. Nunc vel nunc laoreet, ornare augue a, efficitur quam.
 
   h3.titulo-tercero Cajón texto color A
   //- .bloque-texto-a debe ir acompañado de una de una de estas clases => 
@@ -699,7 +707,7 @@ div.mb-5
       //- .bloque-texto-e debe ir acompañado de una de una de estas clases => 
       //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
       .bloque-texto-e.color-secundario.p-4
-        .bloque-texto-e__text
+        .bloque-texto-e__texto
           i.fas.fa-quote-left
           h2.text-regular Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt augue in augue tempus, in dapibus justo interdum. Sed viverra sed odio quis rhoncus. In elementum purus massa, id venenatis purus ullamcorper ut. Vestibulum vel dictum dolor, nec fringilla orci. Nulla vestibulum, metus nec porttitor bibendum, lectus ligula viverra eros, eget tempor risus nulla pretium justo. Nullam turpis dolor, pharetra vel fermentum at, rutrum in elit. Maecenas vitae hendrerit libero, et ornare augue. Vestibulum iaculis, metus et accumsan malesuada.
           i.fas.fa-quote-right
@@ -796,6 +804,39 @@ div.mb-5
   h3 Slider D
   SlyderD.mb-5(:datos="datosSlyder")
 
+  h3 Slider E
+  // SlyderE, para controlar la posicion de los botones de "atras y "adelante" 
+  //- se usa el prop 'indicadores' con los valores => 'centro' y 'derecha' 
+  // para el valor 'izquierda' se deja sin el prop 'indicadores'
+  SlyderE(indicadores="derecha")
+    .row
+      .col-md-6.mb-4.mb-md-0
+        p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+    
+      .col-md-6
+        figure
+          img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+          figcaption Leyenda de la imagen
+
+    div
+      figure
+        img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+        figcaption Leyenda de la imagen
+
+    .row
+      .col-md-6.mb-4.mb-md-0
+        p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+    
+      .col-md-6
+        figure
+          img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+          figcaption Leyenda de la imagen
+
+    div
+      figure
+        img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+        figcaption Leyenda de la imagen
+
   h3 Slider Bootstrap
   #carouselExampleIndicators.carousel.slide.mb-5(data-bs-ride='carousel')
     .carousel-indicators
@@ -853,7 +894,7 @@ div.mb-5
     li 
       i.lista-ul__vineta
       | No se debe utilizar dentro del acordeón vídeos.
-
+  
   h3 Acordion A tipo A
   AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")
     .row(titulo="Titulo item 1")
@@ -1166,7 +1207,8 @@ div.mb-5
   .tarjeta.tarjeta--gris.p-4.mb-5
     //- LineaTiempoC debe ir acompañado de una de una de estas clases => 
     //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-    LineaTiempoC.color-acento-contenido
+    //- text-small se usa para que los títulos sean mas pequeños
+    LineaTiempoC.color-acento-contenido(text-small)
       .row(titulo="1761")
         .col-md-6.mb-4.mb-md-0
           p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
@@ -1686,7 +1728,8 @@ div.mb-5
   .row
     .col-lg-6
       .tarjeta-avatar-b.mb-5
-        img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+        .tarjeta-avatar-b__img
+          img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
         .tarjeta.tarjeta--azul
           .p-4
             h2 John Doe
@@ -1694,7 +1737,8 @@ div.mb-5
 
     .col-lg-6
       .tarjeta-avatar-b.mb-5
-        img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+        .tarjeta-avatar-b__img
+          img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
         //- .tarjeta debe ir acompañado de una de una de estas clases => 
         //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
         //- estas clases tambien tienen un modificador --borde
@@ -1705,7 +1749,8 @@ div.mb-5
 
     .col-lg-6
       .tarjeta-avatar-b.mb-5
-        img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+        .tarjeta-avatar-b__img
+          img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
         //- .tarjeta debe ir acompañado de una de una de estas clases => 
         //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
         //- estas clases tambien tienen un modificador --borde
@@ -1716,7 +1761,8 @@ div.mb-5
 
     .col-lg-6
       .tarjeta-avatar-b.mb-5
-        img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+        .tarjeta-avatar-b__img
+          img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
         //- .tarjeta debe ir acompañado de una de una de estas clases => 
         //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
         //- estas clases tambien tienen un modificador --borde
@@ -1793,7 +1839,7 @@ div.mb-5
   h3 Tarjetas con número
 
   .row.mb-5
-    .col-md-6.col-xxl.mb-4.mb-xxl-0
+    .col-md-6.col-xl.mb-4.mb-xl-0
       //- .tarjeta-numerada debe ir acompañado de una de una de estas clases => 
       //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
       //- estas clases tambien tienen un modificador --borde
@@ -1804,7 +1850,7 @@ div.mb-5
           b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
         p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
 
-    .col-md-6.col-xxl.mb-4.mb-xxl-0
+    .col-md-6.col-xl.mb-4.mb-xl-0
       //- .tarjeta-numerada debe ir acompañado de una de una de estas clases => 
       //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
       //- estas clases tambien tienen un modificador --borde
@@ -1815,7 +1861,7 @@ div.mb-5
           b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
         p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
 
-    .col-md-6.col-xxl.mb-4.mb-xxl-0
+    .col-md-6.col-xl.mb-4.mb-xl-0
       //- .tarjeta-numerada debe ir acompañado de una de una de estas clases => 
       //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
       //- estas clases tambien tienen un modificador --borde
@@ -1826,7 +1872,7 @@ div.mb-5
           b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
         p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
 
-    .col-md-6.col-xxl.mb-4.mb-xxl-0
+    .col-md-6.col-xl.mb-4.mb-xl-0
       //- .tarjeta-numerada debe ir acompañado de una de una de estas clases => 
       //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
       //- estas clases tambien tienen un modificador --borde
