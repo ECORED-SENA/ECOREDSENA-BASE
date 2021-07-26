@@ -7,6 +7,7 @@ Estos son los cambios hechos en la ECORED-BASE-2021
 ### Cambios
 
 - /package.json
+- /src/components/Muestras.vue
 
 ### Agregado
 
@@ -29,6 +30,10 @@ Estos son los cambios hechos en la ECORED-BASE-2021
   - referencias bibliograficas
 - En el componente 'pasos' el problema con los circulos en responsive
 - En los componentes de texto destacado, los problemas de alineacion de las comillas
+
+### Potenciales problemas con versiones anteriores
+
+- en el componente 'tarjeta-avatar-b', la imagen solo necesita estar dentro de: .tarjeta-avatar-b__img
 
 #
 
