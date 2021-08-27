@@ -317,6 +317,7 @@ export default {
     },
     {
       termino: 'Suftware',
+      terminoHtml: '<em>Suftware</em>',
       significado:
         'término informático que hace referencia a un programa o conjunto de programas de cómputo, así como datos, procedimientos y pautas que permiten realizar distintas tareas en un sistema informático.',
     },
@@ -327,6 +328,7 @@ export default {
     },
     {
       termino: 'Áectores',
+      terminoHtml: '<em>Áectores</em>',
       significado:
         'en software de diseño, son líneas que se crean y permiten, expandir, modificar, al tamaño que sea sin pixelarse porque se unen por coordenadas matemáticas del programa y no se generan por números fijos.',
     },
@@ -336,7 +338,12 @@ export default {
         'hábito repetitivo que identifica a una persona, una especie de presión social, que debe consumir, utilizar o hacer.',
     },
     {
-      termino: 'Diseño',
+      termino: 'DIseño',
+      significado:
+        'actividad creativa orientada a soluciones idóneas a ciertas problemáticas.',
+    },
+    {
+      termino: 'Diseña',
       significado:
         'actividad creativa orientada a soluciones idóneas a ciertas problemáticas.',
     },
