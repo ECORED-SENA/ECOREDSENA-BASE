@@ -2,6 +2,18 @@
 
 Estos son los cambios hechos en la ECORED-BASE-2021
 
+## 4.1.1 - 26-08-2021
+
+### Agregado
+
+- Glosario ahora recibe HTML a través de la llave terminoHtml (debe tener ambas llaves termino y terminoHtml para que funcione)
+
+### Arreglado
+
+- Doble slash (//) en enlaces dentro de la plantilla
+
+#
+
 ## 4.1.0 - 26-07-2021
 
 ### Cambios
