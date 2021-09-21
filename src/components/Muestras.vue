@@ -561,8 +561,9 @@ div.mb-5
   #imagen_infografica.titulo-segundo
     h2 Imagen Infográfica
 
-  ImagenInfografica.color-secundario.mb-5
+  h3 Imagen Infográfica A
 
+  ImagenInfografica.color-secundario.mb-5
     template(v-slot:imagen)
       figure
         img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
@@ -577,6 +578,28 @@ div.mb-5
       p Lorem ipsum dolor ddasdasd asdasd asdasd a asd sd asdasd sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
 
     .tarjeta.color-acento-botones.p-3(x="70%" y="70%")
+      .h5.mb-2 titulo
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
+
+  h3 Imagen Infográfica B
+
+  ImagenInfograficaB.color-primario.mb-5
+    template(v-slot:imagen)
+      figure
+        img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+        figcaption Leyenda de la imagen
+
+    div(x="20%" y="20%" tooltip="tooltip de max 35 caracteres")
+      h5 titulo
+      p Lorem ipsum dolor Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
+      p Lorem ipsum dolor Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
+      p Lorem ipsum dolor Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
+
+    div(x="50%" y="50%" tooltip="tooltip de max 35 caracteres")
+      .h5.mb-2 titulo
+      p Lorem ipsum dolor ddasdasd asdasd asdasd a asd sd asdasd sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
+
+    div(x="70%" y="70%" tooltip="tooltip de max 35 caracteres")
       .h5.mb-2 titulo
       p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
 
@@ -1806,6 +1829,42 @@ div.mb-5
             h2.text-center Greatness isn’t the height
             p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
+  h3 Tarjetas flip
+
+  .row.mb-5
+    .col-sm-6.col-xl-3.mb-4.mb-xl-0
+      .tarjeta.tarjeta-flip.color-primario(@mouseover="indicadorTarjetaFlip = false")
+        .indicador--hover(v-if="indicadorTarjetaFlip")
+        .tarjeta-flip__contenedor
+          .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/avatar.svg')})`}")
+          .tarjeta-flip__contenido.p-4.p-xl-5
+            h1 John Doe
+            p Lorem ipsum dolor sit amet, 
+
+    .col-sm-6.col-xl-3.mb-4.mb-xl-0
+      .tarjeta.tarjeta-flip.color-secundario(@mouseover="indicadorTarjetaFlip = false")
+        .tarjeta-flip__contenedor
+          .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/avatar.svg')})`}")
+          .tarjeta-flip__contenido.p-4.p-xl-5
+            h1 John Doe
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
+
+    .col-sm-6.col-xl-3.mb-4.mb-sm-0
+      .tarjeta.tarjeta-flip.color-acento-contenido(@mouseover="indicadorTarjetaFlip = false")
+        .tarjeta-flip__contenedor
+          .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/avatar.svg')})`}")
+          .tarjeta-flip__contenido.p-4.p-xl-5
+            h1 John Doe
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
+
+    .col-sm-6.col-xl-3
+      .tarjeta.tarjeta-flip.color-acento-botones(@mouseover="indicadorTarjetaFlip = false")
+        .tarjeta-flip__contenedor
+          .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/avatar.svg')})`}")
+          .tarjeta-flip__contenido.p-4.p-xl-5
+            h1 John Doe
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
+
   h3 Tarjetas Tabla
   .row.mb-5
     .col-md-6.col-lg.tarjeta--tabla.p-4
@@ -2017,6 +2076,7 @@ export default {
   name: 'Muestras',
   data: () => ({
     mostrarIndicador: true,
+    indicadorTarjetaFlip: true,
     modal1: false,
     modal2: false,
     datosLineaTiempoA: [
