@@ -2284,6 +2284,8 @@ div
     .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
       .tarjeta.color-secundario.text-center.p-3(data-aos="zoom-out-right")
         h3.mb-0 zoom-out-right
+    
+    .p-5
 
 </template>
 
