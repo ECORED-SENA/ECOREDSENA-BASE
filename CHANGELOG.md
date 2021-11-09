@@ -2,6 +2,16 @@
 
 Estos son los cambios hechos en la ECORED-BASE-2021
 
+## 5.0.1 - 09-11-2021
+
+### Arreglado
+
+- Componente SlyderF aveces no llegaba al último elemento
+- Componente Zoom hace zoom cuando se hacía scroll por la pagina, ahora solo hay que hacer click a la imágen para que se pueda hacer zoom
+- Vista Material complementario enlaces de descargas no funcionaban cuando era uno solo
+
+#
+
 ## 5.0.0 - 29-10-2021
 
 ### Agregado
