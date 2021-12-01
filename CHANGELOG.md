@@ -6,7 +6,7 @@ Estos son los cambios hechos en la ECORED-BASE-2021
 
 ### Agregado
 
-- Componente tarjeta-avatar-slide
+- Sintesis
 
 ### Arreglado
 
