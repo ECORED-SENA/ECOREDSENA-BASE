@@ -461,12 +461,12 @@ export default {
     ],
     gestoresRepositorio: [
       {
-        nombre: 'Daniel Felipe Varón Molina',
+        nombre: 'Álvaro Andrés Angarita Ramirez',
         cargo: 'Validación y vinculación en plataforma LMS',
         centro: 'Centro de Comercio y Servicios Regional Tolima',
       },
       {
-        nombre: 'Álvaro Andrés Angarita Ramirez',
+        nombre: 'Daniel Felipe Varón Molina',
         cargo: 'Validación y vinculación en plataforma LMS',
         centro: 'Centro de Comercio y Servicios Regional Tolima',
       },
