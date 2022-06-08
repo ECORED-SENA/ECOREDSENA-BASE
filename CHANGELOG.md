@@ -6,7 +6,7 @@ Estos son los cambios hechos en la ECORED-BASE-2021
 
 ### Cambios
 
-- /package.json => "ecored-base-pkg": "5.1.0"
+- /package.json => "ecored-base-pkg": "5.1.1"
 
 ### Agregado
 
