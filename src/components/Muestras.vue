@@ -110,6 +110,40 @@ div
 
   Separador
 
+  .titulo-segundo.color-acento-botones
+    h2.mb-2 Botones de audio
+  .d-flex.mb-5
+    Audio.color-primario.mx-3(
+      :audio="require('../../assets/componentes/audios/audio-ej.mp3')"
+      @audio-hover="mostrarIndicadorAudio = false"
+    )
+      .indicador--click(v-if="mostrarIndicadorAudio")
+    Audio.color-secundario.mx-3(:audio="require('../../assets/componentes/audios/audio-ej.mp3')")
+    Audio.color-acento-contenido.mx-3(:audio="require('../../assets/componentes/audios/audio-ej.mp3')")
+    Audio.color-acento-botones.mx-3(:audio="require('../../assets/componentes/audios/audio-ej.mp3')")
+  Separador
+  .titulo-segundo.color-acento-botones
+    h2.mb-2 Tarjetas Audio 
+  .row
+    .col-lg-6
+      TarjetaAudio.color-primario.mb-3(
+        texto="Texto de muestra "
+        :audio="require('../../assets/componentes/audios/audio-ej.mp3')"
+        @audio-hover="mostrarIndicadorTarjetaAudio = false"
+      )
+        .indicador--click(v-if="mostrarIndicadorTarjetaAudio")
+      TarjetaAudio.color-secundario.mb-3(
+        texto="Texto de muestra "
+        :audio="require('../../assets/componentes/audios/audio-ej.mp3')")
+      TarjetaAudio.color-acento-contenido.mb-3(
+        texto="Texto de muestra "
+        :audio="require('../../assets/componentes/audios/audio-ej.mp3')")
+      TarjetaAudio.color-acento-botones.mb-3(
+        texto="Texto de muestra "
+        :audio="require('../../assets/componentes/audios/audio-ej.mp3')")
+  Separador
+
+
   #listas.titulo-segundo.color-acento-botones
     h2 Listas
 
