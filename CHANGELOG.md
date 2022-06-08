@@ -2,6 +2,17 @@
 
 Estos son los cambios hechos en la ECORED-BASE-2021
 
+## 6.1.0 - 08-06-2022
+
+### Cambios
+
+- /package.json => "ecored-base-pkg": "5.1.0"
+
+### Agregado
+
+- Componente Audio
+- COmponente TarjetaAudio
+
 ## 6.0.0 - 01-06-2022
 
 ### Arreglado
