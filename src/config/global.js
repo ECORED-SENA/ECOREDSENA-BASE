@@ -6,6 +6,16 @@ export default {
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis vestibulum quam bibendum varius.<br/><br/>Quisque pretium at nulla sit amet placerat. Vestibulum consequat suscipit accumsan. Proin pharetra congue enim et tempus. Sed sodales dui volutpat, placerat tellus accumsan, semper est. Phasellus nec lorem elementum, mattis quam eget, vestibulum nibh. Sed.',
     imagenBannerPrincipal: require('@/assets/curso/banner-princiapal.svg'),
     fondoBannerPrincipal: require('@/assets/curso/fondo-banner-principal.png'),
+    imagenesDecorativasBanner: [
+      {
+        clases: ['banner-principal-decorativo-1', 'd-none', 'd-lg-block'],
+        imagen: require('@/assets/curso/banner-principal-decorativo-1.svg'),
+      },
+      {
+        clases: ['banner-principal-decorativo-2'],
+        imagen: require('@/assets/curso/banner-principal-decorativo-2.svg'),
+      },
+    ],
   },
   menuPrincipal: {
     menu: [
@@ -48,42 +58,48 @@ export default {
           {
             icono: 'far fa-file-alt',
             numero: '1.4',
+            titulo: 'Audio',
+            hash: 'audio',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '1.5',
             titulo: 'Listas',
             hash: 'listas',
           },
           {
             icono: 'far fa-file-alt',
-            numero: '1.5',
+            numero: '1.6',
             titulo: 'Tablas',
             hash: 'tablas',
           },
           {
             icono: 'far fa-file-alt',
-            numero: '1.6',
+            numero: '1.7',
             titulo: 'Imagen',
             hash: 'imagen',
           },
           {
             icono: 'far fa-file-alt',
-            numero: '1.7',
+            numero: '1.8',
             titulo: 'Imagen Infográfica',
             hash: 'imagen_infografica',
           },
           {
             icono: 'far fa-file-alt',
-            numero: '1.8',
+            numero: '1.9',
             titulo: 'Video',
             hash: 'video',
           },
           {
             icono: 'far fa-file-alt',
-            numero: '1.9',
+            numero: '1.10',
             titulo: 'Bloques de texto destacado',
             hash: 'texto_destacado',
           },
           {
             icono: 'far fa-file-alt',
-            numero: '1.10',
+            numero: '1.11',
             titulo: 'Sliders',
             hash: 'sliders',
           },

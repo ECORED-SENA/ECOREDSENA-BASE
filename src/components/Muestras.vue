@@ -110,8 +110,10 @@ div
 
   Separador
 
-  .titulo-segundo.color-acento-botones
-    h2.mb-2 Botones de audio
+  #audio.titulo-segundo.color-acento-botones
+    h2.mb-2 Audio
+
+  h3.titulo-tercero Botones audio
   .d-flex.mb-5
     Audio.color-primario.mx-3(
       :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
@@ -122,10 +124,7 @@ div
     Audio.color-acento-contenido.mx-3(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
     Audio.color-acento-botones.mx-3(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
 
-  Separador
-
-  .titulo-segundo.color-acento-botones
-    h2.mb-2 Tarjetas Audio 
+  h3.titulo-tercero Tarjetas Audio 
   .row
     .col-lg-6
       TarjetaAudio.color-primario.mb-3(
@@ -490,7 +489,7 @@ div
   //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
   .tabla-b.color-acento-contenido.mb-5
     .tabla-b__header
-      h5.mb-0 Niveles del lenguaje
+      h4.mb-0 Niveles del lenguaje
     table
       caption Leyenda de la tabla
       tr
