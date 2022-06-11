@@ -2,6 +2,21 @@
 
 Estos son los cambios hechos en la ECORED-BASE-2021
 
+## 6.2.0 - 10-06-2022
+
+### Agregado
+
+- En el objeto global se puede agregar imagenes decorativas para el banner principal
+
+### Arreglado
+
+- El tamano de letra de los encabezados de las tablas
+
+### Eliminado
+
+- Animaciones que generan problemas en el main container
+
+#
 ## 6.1.1 - 09-06-2022
 
 ### Arreglado
