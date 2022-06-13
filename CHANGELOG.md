@@ -2,6 +2,13 @@
 
 Estos son los cambios hechos en la ECORED-BASE-2021
 
+## 6.2.1 - 13-06-2022
+
+### Arreglado
+
+- Las clases para animaciones no funcionavan
+
+#
 ## 6.2.0 - 10-06-2022
 
 ### Agregado
