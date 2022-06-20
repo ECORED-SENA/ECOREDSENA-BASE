@@ -2,6 +2,24 @@
 
 Estos son los cambios hechos en la ECORED-BASE-2021
 
+## 6.3.0 - 19-06-2022
+
+### Cambios
+
+- /package.json => "ecored-base-pkg": "5.3.0"
+- /src/styles/_styles.sass
+- /src/styles/_variables.sass
+- /src/assets/template/green-check.svg
+- /src/assets/template/red-x.svg
+
+### Agregado
+
+- Componente dialogo de arrastrar y soltar para ingles
+
+### Arreglado
+
+- compativilidad del componente audio con mobiles
+
 ## 6.2.1 - 13-06-2022
 
 ### Arreglado
