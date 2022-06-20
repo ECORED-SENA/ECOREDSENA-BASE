@@ -1351,7 +1351,7 @@ div
 
   Separador
 
-  #actividad-dialogo.titulo-segundo.color-acento-botones
+  #actividad_dialogo.titulo-segundo.color-acento-botones
     h2 Actividad dialogo Ingles
 
   Dialogo.color-primario(:dialogo="dialogo")
@@ -2345,6 +2345,8 @@ export default {
     indicadorImagenZoom: true,
     indicadorTarjetaFlip: true,
     indicadorTarjetaSlide: true,
+    mostrarIndicadorAudio: true,
+    mostrarIndicadorTarjetaAudio: true,
     modal1: false,
     modal2: false,
     dialogo: {
