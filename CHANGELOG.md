@@ -24,7 +24,7 @@ Estos son los cambios hechos en la ECORED-BASE-2021
 
 ### Arreglado
 
-- compativilidad del componente audio con mobiles
+- compatibilidad del componente audio con mobiles
 
 ## 6.2.1 - 13-06-2022
 
