@@ -1358,6 +1358,8 @@ div
     template(#nombre-actividad) Arrastrar y Soltar
     template(#titulo-actividad) Titulo de actividad - Completa la conversación.
     template(#descripcion-actividad) Arrastra y suelta el cada una de las palabras en el orden correcto.
+    //- template(#feedback-correcto) Bien!
+    //- template(#feedback-incorrecto) Mal!
 
   Separador
 

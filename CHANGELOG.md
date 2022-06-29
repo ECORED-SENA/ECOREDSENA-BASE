@@ -2,6 +2,12 @@
 
 Estos son los cambios hechos en la ECORED-BASE-2021
 
+## 6.3.1 - 28-06-2022
+
+### Agregado
+
+- Componente dialogo se puede modificar el feedback
+
 ## 6.3.0 - 19-06-2022
 
 ### Cambios
