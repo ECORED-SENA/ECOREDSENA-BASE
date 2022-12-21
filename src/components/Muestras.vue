@@ -1,5 +1,7 @@
 <template lang="pug">
-div
+
+div.mb-5
+
   #encabezados.titulo-segundo.color-acento-botones
     h2 Encabezados
 
@@ -65,7 +67,7 @@ div
     //- .boton debe ir acompañado de una de una de estas clases => 
     //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
     a.boton.me-3.indicador__container(
-      :href="obtenerLink('downloads/prueba.pdf')"
+      :href="obtenerLink('/downloads/prueba.pdf')"
       target="_blank"
       type="application/pdf"
       @mouseover="mostrarIndicador = false"
@@ -75,45 +77,44 @@ div
       .indicador--click(v-if="mostrarIndicador")
 
   .mb-3
-    a.boton.color-primario.me-3(:href="obtenerLink('downloads/prueba.pdf')" target="_blank" type="application/pdf")
+    a.boton.color-primario.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
       span Descargar
       i.fas.fa-file-download
 
-    a.boton.color-secundario.me-3(:href="obtenerLink('downloads/prueba.pdf')" target="_blank" type="application/pdf")
+    a.boton.color-secundario.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
       span Descargar
       i.fas.fa-file-download
 
-    a.boton.color-acento-contenido.me-3(:href="obtenerLink('downloads/prueba.pdf')" target="_blank" type="application/pdf")
+    a.boton.color-acento-contenido.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
       span Descargar
       i.fas.fa-file-download
 
-    a.boton.color-acento-botones.me-3(:href="obtenerLink('downloads/prueba.pdf')" target="_blank" type="application/pdf")
+    a.boton.color-acento-botones.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
       span Descargar
       i.fas.fa-file-download
 
   div
-    a.boton--sm.color-primario.me-3(:href="obtenerLink('downloads/prueba.pdf')" target="_blank" type="application/pdf")
+    a.boton--sm.color-primario.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
       span Descargar
       i.fas.fa-file-download
 
-    a.boton--sm.color-secundario.me-3(:href="obtenerLink('downloads/prueba.pdf')" target="_blank" type="application/pdf")
+    a.boton--sm.color-secundario.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
       span Descargar
       i.fas.fa-file-download
 
-    a.boton--sm.color-acento-contenido.texto-blanco.me-3(:href="obtenerLink('downloads/prueba.pdf')" target="_blank" type="application/pdf")
+    a.boton--sm.color-acento-contenido.texto-blanco.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
       span Descargar
       i.fas.fa-file-download
 
-    a.boton--sm.color-acento-botones.me-3(:href="obtenerLink('downloads/prueba.pdf')" target="_blank" type="application/pdf")
+    a.boton--sm.color-acento-botones.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
       span Descargar
       i.fas.fa-file-download
 
   Separador
 
-  #audio.titulo-segundo.color-acento-botones
-    h2.mb-2 Audio
 
-  h3.titulo-tercero Botones audio
+  .titulo-segundo.color-acento-botones
+    h2.mb-2 Botones de audio
   .d-flex.mb-5
     Audio.color-primario.mx-3(
       :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
@@ -123,27 +124,28 @@ div
     Audio.color-secundario.mx-3(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
     Audio.color-acento-contenido.mx-3(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
     Audio.color-acento-botones.mx-3(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
-
-  h3.titulo-tercero Tarjetas Audio 
+  Separador
+  .titulo-segundo.color-acento-botones
+    h2.mb-2 Tarjetas Audio 
   .row
     .col-lg-6
       TarjetaAudio.color-primario.mb-3(
-        texto="Texto de muestra"
+        texto="Texto de muestra  "
         :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
         @audio-hover="mostrarIndicadorTarjetaAudio = false"
       )
         .indicador--click(v-if="mostrarIndicadorTarjetaAudio")
       TarjetaAudio.color-secundario.mb-3(
-        texto="Texto de muestra <br> Texto de muestra"
+        texto="Texto de muestra <br> Texto de muestra "
         :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
       )
       TarjetaAudio.color-acento-contenido.mb-3(
-        texto="Texto de muestra"
+        texto="Texto de muestra "
         :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
         no-barra
       )
       TarjetaAudio.color-acento-botones.mb-3(
-        texto="Texto de muestra"
+        texto="Texto de muestra "
         :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
       )
   Separador
@@ -187,7 +189,8 @@ div
       ol.lista-ol
         li 
           span.text-bold 1. 
-          | Item lista ordenada 1
+          | Item lista ordenada 1 
+          i Texto en Italica
         li 
           span.text-bold 2. 
           | Item lista ordenada 2
@@ -205,7 +208,8 @@ div
       ol.lista-ol
         li 
           span.text-bold a. 
-          | Item lista ordenada a
+          | Item lista ordenada a 
+          i Texto en Italica
         li 
           span.text-bold b. 
           | Item lista ordenada b
@@ -223,7 +227,8 @@ div
       ol.lista-ol.lista-ol--separador
         li 
           span.text-bold a. 
-          | Item lista ordenada a
+          | Item lista ordenada a 
+          i Texto en Italica
         li 
           span.text-bold b. 
           | Item lista ordenada b
@@ -244,7 +249,8 @@ div
         li 
           .lista-ol--cuadro__vineta
             span 1
-          | Item lista ordenada 1
+          | Item lista ordenada 1 
+          i Texto en Italica
         li 
           .lista-ol--cuadro__vineta
             span 2
@@ -345,13 +351,15 @@ div
               | Item lista no ordenada
             li 
               i.fas.fa-angle-right
-              | Item lista no ordenada
+              | Item lista no ordenada 
+              i Texto en Italica
         li 
           i.fas.fa-angle-right
           | Item lista no ordenada
         li 
           i.fas.fa-angle-right
-          | Item lista no ordenada
+          | Item lista no ordenada 
+          i Texto en Italica
 
     .col-sm
       h4 Listado no ordenado básico + separadores
@@ -381,7 +389,8 @@ div
       ul.lista-ul--color
         li 
           i.lista-ul__vineta
-          | Item lista no ordenada
+          | Item lista no ordenada 
+          i Texto en Italica
         li
           ul
             li 
@@ -402,7 +411,8 @@ div
       ul.lista-ul--color
         li 
           i.fas.fa-brain
-          | Item lista no ordenada
+          | Item lista no ordenada 
+          i Texto en Italica
         li
           ul
             li 
@@ -423,12 +433,14 @@ div
       ul.lista-ul--color.lista-ul--separador
         li 
           i.fas.fa-feather
-          | Item lista no ordenada
+          | Item lista no ordenada 
+          i Texto en Italica
         li.pb-0
           ul
             li 
               i.fas.fa-cookie
-              | Item lista no ordenada
+              | Item lista no ordenada 
+              b texto bold
             li 
               i.fas.fa-hat-wizard
               | Item lista no ordenada
@@ -810,7 +822,17 @@ div
         img(src='@/assets/template/img-placeholder-1-1.svg', alt='Texto que describa la imagen')
 
   h3.titulo-tercero Cajón texto color G
-  .bloque-texto-g.color-secundario.p-3.p-sm-4.p-md-5
+  .bloque-texto-g.color-secundario.p-3.p-sm-4.p-md-5.mb-5
+    .bloque-texto-g__img(
+      :style="{'background-image': `url(${require('@/assets/curso/img.jpg')})`}"
+    )
+    .bloque-texto-g__texto.p-4
+      p.mb-0 Think about all the possibilities. A good composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Nothing of without working at it. Be impossible to ignore.
+        br
+        br
+        | Stand so tall that they can’t look past you. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect accept possibility of failure. 
+
+  .bloque-texto-g.bloque-texto-g--inverso.color-secundario.p-3.p-sm-4.p-md-5
     .bloque-texto-g__img(
       :style="{'background-image': `url(${require('@/assets/curso/img.jpg')})`}"
     )
@@ -947,48 +969,48 @@ div
         .col-8
           img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
       h2.text-center FIRST
+      p.text-center moment. Abandon the shelter  asdf asdf asdf asdf asdfasdf asaasdfa sdf asdfsadf asd fasd dsf sdf asdfa sdfasdf asd of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+    .tarjeta.color-acento-botones.p-4
+      .row.justify-content-center.mb-3
+        .col-8
+          img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+      h2.text-center 2
       p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
     .tarjeta.color-acento-botones.p-4
       .row.justify-content-center.mb-3
         .col-8
           img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-      h2.text-center John Doe
+      h2.text-center 3
       p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
     .tarjeta.color-acento-botones.p-4
       .row.justify-content-center.mb-3
         .col-8
           img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-      h2.text-center John Doe
+      h2.text-center 4
       p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
     .tarjeta.color-acento-botones.p-4
       .row.justify-content-center.mb-3
         .col-8
           img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-      h2.text-center John Doe
+      h2.text-center 5
       p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
     .tarjeta.color-acento-botones.p-4
       .row.justify-content-center.mb-3
         .col-8
           img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-      h2.text-center John Doe
+      h2.text-center 6
       p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
     .tarjeta.color-acento-botones.p-4
       .row.justify-content-center.mb-3
         .col-8
           img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-      h2.text-center John Doe
-      p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-
-    .tarjeta.color-acento-botones.p-4
-      .row.justify-content-center.mb-3
-        .col-8
-          img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-      h2.text-center John Doe
+      h2.text-center 7
       p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
 
     .tarjeta.color-acento-botones.p-4
@@ -1351,15 +1373,23 @@ div
 
   Separador
 
-  #actividad_dialogo.titulo-segundo.color-acento-botones
+  #actividad-dialogo.titulo-segundo.color-acento-botones
     h2 Actividad dialogo Ingles
 
-  Dialogo.color-primario(:dialogo="dialogo")
+  DialogoActividad.color-primario.mb-5(:dialogo="dialogoActividad")
     template(#nombre-actividad) Arrastrar y Soltar
     template(#titulo-actividad) Titulo de actividad - Completa la conversación.
     template(#descripcion-actividad) Arrastra y suelta el cada una de las palabras en el orden correcto.
     //- template(#feedback-correcto) Bien!
     //- template(#feedback-incorrecto) Mal!
+    
+  Separador
+  #actividad-dialogo.titulo-segundo.color-acento-botones
+    h2 Complementos dialogo Ingles
+
+  DialogoBurbuja.color-primario.borde.mb-3(:dialogoItem="dialogoItem")
+
+  Dialogo.mb-5.color-secundario.borde(:dialogo="dialogo")  
 
   Separador
 
@@ -1748,7 +1778,7 @@ div
         h3 Título del recurso
         p.mb-4 There is no right answer. The splendor of the mystery is that you don’t understand. Your rapidograph pens are dried up, the x-acto blades in your bag are rusty, and your mind is dull. Stop clicking your mouse, get messy, go back to the basics and make something original. Why are you reading all of this?
         
-        a.boton.color-acento-contenido.texto-blanco(:href="obtenerLink('downloads/prueba.pdf')" target="_blank" type="application/pdf")
+        a.boton.color-acento-contenido.texto-blanco(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
           span Descargar
           i.fas.fa-file-download
 
@@ -1766,7 +1796,7 @@ div
             h3.mb-1 Título del recurso
             p.text-small Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias  
           .col-sm-auto
-            a.boton.color-acento-contenido.texto-blanco(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+            a.boton.color-acento-contenido.texto-blanco(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
               span Descargar
               i.fas.fa-file-download
 
@@ -1783,26 +1813,26 @@ div
             h3.mb-1 Título del recurso
             p.text-small Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias 
           .col-sm-auto
-            a.boton.color-acento-contenido(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+            a.boton.color-acento-contenido(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
               span Descargar
               i.fas.fa-file-download
 
   .h5 Ejemplo: Llamado a la acción 3 Recursos externos versión simplificada
   .row
     .col-lg-6
-      a.anexo.mb-4(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+      a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
         .anexo__icono
           img(src="@/assets/template/icono-pdf.svg")
         .anexo__texto
           p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
         
-      a.anexo.mb-4(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+      a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
         .anexo__icono
           img(src="@/assets/template/icono-doc.svg")
         .anexo__texto
           p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
         
-      a.anexo.mb-4(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+      a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
         .anexo__icono
           img(src="@/assets/template/icono-xls.svg")
         .anexo__texto
@@ -1815,19 +1845,19 @@ div
           p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
         
     .col-lg-6
-      a.anexo.mb-4(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+      a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
         .anexo__icono
           img(src="@/assets/template/icono-zip.svg")
         .anexo__texto
           p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
         
-      a.anexo.mb-4(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+      a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
         .anexo__icono
           img(src="@/assets/template/icono-ppt.svg")
         .anexo__texto
           p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
         
-      a.anexo(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+      a.anexo(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
         .anexo__icono
           img(src="@/assets/template/icono-xml.svg")
         .anexo__texto
@@ -2182,7 +2212,7 @@ div
         p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
   
   h3 Tarjeta Avatar Slide
-  .row
+  .row.mb-5
     .col-lg-4.mb-4
       .tarjeta.tarjeta-avatar-slide.color-acento-contenido.p-4.h-100
         .tarjeta-avatar-slide__img.mb-4
@@ -2334,8 +2364,6 @@ div
     .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
       .tarjeta.color-secundario.text-center.p-3(data-aos="zoom-out-right")
         h3.mb-0 zoom-out-right
-    
-    .p-5
 
 </template>
 
@@ -2351,56 +2379,6 @@ export default {
     mostrarIndicadorTarjetaAudio: true,
     modal1: false,
     modal2: false,
-    dialogo: {
-      personajes: [
-        {
-          nombre: 'Hanna',
-          img: require('@/assets/componentes/ej-05.svg'),
-        },
-        {
-          nombre: 'Jhon',
-          img: require('@/assets/componentes/ej-05.svg'),
-        },
-      ],
-      dialogo: [
-        {
-          personaje: 'Hanna',
-          textoIng: 'I need the biology book and the sheets.',
-          textoEsp: 'Yo necesito el libro de biologia y las diapositivas.',
-          audio: require('@/assets/componentes/audios/audio-ej.mp3'),
-        },
-        {
-          personaje: 'Jhon',
-          textoIng:
-            'I need the *** book and the sheets book and the sheets book and the sheets book and the sheets.',
-          textoEsp:
-            'Yo necesito el libro de *** y las diapositivas Yo necesito el libro de Yo necesito el libro de Yo necesito el libro de .',
-          audio: require('@/assets/componentes/audios/audio-ej.mp3'),
-          palabra: 'Biology1',
-        },
-        {
-          personaje: 'Hanna',
-          textoIng: 'I need the biology books and the ***.',
-          textoEsp: 'Yo necesito el libro de biologia y las ***.',
-          audio: require('@/assets/componentes/audios/audio-ej.mp3'),
-          palabra: 'sheets2',
-        },
-        {
-          personaje: 'Jhon',
-          textoIng: 'I *** the biology books and the sheets',
-          textoEsp: 'Yo *** el libro de biologia y las diapositivas.',
-          audio: require('@/assets/componentes/audios/audio-ej.mp3'),
-          palabra: 'need3',
-        },
-        {
-          personaje: 'Hanna',
-          textoIng: 'I need the biology books and the ***.',
-          textoEsp: 'Yo necesito el libro de biologia y las ***.',
-          audio: require('@/assets/componentes/audios/audio-ej.mp3'),
-          palabra: 'sheets4',
-        },
-      ],
-    },
     datosLineaTiempoA: [
       {
         ano: '100.000 - 10.000 A.C.',
@@ -2479,6 +2457,109 @@ export default {
         leyendaImagen: 'Leyenda de la imagen',
       },
     ],
+    dialogoItem: {
+      personaje: {
+        nombre: 'Jhon',
+        img: require('@/assets/componentes/ej-05.svg'),
+      },
+      textoIng: 'She is forgetting the keys.',
+      textoEsp: 'Ella está olvidando las llaves.',
+      audio: require('@/assets/componentes/audios/audio-ej.mp3'),
+    },
+    dialogo: {
+      personajes: [
+        {
+          nombre: 'Hanna',
+          img: require('@/assets/componentes/ej-05.svg'),
+        },
+        {
+          nombre: 'Jhon',
+          img: require('@/assets/componentes/ej-05.svg'),
+        },
+      ],
+      dialogo: [
+        {
+          personaje: 'Hanna',
+          textoIng: 'I need the biology book and the sheets.',
+          textoEsp: 'Yo necesito el libro de biologia y las diapositivas.',
+          audio: require('@/assets/componentes/audios/audio-ej.mp3'),
+        },
+        {
+          personaje: 'Jhon',
+          textoIng: 'I need the book and the sheets',
+          textoEsp: 'Yo necesito el libro de y las diapositivas',
+          audio: require('@/assets/componentes/audios/audio-ej.mp3'),
+        },
+        {
+          personaje: 'Hanna',
+          textoIng: 'I need the biology books and the.',
+          textoEsp: 'Yo necesito el libro de biologia y las.',
+          audio: require('@/assets/componentes/audios/audio-ej.mp3'),
+        },
+        {
+          personaje: 'Jhon',
+          textoIng: 'I the biology books and the sheets',
+          textoEsp: 'Yo el libro de biologia y las diapositivas.',
+          audio: require('@/assets/componentes/audios/audio-ej.mp3'),
+        },
+        {
+          personaje: 'Hanna',
+          textoIng: 'I need the biology books and the.',
+          textoEsp: 'Yo necesito el libro de biologia y las.',
+          audio: require('@/assets/componentes/audios/audio-ej.mp3'),
+        },
+      ],
+    },
+    dialogoActividad: {
+      personajes: [
+        {
+          nombre: 'Hanna',
+          img: require('@/assets/componentes/ej-05.svg'),
+        },
+        {
+          nombre: 'Jhon',
+          img: require('@/assets/componentes/ej-05.svg'),
+        },
+      ],
+      dialogo: [
+        {
+          personaje: 'Hanna',
+          textoIng: 'I need the biology book and the sheets.',
+          textoEsp: 'Yo necesito el libro de biologia y las diapositivas.',
+          audio: require('@/assets/componentes/audios/audio-ej.mp3'),
+        },
+        {
+          personaje: 'Jhon',
+          textoIng:
+            'I need the *** book and the sheets book and the sheets book and the sheets book and the sheets.',
+          textoEsp:
+            'Yo necesito el libro de *** y las diapositivas Yo necesito el libro de Yo necesito el libro de Yo necesito el libro de .',
+          audio: require('@/assets/componentes/audios/audio-ej.mp3'),
+          palabra: 'Biology1',
+        },
+        {
+          personaje: 'Hanna',
+          textoIng: 'I need the biology books and the ***.',
+          textoEsp: 'Yo necesito el libro de biologia y las ***.',
+          audio: require('@/assets/componentes/audios/audio-ej.mp3'),
+          palabra: 'sheets2',
+        },
+        {
+          personaje: 'Jhon',
+          textoIng: 'I *** the biology books and the sheets',
+          textoEsp: 'Yo *** el libro de biologia y las diapositivas.',
+          audio: require('@/assets/componentes/audios/audio-ej.mp3'),
+          palabra: 'need3',
+        },
+        {
+          personaje: 'Hanna',
+          textoIng: 'I need the biology books and the ***.',
+          textoEsp: 'Yo necesito el libro de biologia y las ***.',
+          audio: require('@/assets/componentes/audios/audio-ej.mp3'),
+          palabra: 'sheets4',
+        },
+      ],
+    },
   }),
 }
 </script>

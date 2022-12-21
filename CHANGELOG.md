@@ -2,6 +2,19 @@
 
 Estos son los cambios hechos en la ECORED-BASE-2021
 
+## 6.4.0 - 20-12-2022
+
+### Agregado
+
+- Componente .bloque-texto-g se puede reversar con la clase .bloque-texto-g--inverso
+- Componentes complementarios para dialogos de ingles
+
+### Arreglado
+
+- Componente slyder F los elementos toman toda la altura
+- Componentes de listas inconsistencias con la tipografia italica arreglado
+- El manu siempre va sobrepuesto en el contenido y se va a cerrar al hacer click por fuera del mismo
+
 ## 6.3.1 - 28-06-2022
 
 ### Agregado
