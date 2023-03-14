@@ -34,8 +34,8 @@ jobs:
 
       - name: agregar nevo dist a gh-pages
         run: |
-          git config user.name maoSantaella
-          git config user.email mao.santaella@gmail.com
+          git config user.name flizcano
+          git config user.email flizcanor@icloud.com
           git checkout -b newdist
           git add --force dist
           git commit -m "new dist"
