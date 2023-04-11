@@ -2,6 +2,18 @@
 
 Estos son los cambios hechos en la ECORED-BASE-2021
 
+## 7.0.0 - 11-04-2023
+
+### Agregado
+
+- Creditos dinamicos donde se puede cambiar el titulo (nueva estructural en global.js)
+- Creditos adicionales para imagenes y crfeatavie commons
+
+### Arreglado
+
+- Logo sena (cambio de nombre logo-sena-naranja.svg a logo-sena.svg)
+- Arreglo de nombre en el inicio 'Ecosistema de Recursos Educativos Digitales'
+
 ## 6.4.0 - 20-12-2022
 
 ### Agregado
