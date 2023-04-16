@@ -2,6 +2,13 @@
 
 Estos son los cambios hechos en la ECORED-BASE-2021
 
+## 7.0.1 - 16-04-2023
+
+### Arreglado
+
+- Ocultar menu cuando se hace click en un enlace
+- Arreglo de iconos en el menu
+
 ## 7.0.0 - 11-04-2023
 
 ### Agregado
