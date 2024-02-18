@@ -1,9 +1,9 @@
 export default {
   global: {
     componenteFormativo:
-      'Componente Formativo con un nombre extremadamente largo y extenso',
+      'Nombre del componente formativo',
     descripcionCurso:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis vestibulum quam bibendum varius.<br/><br/>Quisque pretium at nulla sit amet placerat. Vestibulum consequat suscipit accumsan. Proin pharetra congue enim et tempus. Sed sodales dui volutpat, placerat tellus accumsan, semper est. Phasellus nec lorem elementum, mattis quam eget, vestibulum nibh. Sed.',
+      'Descripción corta del componente',
     imagenBannerPrincipal: require('@/assets/curso/banner-princiapal.svg'),
     fondoBannerPrincipal: require('@/assets/curso/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
@@ -358,7 +358,7 @@ export default {
         'ensayo sin componentes reactivos, quiere decir, reconocimiento de los componentes, mediante la aplicación adecuada del fuego.',
     },
     {
-      termino: '<em>Áectores</em>',
+      termino: '<em>Áctores</em>',
       significado:
         'en software de diseño, son líneas que se crean y permiten, expandir, modificar, al tamaño que sea sin pixelarse porque se unen por coordenadas matemáticas del programa y no se generan por números fijos.',
     },
@@ -431,13 +431,13 @@ export default {
       titulo: 'ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Claudia Patricia Aristizabal',
-          cargo: 'Líder del equipo',
+          nombre: 'Milady Tatiana Villamil Castellanos',
+          cargo: 'Líder del Ecosistema',
           centro: 'Dirección General',
         },
         {
           nombre: 'Nombre completo',
-          cargo: 'Responsable de línea de producción',
+          cargo: 'Responsable de Línea de Producción',
           centro: 'Nombre centro de formación',
         },
       ],
@@ -457,17 +457,17 @@ export default {
       autores: [
         {
           nombre: 'Nombre responsable',
-          cargo: 'Diseñador web',
+          cargo: 'Diseñador de Contenidos Digitales',
           centro: 'Nombre centro de formación',
         },
         {
           nombre: 'Nombre responsable',
-          cargo: 'Desarrollador Fullstack',
+          cargo: 'Desarrollador Full-Stack',
           centro: 'Nombre centro de formación',
         },
         {
           nombre: 'Nombre',
-          cargo: 'Animador y Producción audiovisual',
+          cargo: 'Animador y Productor Multimedia',
           centro: 'Nombre centro de formación',
         },
       ],
@@ -477,12 +477,12 @@ export default {
       autores: [
         {
           nombre: 'Nombre validador',
-          cargo: 'Validación y vinculación en plataforma LMS',
+          cargo: 'Validación y Vinculador de RED',
           centro: 'Nombre centro formación',
         },
         {
           nombre: 'Nombre validador',
-          cargo: 'Validación de contenidos accesibles',
+          cargo: 'Evaluador para Contenidos Inclusivos y Accesibles',
           centro: 'Nombre centro formación',
         },
       ],
