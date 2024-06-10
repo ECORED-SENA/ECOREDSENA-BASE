@@ -2,7 +2,7 @@
 
 Estos son los cambios hechos en la ECORED-BASE-2021
 
-## 6.0.3 - 10-06-2024
+## 7.0.2 - 10-06-2024
 
 ### Cambios
 

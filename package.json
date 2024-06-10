@@ -1,6 +1,6 @@
 {
   "name": "sena-base-2021",
-  "version": "7.0.0",
+  "version": "7.0.2",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
