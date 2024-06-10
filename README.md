@@ -1,4 +1,4 @@
-# **ecoredsena-base v7.0.1**
+# **ecoredsena-base v7.0.2**
 
 ## **Enlace GitHubPages**
 
