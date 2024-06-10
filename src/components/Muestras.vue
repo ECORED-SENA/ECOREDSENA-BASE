@@ -132,9 +132,11 @@ div.mb-5
       TarjetaAudio.color-primario.mb-3(
         texto="Texto de muestra  "
         :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+        tiempo
         @audio-hover="mostrarIndicadorTarjetaAudio = false"
       )
         .indicador--click(v-if="mostrarIndicadorTarjetaAudio")
+        
       TarjetaAudio.color-secundario.mb-3(
         texto="Texto de muestra <br> Texto de muestra "
         :audio="require('@/assets/componentes/audios/audio-ej.mp3')"

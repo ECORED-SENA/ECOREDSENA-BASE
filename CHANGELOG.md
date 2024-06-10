@@ -2,6 +2,27 @@
 
 Estos son los cambios hechos en la ECORED-BASE-2021
 
+## 6.0.3 - 10-06-2024
+
+### Cambios
+
+- /package.json => "ecored-base-pkg": "6.0.3"
+- /src/router/index.js
+- /src/views/Actividad/ActividadDidactica.vue
+- /src/config/global.js
+- /src/assets/actividad/correcto.svg
+- /src/assets/actividad/incorrecto.svg
+- /src/assets/actividad/vacio.svg
+- /src/assets/actividad/vacio-hover.svg
+
+### Agregado
+
+- Nuevo componente de actividad de aprendizaje (Actividad)
+
+### Arreglado
+
+- Mejora en tarjeta de audio para mostrar tiempo de reproduccion
+
 ## 7.0.1 - 16-04-2023
 
 ### Arreglado

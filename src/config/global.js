@@ -1,9 +1,7 @@
 export default {
   global: {
-    componenteFormativo:
-      'Nombre del componente formativo',
-    descripcionCurso:
-      'Descripción corta del componente',
+    componenteFormativo: 'Nombre del componente formativo',
+    descripcionCurso: 'Descripción corta del componente',
     imagenBannerPrincipal: require('@/assets/curso/banner-princiapal.svg'),
     fondoBannerPrincipal: require('@/assets/curso/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
@@ -261,6 +259,12 @@ export default {
         nombreRuta: 'actividad',
         icono: 'far fa-question-circle',
         titulo: 'Actividad didáctica',
+        desarrolloContenidos: true,
+      },
+      {
+        nombreRuta: 'nuevaActividad',
+        icono: 'far fa-question-circle',
+        titulo: 'Nueva actividad didáctica',
         desarrolloContenidos: true,
       },
       {
